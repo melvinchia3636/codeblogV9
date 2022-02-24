@@ -44,7 +44,7 @@
     {/if}
     {#if bind2}
         <div class="tracking-[0.325em] type flex font-light text-amber-400 -ml-1 text-sm mt-4" in:fade="{{duration: 300}}">/*
-            <TypedJs strings={['PORTFOLIO OF MELVIN CHIA', "MINIMALISM ULTRA PRO MAX PLUS SPECIAL EDITION"]} loop={true} showCursor={false} typeSpeed={100} backSpeed={50} backDelay={1500}>
+            <TypedJs strings={['PORTFOLIO OF MELVIN CHIA', "MINIMALISM ULTRA PRO MAX PLUS SPECIAL EDITION +"]} loop={true} showCursor={false} typeSpeed={100} backSpeed={50} backDelay={1500}>
                 <h1 class="typing"></h1>
             </TypedJs>
         */</div>
