@@ -1,5 +1,6 @@
 <script>
   import { Router, Route, Link } from "svelte-navigator";
+  import About from "./About.svelte";
   import Home from "./Home.svelte";
   import Work from "./Work.svelte"
 </script>
@@ -11,6 +12,9 @@
     </Route>
     <Route path="/work">
       <Work />
+    </Route>
+    <Route path="/about">
+      <About />
     </Route>
   </main>
 </Router>

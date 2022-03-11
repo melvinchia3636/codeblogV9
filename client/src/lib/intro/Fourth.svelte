@@ -1,10 +1,13 @@
-<script>
+<script lang='ts'>
 	import { expoInOut } from 'svelte/easing';
 	import { tweened } from 'svelte/motion';
 	import { fade } from 'svelte/transition';
   import TypedJs from '@loscrackitos/svelte-typed-js';
   import Navbar from '../Navbar.svelte';
   import { Link, navigate } from 'svelte-navigator';
+
+  export let setHide: (state: boolean) => void;
+  setHide && setHide(true);
 
   let bind = false
   let bind2 = false

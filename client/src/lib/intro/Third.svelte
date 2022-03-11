@@ -1,5 +1,7 @@
-<script>
+<script lang="ts">
 	import "animate.css";
+  export let setHide: (state: boolean) => void;
+  setHide && setHide(false);
 </script>
 
 <div class="flex flex-col items-center">
