@@ -99,7 +99,7 @@
         {#if bind3}
             <div class="flex gap-4 mt-20">
                 <button on:click={() => leavePage("work")} class="tracking-[0.325em] flex items-center justify-center bg-amber-400 w-72 text-neutral-800 pb-[1.2rem] pt-5 px-12 animate__animated animate__fadeInRight">SEE MY WORK</button>
-                <button class="tracking-[0.325em] text-amber-400 w-72 border-[1.6px] border-amber-400 pb-[1.2rem] pt-5 px-12 animate__animated animate__fadeInLeft">ABOUT ME</button>
+                <button on:click={() => leavePage("about")} class="tracking-[0.325em] text-amber-400 w-72 border-[1.6px] border-amber-400 pb-[1.2rem] pt-5 px-12 animate__animated animate__fadeInLeft">ABOUT ME</button>
             </div>
         {/if}
       </div>

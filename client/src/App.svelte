@@ -10,6 +10,9 @@
     <Route path="/">
       <Home />
     </Route>
+    <Route path="/home">
+      <Home />
+    </Route>
     <Route path="/work">
       <Work />
     </Route>
