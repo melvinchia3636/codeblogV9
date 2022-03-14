@@ -1,9 +1,9 @@
 <script lang="ts">
-  import FirstIntro from './lib/intro/First.svelte';
-  import SecondIntro from './lib/intro/Second.svelte';
-  import ThirdIntro from './lib/intro/Third.svelte';
-  import FourthIntro from './lib/intro/Fourth.svelte';
-  import Visibility from './lib/Visibility.svelte';
+  import FirstIntro from './intro/First.svelte';
+  import SecondIntro from './intro/Second.svelte';
+  import ThirdIntro from './intro/Third.svelte';
+  import FourthIntro from './intro/Fourth.svelte';
+  import Visibility from './Visibility.svelte';
   import Icon from "@iconify/svelte";
   import { fade } from "svelte/transition";
 

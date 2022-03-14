@@ -65,7 +65,7 @@
 <div class="w-full h-screen flex items-center justify-center">
     {#if showPage}
       <div class="flex flex-col items-center" style="height: {$height}px" out:fade>
-        <Navbar />
+        <Navbar active="home" />
         <div class="tracking-[0.325em] type flex items-center justify-center font-light -ml-1 text-base mb-4 overflow-hidden whitespace-nowrap" style="max-width: {$size}px">
           A WEB DEVELOPER | A UI DESIGNER
         </div>

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import "scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js";
 	import "animate.css";
   import { tweened } from "svelte/motion";
@@ -6,6 +6,7 @@
   import { Link } from "svelte-navigator";
   import { fade } from "svelte/transition";
   import Saos from "saos";
+import Navbar from "./Navbar.svelte";
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -31,17 +32,7 @@
 </script>
 
 <div class="w-full relative flex justify-center" in:fade out:fade>
-  <header class="absolute z-[9999] left-0 top-0 w-screen">
-    <nav class="w-full py-8 px-9 flex justify-between" style="transform: translateX(-{$nav}%); opacity: {(100-$nav)/100}">
-      <h1 class="text-xl tracking-[0.325em]" on:click={scrollToTop}>&lt;CODEBLOG/&gt;</h1>
-      <div class="flex items-center gap-12 text-sm">
-        <Link to="/" class="tracking-[0.325rem] relative">HOME</Link>
-        <button class="tracking-[0.325rem]">ABOUT</button>
-        <button class="tracking-[0.325rem] relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:w-1/2 after:border-b-[2px] after:border-amber-500">WORK</button>
-        <button class="tracking-[0.325rem]">CONTACT</button>
-      </div>
-    </nav>
-  </header>
+  <Navbar active="work" />
   <div class="w-8/12">
     <div class="flex flex-wrap -mx-4 my-64 gap-20">
       {#each data as project}
@@ -51,7 +42,7 @@
           <div class="py-4 flex flex-col gap-4">
             <div class="uppercase tracking-[0.325em] font-medium text-xl text-yellow-500">{project.name}</div>
             <p class="text-base tracking-[0.2em]">{project.desc}</p>
-            <a href={project.url} class="uppercase text-sm font-semibold underline-offset-4 underline tracking-[0.325em] text-yellow-500">visit website</a>
+            <a href={project.url} target="_blank" class="uppercase text-sm font-semibold underline-offset-4 underline tracking-[0.325em] text-yellow-500">visit website</a>
           </div>
         </div>
       </Saos>

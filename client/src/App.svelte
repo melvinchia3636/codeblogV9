@@ -1,8 +1,8 @@
 <script>
   import { Router, Route, Link } from "svelte-navigator";
-  import About from "./About.svelte";
-  import Home from "./Home.svelte";
-  import Work from "./Work.svelte"
+  import About from "./lib/About.svelte";
+  import Home from "./lib/Home.svelte";
+  import Work from "./lib/Work.svelte"
 </script>
 
 <Router>
