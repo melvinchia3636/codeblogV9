@@ -1,0 +1,64 @@
+{
+  "PROGRAMMING / MARKUP LANGUAGES": [
+    ["vscode-icons:file-type-html", "HTML"],
+    ["vscode-icons:file-type-css", "CSS"],
+    ["logos:typescript-icon", "Typescript"],
+    ["logos:javascript", "Javascript"],
+    ["logos:es6", "ES6"],
+    ["logos:python", "Python"],
+    ["logos:c-plusplus", "C++"],
+    ["logos:markdown", "Markdown"]
+  ],
+
+  "FRONTEND": [
+    ["logos:react", "REACT"],
+    ["logos:svelte-icon", "Svelte"],
+    ["logos:angular-icon", "Angular"],
+    ["bx:bxl-jquery", "JQuery"],
+    ["logos:redux", "Redux"],
+    ["logos:react-router", "React Router"],
+    ["logos:vitejs", "Vite"],
+    ["logos:babel", "Babel"],
+    ["logos:webpack", "Webpack"]
+  ],
+  "CSS FRAMEWORKS / PREPROCESSOR": [
+    ["logos:tailwindcss-icon", "TailwindCSS"],
+    ["logos:material-ui", "Material ui"],
+    ["logos:uikit", "UIKit"],
+    ["logos:bootstrap", "Bootstrap"],
+    ["vscode-icons:file-type-scss", "SCSS"]
+  ],
+  "BACKEND / SERVER / DATABASE / API": [
+    ["logos:nodejs-icon", "NodeJS"],
+    ["simple-icons:express", "Express"],
+    ["logos:django-icon", "Django"],
+    ["logos:flask", "Flask"],
+    ["vscode-icons:file-type-mongo", "MongoDB"],
+    ["logos:mysql", "MySQL"],
+    ["logos:sqlite", "SQLite"],
+    ["logos:firebase", "Firebase"],
+    ["logos:cpanel", "CPanel"],
+    ["logos:heroku-icon", "Heroku"],
+    ["logos:google-developers", "Google Dev"],
+    ["logos:oauth", "OAuth"]
+  ],
+  "MOBILE APP": [
+    ["logos:expo-icon", "Expo"],
+    ["logos:react", "React Native"]
+  ],
+  "MISCELLANEOUS": [
+    ["logos:stackoverflow-icon", "Stackoverflow"],
+    ["logos:figma", "Figma"],
+    ["logos:bash-icon", "Bash"],
+    ["logos:npm-icon", "NPM"],
+    ["logos:codepen-icon", "Codepen"],
+    ["logos:eslint", "ESLint"],
+    ["logos:prettier", "Prettier"],
+    ["logos:json", "JSON"],
+    ["logos:io", "Socket IO"],
+    ["logos:discord-icon", "Discord"],
+    ["logos:git-icon", "Git"],
+    ["mdi:github", "Github"],
+    ["logos:raspberry-pi", "Raspberry Pi"]
+  ]
+}

@@ -29,7 +29,7 @@ app.use('/projects/list', (req, res) => {
   });
 });
 
-app.post('/project/add', (req, res) => {
+app.use('/quotes/list', (req, res) => {
   res.setHeader('Content-Type', 'application/json');
   // connect to mongodb
   mongodb.MongoClient.connect('mongodb+srv://redaxe:nFl2muMZQjmHinis@cluster0.enpf0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', (err, client) => {
@@ -38,16 +38,62 @@ app.post('/project/add', (req, res) => {
       return;
     }
     console.log('connected to mongodb');
-    const db = client.db('project-list');
-    const collection = db.collection('projects');
-    collection.insertOne(req.body, (err, result) => {
+    const db = client.db('quotes');
+    const collection = db.collection('quotes');
+    collection.find({}).toArray((err, docs) => {
       if (err) {
         console.log(err);
         return;
       }
-      res.send(result);
+      res.send(docs);
     });
   });
+});
+
+app.use('/mottoes/list', (req, res) => {
+  res.setHeader('Content-Type', 'application/json');
+  // connect to mongodb
+  mongodb.MongoClient.connect('mongodb+srv://redaxe:nFl2muMZQjmHinis@cluster0.enpf0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', (err, client) => {
+    if (err) {
+      console.log(err);
+      return;
+    }
+    console.log('connected to mongodb');
+    const db = client.db('quotes');
+    const collection = db.collection('mottoes');
+    collection.find({}).toArray((err, docs) => {
+      if (err) {
+        console.log(err);
+        return;
+      }
+      res.send(docs);
+    });
+  });
+});
+
+app.post('/:db/:collection/add/:password', (req, res) => {
+  if (req.params.password === "redaxe3636") {
+    res.setHeader('Content-Type', 'application/json');
+    // connect to mongodb
+    mongodb.MongoClient.connect('mongodb+srv://redaxe:nFl2muMZQjmHinis@cluster0.enpf0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', (err, client) => {
+      if (err) {
+        console.log(err);
+        return;
+      }
+      console.log('connected to mongodb');
+      const db = client.db(req.params.db);
+      const collection = db.collection(req.params.collection);
+      collection.insertOne(req.body, (err, result) => {
+        if (err) {
+          console.log(err);
+          return;
+        }
+        res.send(result);
+      });
+    });
+  } else {
+    res.status(403).send('Access denied');
+  }
 })
 
 
