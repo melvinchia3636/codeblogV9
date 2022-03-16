@@ -32,7 +32,6 @@ import Navbar from "./Navbar.svelte";
 </script>
 
 <div class="w-full relative flex justify-center">
-  <Navbar active="work" />
   <div class="w-8/12">
     <div class="flex flex-wrap -mx-4 my-64 gap-20">
       {#each data as project}

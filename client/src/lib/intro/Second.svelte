@@ -1,55 +1,65 @@
 <script lang="ts">
-	import { tweened } from 'svelte/motion';
-	import { expoInOut } from 'svelte/easing';
-	import { fade } from 'svelte/transition';
-  import TypedJs from '@loscrackitos/svelte-typed-js';
+  import { tweened } from "svelte/motion";
+  import { expoInOut } from "svelte/easing";
+  import { fade } from "svelte/transition";
 
-  export let setHide: (state: boolean) => void;
-  setHide && setHide(false);
+  const size = tweened(0, {
+    duration: 1500,
+    easing: expoInOut,
+  });
 
-	const size = tweened(0, {
-		duration: 1500,
-		easing: expoInOut
-	});
+  const size2 = tweened(50, {
+    duration: 1500,
+    easing: expoInOut,
+  });
 
-    const size2 = tweened(50, {
-		duration: 1500,
-		easing: expoInOut
-	});
+  let bind = false;
+  let bind2 = false;
 
-    let bind = false;
-    let bind2 = false
+  setTimeout(() => {
+    bind = true;
+  }, 0);
 
-    setTimeout(() => {
-        bind = true
-    }, 0)
+  setTimeout(() => {
+    $size += 420;
+  }, 500);
 
-	setTimeout(() => {
-		$size += 420;
-	}, 500)
+  setTimeout(() => {
+    $size2 += 20;
+  }, 1500);
 
-    setTimeout(() => {
-		$size2 += 20;
-	}, 1500)
-
-    setTimeout(() => {
-        bind2 = true
-    }, 3000)
+  setTimeout(() => {
+    bind2 = true;
+  }, 3000);
 </script>
 
 <div class="flex flex-col items-center" style="height: {$size2}px">
-    {#if bind}
-        <div class="text-5xl tracking-[0.325em] flex" in:fade="{{delay: 250, duration: 300}}" out:fade="{{delay: 250, duration: 300}}">
-            <div class="overflow-hidden flex justify-center items-center" style="max-width: {$size}px">CREATIVITY</div>
-        </div>
-    {/if}
-    {#if bind2}
-        <div class="tracking-[0.325em] type flex font-light text-amber-400 -ml-1 text-sm mt-4" in:fade="{{duration: 300}}">VISIONARY | SIMPLICITY</div>
-    {/if}
+  {#if bind}
+    <div
+      class="text-5xl tracking-[0.325em] flex"
+      in:fade={{ delay: 250, duration: 300 }}
+      out:fade={{ delay: 250, duration: 300 }}
+    >
+      <div
+        class="overflow-hidden flex justify-center items-center"
+        style="max-width: {$size}px"
+      >
+        CREATIVITY
+      </div>
+    </div>
+  {/if}
+  {#if bind2}
+    <div
+      class="tracking-[0.325em] type flex font-light text-amber-400 -ml-1 text-sm mt-4"
+      in:fade={{ duration: 300 }}
+    >
+      VISIONARY | SIMPLICITY
+    </div>
+  {/if}
 </div>
 
 <style global>
-    .type > div {
-        display: flex;
-    }
+  .type > div {
+    display: flex;
+  }
 </style>

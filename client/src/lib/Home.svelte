@@ -6,11 +6,34 @@
   import Visibility from './Visibility.svelte';
   import Icon from "@iconify/svelte";
   import { fade } from "svelte/transition";
+    //Optional, include all titles of your sections, this is also used as number that indicate count of sections
+    const sections = [
+        'Home',
+        'History',
+        'Present',
+        'Future'
+    ];
+    
+    //Same mechanics as in sections
+    const slides = [
+        '1982-1993',
+        '1993-2006',
+        '2006-present'
+    ];
 
   let hide: boolean = false;
+  let currentSection = 0
+
+  const setCurrentSection = (section: number) => {
+    currentSection = section
+  }
 
   const setHide = (state: boolean) => {
     hide = state
+  }
+
+  $:{
+    console.log(currentSection)
   }
 </script>
 
@@ -18,36 +41,34 @@
   <div class="w-full h-screen flex-shrink-0 flex items-center justify-center snap-start">
     <Visibility steps={100} let:percent let:unobserve>
       {#if percent > 50}
-        <FirstIntro setHide={setHide} />
+        <FirstIntro />
       {/if}
     </Visibility>
   </div>
   <div class="w-full h-screen flex-shrink-0 flex items-center justify-center snap-start">
     <Visibility steps={100} let:percent let:unobserve>
       {#if percent > 50}
-        <SecondIntro setHide={setHide} />
+        <SecondIntro />
       {/if}
     </Visibility>
   </div>
   <div class="w-full h-screen flex-shrink-0 flex items-center justify-center snap-start">
     <Visibility steps={100} let:percent let:unobserve>
       {#if percent > 50}
-        <ThirdIntro setHide={setHide} />
+        <ThirdIntro />
       {/if}
     </Visibility>
   </div>
   <div class="w-full h-screen relative flex-shrink-0 flex items-center justify-center snap-start">
     <Visibility steps={100} let:percent let:unobserve>
       {#if percent > 50}
-        <FourthIntro setHide={setHide} />
+        <FourthIntro />
       {/if}
     </Visibility>
   </div>
-  {#if !hide}
-    <div class="fixed bottom-0 left-1/2 -translate-x-1/2" in:fade out:fade>
-      <Icon icon="mdi:chevron-down" class="w-8 h-8 animate-bounce opacity-40" />
-    </div>
-  {/if}
+  <div class="fixed bottom-0 left-1/2 -translate-x-1/2" in:fade out:fade>
+    <Icon icon="mdi:chevron-down" class="w-8 h-8 animate-bounce opacity-40" />
+  </div>
 </main>
 
 <style global>
