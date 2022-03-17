@@ -20,7 +20,7 @@
     () => {
       $nav -= 100;
     },
-    active === "home" ? 1200 : 500
+    active === "home" ? 1200 : 200
   );
 </script>
 

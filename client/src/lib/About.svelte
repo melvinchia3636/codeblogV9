@@ -42,7 +42,7 @@
           setSection(null);
           setTimeout(() => {
             setShowSection(false);
-          }, 0);
+          }, 2000);
         }}
         class="tracking-[0.325em] uppercase font-medium text-yellow-500 -ml-4 flex items-center gap-2"
       >

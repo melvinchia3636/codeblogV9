@@ -1,13 +1,17 @@
 <script>
   import { Router, Route, Link } from "svelte-navigator";
   import About from "./lib/About.svelte";
+  import Contact from "./lib/Contact.svelte";
   import Home from "./lib/Home.svelte";
-import Navbar from "./lib/Navbar.svelte";
+  import Navbar from "./lib/Navbar.svelte";
   import Work from "./lib/Work.svelte"
 </script>
 
 <Router>
   <main class="w-full h-full overflow-y-auto relative">
+    <Route path="/">
+      <Home/>
+    </Route>
     <Route path="/home">
       <Home />
     </Route>
@@ -18,6 +22,10 @@ import Navbar from "./lib/Navbar.svelte";
     <Route path="/about">
       <Navbar active="about" />
       <About />
+    </Route>
+    <Route path="/contact">
+      <Navbar active="contact" />
+      <Contact />
     </Route>
   </main>
 </Router>

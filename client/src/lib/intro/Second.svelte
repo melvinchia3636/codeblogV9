@@ -8,11 +8,6 @@
     easing: expoInOut,
   });
 
-  const size2 = tweened(50, {
-    duration: 1500,
-    easing: expoInOut,
-  });
-
   let bind = false;
   let bind2 = false;
 
@@ -25,15 +20,11 @@
   }, 500);
 
   setTimeout(() => {
-    $size2 += 20;
-  }, 1500);
-
-  setTimeout(() => {
     bind2 = true;
-  }, 3000);
+  }, 1500);
 </script>
 
-<div class="flex flex-col items-center" style="height: {$size2}px">
+<div class="flex flex-col items-center">
   {#if bind}
     <div
       class="text-5xl tracking-[0.325em] flex"

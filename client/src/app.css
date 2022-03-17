@@ -4,8 +4,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-*:focus, *:active {
-  outline: none;
-  border: none
-}

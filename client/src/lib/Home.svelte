@@ -6,20 +6,6 @@
   import Visibility from './Visibility.svelte';
   import Icon from "@iconify/svelte";
   import { fade } from "svelte/transition";
-    //Optional, include all titles of your sections, this is also used as number that indicate count of sections
-    const sections = [
-        'Home',
-        'History',
-        'Present',
-        'Future'
-    ];
-    
-    //Same mechanics as in sections
-    const slides = [
-        '1982-1993',
-        '1993-2006',
-        '2006-present'
-    ];
 
   let hide: boolean = false;
   let currentSection = 0
