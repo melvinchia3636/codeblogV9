@@ -6,6 +6,7 @@
   import Visibility from './Visibility.svelte';
   import Icon from "@iconify/svelte";
   import { fade } from "svelte/transition";
+import Navbar from './Navbar.svelte';
 
   let hide: boolean = false;
   let currentSection = 0
@@ -23,7 +24,7 @@
   }
 </script>
 
-<main class="w-full h-screen snap-y overflow-scroll snap-mandatory relative" in:fade>
+<main class="w-full h-screen [max-height:-webkit-fill-available] snap-y overflow-y-scroll overflow-x-hidden snap-mandatory relative" in:fade out:fade>
   <div class="w-full h-screen flex-shrink-0 flex items-center justify-center snap-start">
     <Visibility steps={100} let:percent let:unobserve>
       {#if percent > 50}

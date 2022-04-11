@@ -22,28 +22,28 @@
   }, 500);
 
   setTimeout(() => {
-    $size += 380;
-  }, 2000);
+    $size += 400;
+  }, 1000);
 
   setTimeout(() => {
     $size2 += 20;
-  }, 3000);
+  }, 1500);
 
   setTimeout(() => {
     bind2 = true;
-  }, 4000);
+  }, 2000);
 </script>
 
-<div class="flex flex-col items-center" style="height: {$size2}px">
+<div class="flex flex-col items-center h-screen [max-height:-webkit-fill-available]" style="max-height: {$size2}px">
   {#if bind}
     <div
-      class="text-5xl tracking-[0.325em] flex"
+      class="text-3xl tracking-[0.325em] flex"
       in:fade={{ delay: 250, duration: 300 }}
       out:fade={{ delay: 250, duration: 300 }}
     >
       <div>&lt;</div>
       <div
-        class="overflow-hidden flex justify-center items-center"
+        class="overflow-hidden flex justify-center items-center font-light"
         style="max-width: {$size}px"
       >
         CODEBLOG
@@ -53,7 +53,7 @@
   {/if}
   {#if bind2}
     <div
-      class="tracking-[0.325em] type flex font-light text-amber-400 -ml-1 text-sm mt-4"
+      class="tracking-[0.325em] type flex font-light text-amber-400 -ml-1 text-xs px-8 text-center mt-4"
       in:fade={{ duration: 300 }}
     >
       /*

@@ -27,7 +27,7 @@
 <div class="flex flex-col items-center">
   {#if bind}
     <div
-      class="text-5xl tracking-[0.325em] flex"
+      class="text-3xl tracking-[0.325em] flex"
       in:fade={{ delay: 250, duration: 300 }}
       out:fade={{ delay: 250, duration: 300 }}
     >
@@ -41,7 +41,7 @@
   {/if}
   {#if bind2}
     <div
-      class="tracking-[0.325em] type flex font-light text-amber-400 -ml-1 text-sm mt-4"
+      class="tracking-[0.325em] type flex font-light text-amber-400 -ml-1 text-xs mt-4"
       in:fade={{ duration: 300 }}
     >
       VISIONARY | SIMPLICITY

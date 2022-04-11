@@ -31,11 +31,11 @@
   });
 
   setTimeout(() => {
-    $size = 500;
+    $size = 600;
   }, 100);
 
   setTimeout(() => {
-    $height += 100;
+    $height += 200;
   }, 1000);
 
   setTimeout(() => {
@@ -60,7 +60,7 @@
 </script>
 
 <div
-  class="w-full h-screen flex items-center justify-center -mb-4 overflow-hidden"
+  class="w-full h-screen flex items-center justify-center -mb-16 overflow-hidden"
 >
   {#if showPage}
     <div
@@ -68,9 +68,8 @@
       style="height: {$height}px"
       out:fade
     >
-      <Navbar active="home" />
       <div
-        class="tracking-[0.325em] type flex items-center justify-center font-light text-base mb-4 overflow-hidden whitespace-nowrap"
+        class="tracking-[0.325em] type flex items-center justify-center font-light text-xs mb-4 overflow-hidden whitespace-nowrap"
         style="max-width: {$size}px"
       >
         A WEB DEVELOPER | A UI DESIGNER
@@ -85,10 +84,8 @@
             <TypedJs
               strings={[
                 "CREATIVE",
-                "AMBITIOUS",
                 "PASSIONATE",
                 "GREGARIOUS",
-                "INVENTIVE",
                 "PERCISTENT",
                 "PRACTICAL",
                 "RELIABLE",
@@ -103,13 +100,13 @@
             >
               <span class="text-amber-400 typing" />
             </TypedJs>
-            TEENAGER
+            CODER
           </div>
         </div>
       {/if}
       {#if bind2}
         <div
-          class="tracking-[0.325em] w-8/12 text-center mt-4 font-light"
+          class="tracking-[0.2em] w-3/4 text-center text-base mt-4 font-light"
           in:fade={{ delay: 250, duration: 500 }}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -135,6 +132,9 @@
   <div
     class="fixed bottom-0 w-8 h-8 bg-neutral-800 z-[9999] left-1/2 -translate-x-1/2"
   />
+  <div class="fixed bottom-8 left-1/2 -translate-x-1/2 text-white z-[9999] uppercase text-xs tracking-[0.325em]">
+    Copyright © 2020 - 2022 Melvin Chia. All rights reserved.
+  </div>
 </div>
 
 <style global>

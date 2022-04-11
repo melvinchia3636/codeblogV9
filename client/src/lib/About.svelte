@@ -9,8 +9,6 @@
   import TechStacks from "./about/TechStacks.svelte";
   import Workspace from "./about/Workspace.svelte";
 
-  import Navbar from "./Navbar.svelte";
-
   let section = null;
   let showSection = false;
 
@@ -24,18 +22,12 @@
   const setShowSection = (newShowSection) => {
     showSection = newShowSection;
   };
-
-  $: {
-    console.log(showSection);
-  }
 </script>
 
-<div class="w-full h-screen relative flex flex-col items-center">
+<div class="w-full h-screen overflow-hidden relative flex flex-col items-center" in:fade out:fade>
   {#if showSection && section !== null}
     <div
       class="h-full w-full flex flex-col items-center mt-48"
-      in:fade
-      out:fade
     >
       <button
         on:click={() => {
@@ -67,7 +59,7 @@
     </div>
   {:else}
     <div
-      class="w-full h-screen flex items-center justify-center flex-col gap-12"
+      class="w-full h-screen flex items-center justify-center flex-col gap-12" in:fade out:fade
     >
       <button
         on:click={() => (!showSection ? setSection(0) : "")}
