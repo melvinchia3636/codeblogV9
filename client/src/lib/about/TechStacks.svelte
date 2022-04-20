@@ -9,16 +9,16 @@
 >
   tech stacks
 </h1>
-<div class="flex flex-col w-7/12 gap-20 pb-48">
+<div class="flex flex-col w-7/12 gap-24 pb-48">
   {#each Object.entries(techStack) as [catName, items]}
     <Saos animation={"from-left .5s ease-in-out both"}>
       <div class="flex flex-col items-center gap-8">
         <h2 class="text-yellow-500 upprecase font-medium tracking-[0.325em]">
           {catName}
         </h2>
-        <div class="grid grid-cols-3 gap-y-6 gap-x-24">
+        <div class="grid grid-cols-3 gap-y-8 gap-x-24">
           {#each items as [icon, name]}
-            <div class="flex items-center gap-4 tracking-[0.325em] uppercase">
+            <div class="flex items-center gap-4 tracking-[0.325em] uppercase w-96">
               <Icon {icon} class="w-6 h-6 flex-shrink-0" />
               {name}
             </div>

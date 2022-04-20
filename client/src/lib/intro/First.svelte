@@ -34,7 +34,10 @@
   }, 2000);
 </script>
 
-<div class="flex flex-col items-center h-screen [max-height:-webkit-fill-available]" style="max-height: {$size2}px">
+<div
+  class="flex flex-col items-center h-screen [max-height:-webkit-fill-available]"
+  style="max-height: {$size2}px"
+>
   {#if bind}
     <div
       class="text-3xl tracking-[0.325em] flex"
@@ -53,10 +56,9 @@
   {/if}
   {#if bind2}
     <div
-      class="tracking-[0.325em] type flex font-light text-amber-400 -ml-1 text-xs px-8 text-center mt-4"
+      class="tracking-[0.325em] type flex font-light text-yellow-400 -ml-1 text-xs px-8 text-center mt-4"
       in:fade={{ duration: 300 }}
     >
-      /*
       <TypedJs
         strings={[
           "PORTFOLIO OF MELVIN CHIA",
@@ -68,9 +70,10 @@
         backSpeed={50}
         backDelay={1500}
       >
+        /*
         <h1 class="typing" />
+        */
       </TypedJs>
-      */
     </div>
   {/if}
 </div>

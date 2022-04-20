@@ -6,7 +6,6 @@
   import Visibility from './Visibility.svelte';
   import Icon from "@iconify/svelte";
   import { fade } from "svelte/transition";
-import Navbar from './Navbar.svelte';
 
   let hide: boolean = false;
   let currentSection = 0
@@ -17,10 +16,6 @@ import Navbar from './Navbar.svelte';
 
   const setHide = (state: boolean) => {
     hide = state
-  }
-
-  $:{
-    console.log(currentSection)
   }
 </script>
 

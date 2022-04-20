@@ -27,7 +27,8 @@
 <div class="w-full h-screen overflow-hidden relative flex flex-col items-center" in:fade out:fade>
   {#if showSection && section !== null}
     <div
-      class="h-full w-full flex flex-col items-center mt-48"
+      class="min-h-screen w-full overflow-y-auto flex flex-col items-center pt-48"
+      in:fade out:fade
     >
       <button
         on:click={() => {
@@ -59,7 +60,7 @@
     </div>
   {:else}
     <div
-      class="w-full h-screen flex items-center justify-center flex-col gap-12" in:fade out:fade
+      class="w-full h-screen flex items-center justify-center flex-col gap-12"
     >
       <button
         on:click={() => (!showSection ? setSection(0) : "")}

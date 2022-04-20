@@ -8,19 +8,11 @@
 
 <Router>
   <main class="w-full h-full overflow-y-auto relative">
-    <Navbar active="about" />
-    <Route path="/">
-      <Home/>
-    </Route>
-    <Route path="/home">
-      <Home />
-    </Route>
-    <Route path="/work">
-      <Work />
-    </Route>
-    <Route path="/about">
-      <About />
-    </Route>
+    <Navbar />
+    <Route path="/" component="{Home}" />
+    <Route path="/home" component="{Home}" />
+    <Route path="/work" component="{Work}" />
+    <Route path="/about" component="{About}" />
   </main>
 </Router>
 

@@ -9,7 +9,7 @@
     PRESENTED TO YOU BY
   </div>
   <div
-    class="text-3xl tracking-[0.325em] flex text-amber-400 animate__animated animate__delay-0.5s animate__fadeInUp"
+    class="text-3xl tracking-[0.325em] flex text-yellow-400 animate__animated animate__delay-0.5s animate__fadeInUp"
   >
     <div class="overflow-hidden flex justify-center items-center text-center">
       MELVIN CHIA

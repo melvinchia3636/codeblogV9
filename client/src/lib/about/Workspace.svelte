@@ -13,7 +13,7 @@
 >
   <div class="flex flex-col items-center gap-2">
     <span class="text-sm text-yellow-500">Computer</span>
-    <p class="text-2xl">MacBook Air 13-inch M1 chip</p>
+    <p class="text-2xl">13-inch M1 MacBook Air</p>
   </div>
   <div class="flex flex-col items-center gap-2">
     <span class="text-sm text-yellow-500">Code editor</span>

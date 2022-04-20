@@ -2,8 +2,11 @@
   import { expoInOut } from "svelte/easing";
   import { tweened } from "svelte/motion";
   import { Link } from "svelte-navigator";
+  import { onDestroy, onMount } from "svelte";
+  import { globalHistory } from "svelte-navigator";
+  import Icon from "@iconify/svelte";
 
-  export let active = "";
+  let pathname = window.location.pathname;
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -16,12 +19,28 @@
     easing: expoInOut,
   });
 
-  setTimeout(
-    () => {
-      $nav -= 100;
-    },
-    active === "home" ? 1200 : 200
-  );
+  setTimeout(() => {
+    $nav -= 100;
+  }, 200);
+
+  let unsub;
+
+  onMount(() => {
+    unsub = globalHistory.listen(({ location, action }) => {
+      pathname = location.pathname;
+      setNavOpen(false);
+    });
+  });
+
+  onDestroy(() => {
+    unsub();
+  });
+
+  let navOpen = false;
+
+  const setNavOpen = (state) => {
+    navOpen = state !== undefined ? state : !navOpen;
+  };
 </script>
 
 <header class="w-full z-[9999]">
@@ -29,25 +48,82 @@
     class="fixed left-0 top-0 z-[9999] w-full bg-neutral-800 py-8 px-9 flex justify-between"
     style="opacity: {(100 - $nav) / 100}"
   >
-    <h1 class="text-xl tracking-[0.325em]" on:click={scrollToTop}>
-      <span class="text-yellow-500 font-bold">C</span>ODE<span class="text-yellow-500 font-bold">B</span>LOG<br/>
-      <span class="font-bold text-xs tracking-widest block">by Melvin Chia.</span>
+    <h1
+      class="text-xl tracking-[0.325em] relative z-[9999] {navOpen
+        ? 'text-neutral-800'
+        : 'text-white'} transition-all delay-500 duration-700 font-medium"
+      on:click={scrollToTop}
+    >
+      <span
+        class="{navOpen
+          ? 'text-yellow-600'
+          : 'text-yellow-500'} font-bold transition-all delay-500 duration-700"
+        >C</span
+      >ODE<span
+        class="{navOpen
+          ? 'text-yellow-600'
+          : 'text-yellow-500'} font-bold transition-all delay-500 duration-700"
+        >B</span
+      >LOG<br />
+      <span class="font-bold text-xs tracking-widest block"
+        >by Melvin Chia.</span
+      >
     </h1>
-    <div class="flex items-center gap-12 text-sm">
+    <div class="hidden md:flex items-center gap-12 text-sm">
       {#each ["home", "work", "about", "blog"] as link}
         <Link
           to={"/" + link}
-          class="tracking-[0.325rem] relative uppercase {active === link
-            ? "after:content-[''] after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:w-1/2 after:border-b-[1.6px] after:border-amber-400"
+          class="tracking-[0.325rem] relative uppercase {pathname ===
+            '/' + link ||
+          (pathname === '/' && link === 'home')
+            ? "after:content-[''] after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:w-1/2 after:border-b-[1.6px] after:border-yellow-400"
             : ''}">{link}</Link
         >
       {/each}
     </div>
-    <div class="fixed bottom-8 items-center left-6 text-sm flex gap-8 [writing-mode:sideways-lr] [text-orientation:mixed]">
-      <a href="//github.com/melvinchia3636" target="_blank" class="font-bold !font-['Inter']">gh</a>
-      <a href="//facebook.com/TheSillyCoder" target="_blank" class="font-bold !font-['Inter']">fb</a>
-      <a href="//www.youtube.com/channel/UCsSf5dUsiQYfEucaJlusXng" target="_blank" class="font-bold !font-['Inter']">yt</a>
-      <div class="h-16 border-r-2 ml-1 border-neutral-600"></div>
+    <button on:click={setNavOpen} class="block md:!hidden relative z-[9999]">
+      <Icon
+        icon="heroicons-outline:menu-alt-4"
+        class="w-7 h-7 {navOpen ? 'text-neutral-800' : 'text-white'}"
+      />
+    </button>
+    <div
+      class="w-full h-screen bg-yellow-500 {navOpen
+        ? 'top-0 left-0 rounded-br-none'
+        : '-top-full -left-full rounded-br-full'} transition-all duration-700 fixed z-50 flex items-center justify-center text-neutral-800 font-semibold"
+    >
+      <div class="flex flex-col items-center gap-12 text-sm">
+        {#each ["home", "work", "about", "blog"] as link}
+          <Link
+            to={"/" + link}
+            class="tracking-[0.325rem] relative uppercase {pathname ===
+              '/' + link ||
+            (pathname === '/' && link === 'home')
+              ? "after:content-[''] after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:w-1/2 after:border-b-2 after:border-neutral-800"
+              : ''}">{link}</Link
+          >
+        {/each}
+      </div>
+    </div>
+    <div
+      class="fixed bottom-8 items-center left-8 text-sm gap-8 -rotate-90 origin-top-left hidden md:flex"
+    >
+      <a
+        href="//github.com/melvinchia3636"
+        target="_blank"
+        class="font-bold !font-['Inter']">gh</a
+      >
+      <a
+        href="//facebook.com/TheSillyCoder"
+        target="_blank"
+        class="font-bold !font-['Inter']">fb</a
+      >
+      <a
+        href="//www.youtube.com/channel/UCsSf5dUsiQYfEucaJlusXng"
+        target="_blank"
+        class="font-bold !font-['Inter']">yt</a
+      >
+      <div class="w-16 border-t-2 ml-1 border-neutral-600 hidden md:block" />
     </div>
   </nav>
 </header>
