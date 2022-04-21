@@ -19,7 +19,7 @@
 </script>
 
 <h1
-  class="font-medium text-center w-min whitespace-nowrap flex tracking-[0.325em] uppercase text-4xl mt-6 mb-20 relative after:content-[''] after:absolute after:w-24 after:border-b-2 after:border-yellow-500 after:-bottom-2 after:left-1/2 after:-translate-x-[55%]"
+  class="font-medium text-center w-min whitespace-nowrap flex tracking-[0.325em] uppercase text-4xl mt-6 mb-20 relative after:content-[''] after:absolute after:w-24 after:border-b-2 after:border-amber-400 after:-bottom-2 after:left-1/2 after:-translate-x-[55%]"
 >
   Quotes/Mottoes
 </h1>
@@ -33,12 +33,12 @@
           icon={quote.author === "Melvin Chia"
             ? "uil:balance-scale"
             : "mdi:format-quote-open"}
-          class="w-16 h-16 text-yellow-500 stroke-neutral-800 stroke-1"
+          class="w-16 h-16 text-amber-400 stroke-neutral-900 stroke-1"
         />
         {quote.content}
         <br />
         <span class="text-sm font-medium">- {quote.author}</span>
-        <span class="w-16 border-b-2 border-yellow-500" />
+        <span class="w-16 border-b-2 border-amber-400" />
       </div>
     </Saos>
   {/each}

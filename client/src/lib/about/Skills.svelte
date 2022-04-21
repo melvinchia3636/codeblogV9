@@ -3,7 +3,7 @@
 </script>
 
 <h1
-  class="font-medium text-center w-min flex tracking-[0.325em] uppercase text-4xl mt-6 mb-20 relative after:content-[''] after:absolute after:w-24 after:border-b-2 after:border-yellow-500 after:-bottom-2 after:left-1/2 after:-translate-x-[55%]"
+  class="font-medium text-center w-min flex tracking-[0.325em] uppercase text-4xl mt-6 mb-20 relative after:content-[''] after:absolute after:w-24 after:border-b-2 after:border-amber-400 after:-bottom-2 after:left-1/2 after:-translate-x-[55%]"
 >
   skills
 </h1>
@@ -27,7 +27,7 @@
       icon="icon-park-outline:monitor-one"
       class="w-16 h-16 flex-shrink-0"
     />
-    <h2 class="uppercase font-medium tracking-[0.325em] text-2xl">
+    <h2 class="uppercase font-medium tracking-[0.325em] text-2xl text-amber-400">
       Website Development
     </h2>
     <p class="tracking-[0.1em] text-center">
@@ -41,7 +41,7 @@
       icon="icon-park-outline:graphic-design"
       class="w-16 h-16 flex-shrink-0"
     />
-    <h2 class="uppercase font-medium tracking-[0.325em] text-2xl">
+    <h2 class="uppercase font-medium tracking-[0.325em] text-2xl text-amber-400">
       UI/UX Design
     </h2>
     <p class="tracking-[0.1em] text-center">
@@ -55,7 +55,7 @@
       icon="icon-park-outline:database-setting"
       class="w-16 h-16 flex-shrink-0"
     />
-    <h2 class="uppercase font-medium tracking-[0.325em] text-2xl">
+    <h2 class="uppercase font-medium tracking-[0.325em] text-2xl text-amber-400">
       Database Management
     </h2>
     <p class="tracking-[0.1em] text-center">

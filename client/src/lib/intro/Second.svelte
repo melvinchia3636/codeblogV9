@@ -10,13 +10,15 @@
   });
 
   setTimeout(() => {
-    $size += 420;
+    $size += 480;
   }, 100);
 </script>
 
 <div class="flex flex-col items-center">
+  <div in:fade out:fade class="fixed top-0 left-16 text-[16rem] z-[9999] font-bold opacity-[2%]">&lt;/</div>
+  <div in:fade out:fade class="fixed bottom-0 right-16 text-[16rem] z-[9999] font-bold opacity-[2%]">/&gt;</div>
   <div
-    class="text-3xl tracking-[0.325em] flex"
+    class="text-5xl tracking-[0.325em] flex"
     in:fade={{ delay: 250, duration: 300 }}
     out:fade={{ delay: 250, duration: 300 }}
   >
@@ -28,7 +30,7 @@
     </div>
   </div>
   <div
-    class="tracking-[0.325em] animate__animated animate__fadeInDown animate__delay-1s type flex font-light text-yellow-400 -ml-1 text-xs mt-4"
+    class="tracking-[0.325em] animate__animated animate__fadeInDown animate__delay-1s type flex font-light text-amber-400 -ml-1 text-base mt-4"
     in:fade={{ duration: 300 }}
   >
     VISIONARY | SIMPLICITY

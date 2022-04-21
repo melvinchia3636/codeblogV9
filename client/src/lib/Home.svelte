@@ -59,6 +59,6 @@
   @tailwind utilities;
 
   * {
-    font-family: 'Proxima Nova';
+    font-family: 'Jetbrains Mono';
   }
 </style>

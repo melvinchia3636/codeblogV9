@@ -37,7 +37,7 @@
             setShowSection(false);
           }, 2000);
         }}
-        class="tracking-[0.325em] uppercase font-medium text-yellow-500 -ml-4 flex items-center gap-2"
+        class="tracking-[0.325em] uppercase font-medium text-amber-400 -ml-4 flex items-center gap-2"
       >
         <Icon icon="uil:arrow-left" class="w-5 h-5 -mt-[1px]" />
         go back
@@ -66,35 +66,35 @@
         on:click={() => (!showSection ? setSection(0) : "")}
         class="tracking-[0.325em] animate__animated {section === null
           ? 'animate__fadeInUp'
-          : 'animate__fadeOutLeft'} hover:text-yellow-200"
+          : 'animate__fadeOutLeft'} hover:text-amber-200"
         style="animation-delay: 0.4s">RESUME</button
       >
       <button
         on:click={() => (!showSection ? setSection(1) : "")}
         class="tracking-[0.325em] animate__animated {section === null
           ? 'animate__fadeInUp'
-          : 'animate__fadeOutRight'} hover:text-yellow-200"
+          : 'animate__fadeOutRight'} hover:text-amber-200"
         style="animation-delay: 0.6s">SKILLS</button
       >
       <button
         on:click={() => (!showSection ? setSection(2) : "")}
         class="tracking-[0.325em] animate__animated {section === null
           ? 'animate__fadeInUp'
-          : 'animate__fadeOutLeft'} hover:text-yellow-200"
+          : 'animate__fadeOutLeft'} hover:text-amber-200"
         style="animation-delay: 0.8s">TECH STACKS</button
       >
       <button
         on:click={() => (!showSection ? setSection(3) : "")}
         class="tracking-[0.325em] animate__animated {section === null
           ? 'animate__fadeInUp'
-          : 'animate__fadeOutRight'} hover:text-yellow-200"
+          : 'animate__fadeOutRight'} hover:text-amber-200"
         style="animation-delay: 1.0s">QUOTES</button
       >
       <button
         on:click={() => (!showSection ? setSection(4) : "")}
         class="tracking-[0.325em] animate__animated {section === null
           ? 'animate__fadeInUp'
-          : 'animate__fadeOutLeft'} hover:text-yellow-200"
+          : 'animate__fadeOutLeft'} hover:text-amber-200"
         style="animation-delay: 1.2s">WORKSPACE</button
       >
     </div>

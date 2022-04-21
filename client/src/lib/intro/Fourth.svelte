@@ -24,7 +24,7 @@
       out:fade
     >
       <div
-        class="tracking-[0.325em] animate__animated animate__fadeInUp type flex items-center justify-center font-light text-xs mb-8 overflow-hidden whitespace-nowrap"
+        class="tracking-[0.325em] animate__animated animate__fadeInUp type flex items-center justify-center font-light text-sm mb-8 overflow-hidden whitespace-nowrap"
       >
         A WEB DEVELOPER | A UI DESIGNER
       </div>
@@ -50,7 +50,7 @@
             backDelay={1500}
             startDelay={1000}
           >
-            <span class="text-yellow-400 typing" />
+            <span class="text-amber-400 typing" />
           </TypedJs>
           CODER
         </div>
@@ -63,22 +63,24 @@
       <div class="flex gap-4 mt-12 md:mt-20 flex-col md:!flex-row">
         <button
           on:click={() => leavePage("work")}
-          class="tracking-[0.325em] flex items-center font-semibold justify-center bg-yellow-400 w-72 text-neutral-800 pb-[1.2rem] pt-5 px-12 animate__animated animate__fadeInRight"
+          class="tracking-[0.325em] flex items-center font-semibold justify-center bg-amber-400 w-72 text-neutral-900 pb-[1.2rem] pt-5 px-12 animate__animated animate__fadeInRight animate__delay-1s"
           >SEE MY WORK</button
         >
         <button
           on:click={() => leavePage("about")}
-          class="tracking-[0.325em] text-yellow-400 w-72 border-[1.6px] border-yellow-400 pb-[1.2rem] pt-5 px-12 animate__animated animate__fadeInLeft"
+          class="tracking-[0.325em] text-amber-400 w-72 border-[1.6px] border-amber-400 pb-[1.2rem] pt-5 px-12 animate__animated animate__fadeInLeft animate__delay-1s"
           >ABOUT ME</button
         >
       </div>
     </div>
   {/if}
   <div
-    class="fixed bottom-0 w-8 h-8 bg-neutral-800 z-[9998] left-1/2 -translate-x-1/2"
+    class="fixed bottom-0 w-8 h-8 bg-neutral-900 z-[9998] left-1/2 -translate-x-1/2"
   />
-  <div class="fixed bottom-8 w-full text-center px-8 left-1/2 -translate-x-1/2 text-white z-[9999] uppercase text-[0.5rem] text-xs hidden md:block tracking-[0.325em]">
-    Copyright © 2020 - 2022 Melvin Chia. All rights reserved.
+  <div in:fade out:fade class="fixed top-0 left-8 text-[14rem] z-[9999] font-bold opacity-[2%]">()=>{'{'}</div>
+  <div in:fade out:fade class="fixed bottom-0 right-16 text-[14rem] z-[9999] font-bold opacity-[2%]">{'}'}</div>
+  <div in:fade out:fade class="fixed bottom-8 w-full text-center px-8 left-1/2 -translate-x-1/2 text-white z-[9999] uppercase text-xs font-light hidden md:block tracking-[0.325em]">
+    Copyright (C) 2020 - 2022 Melvin Chia. All rights reserved.
   </div>
 </div>
 
@@ -88,6 +90,6 @@
   }
 
   .typed-cursor {
-    @apply text-yellow-400;
+    @apply text-amber-400;
   }
 </style>

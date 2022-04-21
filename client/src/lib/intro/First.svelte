@@ -39,14 +39,15 @@
   style="max-height: {$size2}px"
 >
   {#if bind}
+    <div class="text-9xl fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[2%] tracking-[0.325em] -mt-3 font-bold" in:fade out:fade>&lt;CODEBLOG/&gt;</div>
     <div
-      class="text-3xl tracking-[0.325em] flex"
+      class="text-5xl tracking-[0.325em] flex"
       in:fade={{ delay: 250, duration: 300 }}
       out:fade={{ delay: 250, duration: 300 }}
     >
       <div>&lt;</div>
       <div
-        class="overflow-hidden flex justify-center items-center font-light"
+        class="overflow-hidden flex justify-center items-center"
         style="max-width: {$size}px"
       >
         CODEBLOG
@@ -56,7 +57,7 @@
   {/if}
   {#if bind2}
     <div
-      class="tracking-[0.325em] type flex font-light text-yellow-400 -ml-1 text-xs px-8 text-center mt-4"
+      class="tracking-[0.325em] type flex font-light text-amber-400 -ml-1 text-base px-8 text-center mt-4"
       in:fade={{ duration: 300 }}
     >
       <TypedJs
