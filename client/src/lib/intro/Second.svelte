@@ -15,8 +15,8 @@
 </script>
 
 <div class="flex flex-col items-center">
-  <div in:fade out:fade class="fixed top-0 left-16 text-[16rem] z-[9999] font-bold opacity-[2%]">&lt;/</div>
-  <div in:fade out:fade class="fixed bottom-0 right-16 text-[16rem] z-[9999] font-bold opacity-[2%]">/&gt;</div>
+  <div in:fade out:fade class="fixed pointer-events-none top-0 left-16 text-[16rem] z-[9999] font-bold opacity-10">&lt;/</div>
+  <div in:fade out:fade class="fixed pointer-events-none bottom-0 right-16 text-[16rem] z-[9999] font-bold opacity-10">/&gt;</div>
   <div
     class="text-5xl tracking-[0.325em] flex"
     in:fade={{ delay: 250, duration: 300 }}

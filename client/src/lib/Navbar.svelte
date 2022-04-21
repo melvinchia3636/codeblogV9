@@ -73,11 +73,11 @@
       {#each ["home", "work", "about", "blog"] as link}
         <Link
           to={"/" + link}
-          class="tracking-[0.325rem] relative uppercase {pathname ===
+          class="tracking-[0.325rem] relative uppercase after:transition-all after:duration-300 after:content-[''] after:w-0 after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:border-b-[1.6px] after:border-amber-400 {pathname ===
             '/' + link ||
           (pathname === '/' && link === 'home')
-            ? "after:content-[''] after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:w-1/2 after:border-b-[1.6px] after:border-amber-400"
-            : ''}">{link}</Link
+            ? "after:w-1/2"
+            : ''} hover:after:w-1/2">{link}</Link
         >
       {/each}
     </div>
@@ -90,7 +90,7 @@
     <div
       class="w-full h-screen bg-amber-400 {navOpen
         ? 'top-0 left-0 rounded-br-none'
-        : '-top-full -left-full rounded-br-full'} transition-all duration-700 fixed z-50 flex items-center justify-center text-neutral-900 font-semibold"
+        : '-top-full -left-full rounded-br-full'} transition-all duration-700 fixed pointer-events-none z-50 flex items-center justify-center text-neutral-900 font-semibold"
     >
       <div class="flex flex-col items-center gap-12 text-sm">
         {#each ["home", "work", "about", "blog"] as link}
@@ -106,7 +106,7 @@
       </div>
     </div>
     <div
-      class="fixed bottom-8 items-center left-8 text-sm gap-8 -rotate-90 origin-top-left hidden md:flex"
+      class="fixed pointer-events-none bottom-8 items-center left-8 text-sm gap-8 -rotate-90 origin-top-left hidden md:flex"
     >
       <a
         href="//github.com/melvinchia3636"
@@ -125,5 +125,6 @@
       >
       <div class="w-16 border-t-2 ml-1 border-neutral-600 hidden md:block" />
     </div>
+    <div class="fixed pointer-events-none bottom-10 items-center right-10 text-sm hidden md:block">v9.0.0</div>
   </nav>
 </header>

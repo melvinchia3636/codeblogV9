@@ -39,7 +39,7 @@
   style="max-height: {$size2}px"
 >
   {#if bind}
-    <div class="text-9xl fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[2%] tracking-[0.325em] -mt-3 font-bold" in:fade out:fade>&lt;CODEBLOG/&gt;</div>
+    <div class="text-9xl fixed pointer-events-none top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[2%] tracking-[0.325em] -mt-3 font-black" in:fade out:fade>&lt;CODEBLOG/&gt;</div>
     <div
       class="text-5xl tracking-[0.325em] flex"
       in:fade={{ delay: 250, duration: 300 }}

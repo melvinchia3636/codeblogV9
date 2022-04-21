@@ -1,22 +1,25 @@
 <script lang="ts">
   import { fade } from "svelte/transition";
   import "animate.css";
+  import Vivus from "vivus";
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    new Vivus('box', {duration: 200}).play(2);
+  })
 </script>
 
-<div class="flex flex-col items-center">
-  <div in:fade out:fade class="fixed top-0 left-16 text-[16rem] z-[9999] font-bold opacity-[2%]">&lt;!--</div>
-  <div in:fade out:fade class="fixed bottom-0 right-16 text-[16rem] z-[9999] font-bold opacity-[2%]">--&gt;</div>
+<div class="flex flex-col items-center justify-center mt-12">
+  <div in:fade out:fade class="fixed pointer-events-none top-44 left-24 text-8xl z-[9999] font-bold opacity-10"></div>
+  <div in:fade out:fade class="fixed pointer-events-none bottom-36 left-24 text-8xl z-[9999] font-bold opacity-10"></div>
   <div
-    class="tracking-[0.325em] type flex font-light -ml-1 text-base mb-4 animate__animated animate__delay-0.5s animate__fadeInDown"
+    class="text-4xl tracking-[0.2em] !leading-relaxed relative"
   >
-    PRESENTED TO YOU BY
-  </div>
-  <div
-    class="text-5xl tracking-[0.325em] flex text-amber-400 animate__animated animate__delay-0.5s animate__fadeInUp"
-  >
-    <div class="overflow-hidden flex justify-center items-center text-center">
-      MELVIN CHIA
-    </div>
+    <svg width="384" height="384" viewBox="0 0 384 384" fill="none" id="box" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="2" width="380" height="380" stroke="#FBBF24" stroke-width="4"/>
+    </svg>
+    <div class="text-7xl absolute top-12 -left-32 animate__animated animate__fadeInLeft py-6 bg-neutral-900 whitespace-nowrap">THINK OUT</div>
+    <div class="text-7xl absolute bottom-12 animate__animated animate__fadeInRight -right-48 whitespace-nowrap py-6 bg-neutral-900">OF THE BOX</div>
   </div>
 </div>
 
