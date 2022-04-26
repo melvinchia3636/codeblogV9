@@ -35,7 +35,7 @@
 
 <main
   class="w-full h-screen [max-height:-webkit-fill-available] snap-y overflow-y-scroll overflow-x-hidden snap-mandatory relative"
-  in:fade out:fade
+  id="swup"
 >
   {#if showContent}
   {#each sections as Section, index}

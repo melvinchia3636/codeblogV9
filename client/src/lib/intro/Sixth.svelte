@@ -58,7 +58,7 @@
       <div
         class="animate__animated animate__fadeInUp tracking-[0.2em] w-3/4 text-center text-sm md:!text-base mt-8 font-light"
       >
-        I'm a self-taught full-stack developer and a quick learner with a decent knowledge in lots of different fields.
+        I'm a self-taught full-stack developer and an Avid learner with an insatiable drive for knowledge.
       </div>
       <div class="flex gap-4 mt-12 md:mt-20 flex-col md:!flex-row">
         <button
