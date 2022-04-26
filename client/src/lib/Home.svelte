@@ -20,9 +20,7 @@
 </script>
 
 <main
-  class="w-full h-screen [max-height:-webkit-fill-available] snap-y overflow-y-scroll overflow-x-hidden snap-mandatory relative"
-  in:fade
-  out:fade
+  class="w-full h-screen [max-height:-webkit-fill-available] snap-y overflow-y-scroll overflow-x-hidden snap-mandatory relative transition-fade" id="swup"
 >
   {#each sections as Section}
   <div

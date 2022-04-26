@@ -20,7 +20,7 @@
         </div>
         <div>
           <h2 class="font-bold text-amber-400 mt-12 tracking-widest mb-2">AVERAGE COMPLETION TIME</h2>
-          <p class="tracking-widest">3 MONTH / PROJECT</p>
+          <p class="tracking-widest">3 MONTHS / PROJECT</p>
         </div>
         <div>
           <h2 class="font-bold text-amber-400 mt-12 tracking-widest mb-2">CASE STUDY</h2>

@@ -24,7 +24,7 @@
   };
 </script>
 
-<div class="w-full h-screen overflow-hidden relative flex flex-col items-center" in:fade out:fade>
+<div class="w-full h-screen overflow-hidden relative flex flex-col items-center" id="swup">
   {#if showSection && section !== null}
     <div
       class="min-h-screen w-full overflow-y-auto flex flex-col items-center pt-48"

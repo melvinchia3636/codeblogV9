@@ -7,7 +7,7 @@
 </script>
 
 <Router>
-  <main class="w-full h-full overflow-y-auto relative">
+  <main class="w-full h-full overflow-y-auto relative" id="swup">
     <Navbar />
     <Route path="/" component="{Home}" />
     <Route path="/home" component="{Home}" />
@@ -25,4 +25,14 @@
   ::-webkit-scrollbar-thumb {
     background: #FF0000;
   }
+
+  .transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+  }
+
+  html.is-animating .transition-fade {
+    opacity: 0;
+  }
+
 </style>

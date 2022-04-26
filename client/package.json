@@ -36,6 +36,7 @@
     "scrollmagic": "^2.0.8",
     "svelte-navigator": "^3.1.5",
     "svelte-spa-router": "^3.2.0",
+    "swup": "^2.0.14",
     "tailwindcss": "^3.0.23",
     "vivus": "^0.4.6"
   }
