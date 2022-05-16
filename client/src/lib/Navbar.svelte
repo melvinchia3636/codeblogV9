@@ -45,7 +45,7 @@
 
 <header class="w-full z-[9999]">
   <nav
-    class="fixed left-0 top-0 z-[9999] w-full bg-neutral-900 py-8 px-9 flex justify-between"
+    class="fixed left-0 top-0 z-[9999] w-full bg-neutral-900 py-8 px-9 flex justify-between items-center"
     style="opacity: {(100 - $nav) / 100}"
   >
     <h1
@@ -69,7 +69,7 @@
         >by Melvin Chia.</span
       >
     </h1>
-    <div class="hidden md:flex items-center gap-12 text-sm">
+    <div class="hidden md:flex items-center gap-20 text-sm absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
       {#each ["home", "work", "about", "blog"] as link}
         <Link
           to={"/" + link}
@@ -81,6 +81,10 @@
         >
       {/each}
     </div>
+    <a class="tracking-[0.325em] text-amber-400 flex items-center gap-2 text-sm animate__animated animate__fadeInLeft animate__delay-1s">
+      GET IN TOUCH
+      <Icon icon="uil:arrow-right" class="w-6 h-6" />
+    </a>
     <button on:click={setNavOpen} class="block md:!hidden relative z-[9999]">
       <Icon
         icon="heroicons-outline:menu-alt-4"
