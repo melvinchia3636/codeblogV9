@@ -1,6 +1,9 @@
-<script>
+<script lang="ts">
   import Icon from "@iconify/svelte";
   import { fade } from "svelte/transition";
+
+  export let showListing;
+  export let setShowListing = (state: boolean) => {};
 </script>
 
 <div class="w-full h-full relative flex gap-12">

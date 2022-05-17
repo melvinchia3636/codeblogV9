@@ -28,7 +28,7 @@
 
   let showListing = false;
 
-  const setShowListing = (value) => {
+  const setShowListing = (value: boolean) => {
     showListing = value;
   };
 </script>
