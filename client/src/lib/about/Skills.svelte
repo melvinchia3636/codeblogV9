@@ -13,7 +13,7 @@
       icon="icon-park-outline:thinking-problem"
       class="w-16 h-16 flex-shrink-0"
     />
-    <h2 class="uppercase font-medium tracking-[0.325em] text-2xl">
+    <h2 class="uppercase font-medium tracking-[0.325em] text-2xl text-amber-400">
       Problem Solving
     </h2>
     <p class="tracking-[0.1em] text-center">

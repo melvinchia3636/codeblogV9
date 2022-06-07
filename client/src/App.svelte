@@ -7,7 +7,7 @@
 </script>
 
 <Router>
-  <main class="w-full h-full overflow-y-auto relative" id="swup">
+  <main class="w-full h-full overflow-y-auto relative">
     <Navbar />
     <Route path="/" component="{Home}" />
     <Route path="/home" component="{Home}" />

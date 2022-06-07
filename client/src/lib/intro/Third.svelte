@@ -18,8 +18,8 @@
     <svg width="384" height="384" viewBox="0 0 384 384" fill="none" id="box" xmlns="http://www.w3.org/2000/svg">
       <rect x="2" y="2" width="380" height="380" stroke="#FBBF24" stroke-width="4"/>
     </svg>
-    <div class="text-7xl absolute top-12 -left-32 animate__animated animate__fadeInLeft py-6 bg-neutral-900 whitespace-nowrap">THINK OUT</div>
-    <div class="text-7xl absolute bottom-12 animate__animated animate__fadeInRight -right-48 whitespace-nowrap py-6 bg-neutral-900">OF THE BOX</div>
+    <div class="text-7xl absolute top-12 -left-32 animate__animated animate__fadeInLeft py-6 bg-neutral-800 whitespace-nowrap">THINK OUT</div>
+    <div class="text-7xl absolute bottom-12 animate__animated animate__fadeInRight -right-48 whitespace-nowrap py-6 bg-neutral-800">OF THE BOX</div>
   </div>
 </div>
 

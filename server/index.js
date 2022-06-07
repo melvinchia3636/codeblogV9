@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 app.use('/static', express.static(__dirname + '/images'));
 
-app.use('/projects/list', (req, res) => {
+app.use('/projects/list/:category', (req, res) => {
   res.setHeader('Content-Type', 'application/json');
   // connect to mongodb
   mongodb.MongoClient.connect('mongodb+srv://redaxe:nFl2muMZQjmHinis@cluster0.enpf0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', (err, client) => {
@@ -19,7 +19,9 @@ app.use('/projects/list', (req, res) => {
     console.log('connected to mongodb');
     const db = client.db('project-list');
     const collection = db.collection('projects');
-    collection.find({}).toArray((err, docs) => {
+    collection.find({
+      category: req.params.category,
+    }).toArray((err, docs) => {
       if (err) {
         console.log(err);
         return;
@@ -95,6 +97,27 @@ app.post('/:db/:collection/add/:password', (req, res) => {
     res.status(403).send('Access denied');
   }
 })
+
+app.get('/addfield', (req, res) => {
+  res.setHeader('Content-Type', 'application/json');
+  // connect to mongodb
+  mongodb.MongoClient.connect('mongodb+srv://redaxe:nFl2muMZQjmHinis@cluster0.enpf0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', (err, client) => {
+    if (err) {
+      console.log(err);
+      return;
+    }
+    console.log('connected to mongodb');
+    const db = client.db('project-list');
+    const collection = db.collection('projects');
+    collection.updateMany({}, { $set: { 'techs': [] } }, (err, result) => {
+      if (err) {
+        console.log(err);
+        return;
+      }
+      res.send(result);
+    });
+  });
+});
 
 
 app.listen(3001, () => {

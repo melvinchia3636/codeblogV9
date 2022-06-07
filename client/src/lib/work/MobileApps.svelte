@@ -30,7 +30,7 @@
           <p class="tracking-widest">AVAILABLE</p>
         </div>
       </div>
-      <button class="tracking-[0.325em] text-amber-400 mt-20 border-[1.6px] border-amber-400 pb-[1.2rem] pt-5 px-12 animate__animated animate__fadeInLeft animate__delay-1s">BROWSE PROJECTS</button>
+      <button class="tracking-[0.325em] rounded-sm text-amber-400 mt-20 border-[1.6px] border-amber-400 pb-[1.2rem] pt-5 px-12 animate__animated animate__fadeInLeft animate__delay-1s">BROWSE PROJECTS</button>
     </div>
   </div>
 </div>

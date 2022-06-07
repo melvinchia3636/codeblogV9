@@ -40,22 +40,22 @@
   {#if showContent}
     {#if !showListing}
       {#each sections as Section, index}
-        <div
-          class="w-full h-screen flex-shrink-0 flex px-32 pt-48 snap-start"
-          in:fade
-          out:fade
-        >
+        <div class="w-full h-screen flex-shrink-0 flex px-32 pt-48 snap-start">
           <Visibility steps={100} let:percent let:unobserve>
             {#if percent > 50}
               <div class="flex h-full">
                 <div
-                  class="border-r-2 border-neutral-600 h-full text-4xl text-amber-400"
+                  class="border-r-2 border-neutral-600 h-full pt-24 text-4xl text-amber-400 fixed bottom-0"
                 >
-                  <span class="translate-x-1/2 block bg-neutral-900 mt-8 py-4"
-                    >{(index + 1).toString().padStart(2, "0")}</span
+                  <span class="translate-x-1/2 block bg-neutral-800 mt-8 py-4">
+                    <span
+                      >{(index + 1).toString().padStart(2, "0")}</span
+                    ></span
                   >
                 </div>
-                <Section showListing={showListing} setShowListing={setShowListing} />
+                <div class="flex h-full ml-12">
+                  <Section {showListing} {setShowListing} />
+                </div>
               </div>
             {/if}
           </Visibility>

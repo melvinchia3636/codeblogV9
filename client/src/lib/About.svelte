@@ -60,7 +60,7 @@
     </div>
   {:else}
     <div
-      class="w-full h-screen flex items-center justify-center flex-col gap-12"
+      class="w-full h-screen flex items-center justify-center flex-col gap-12 mt-12"
     >
       <button
         on:click={() => (!showSection ? setSection(0) : "")}
@@ -96,6 +96,13 @@
           ? 'animate__fadeInUp'
           : 'animate__fadeOutLeft'} hover:text-amber-200"
         style="animation-delay: 1.2s">WORKSPACE</button
+      >
+      <button
+        on:click={() => (!showSection ? setSection(5) : "")}
+        class="tracking-[0.325em] animate__animated {section === null
+          ? 'animate__fadeInUp'
+          : 'animate__fadeOutLeft'} hover:text-amber-200"
+        style="animation-delay: 1.4s">GITHUB REPOS</button
       >
     </div>
   {/if}

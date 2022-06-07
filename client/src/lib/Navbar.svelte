@@ -45,12 +45,12 @@
 
 <header class="w-full z-[9999]">
   <nav
-    class="fixed left-0 top-0 z-[9999] w-full bg-neutral-900 py-8 px-9 flex justify-between items-center"
+    class="fixed left-0 top-0 z-[9999] w-full bg-neutral-800 py-8 px-9 flex justify-between items-center"
     style="opacity: {(100 - $nav) / 100}"
   >
     <h1
       class="text-xl tracking-[0.325em] relative z-[9999] {navOpen
-        ? 'text-neutral-900'
+        ? 'text-neutral-800'
         : 'text-white'} transition-all delay-500 duration-700 font-medium"
       on:click={scrollToTop}
     >
@@ -81,20 +81,20 @@
         >
       {/each}
     </div>
-    <a class="tracking-[0.325em] text-amber-400 flex items-center gap-2 text-sm animate__animated animate__fadeInLeft animate__delay-1s">
+    <a href="mailto:melvinchia@thecodeblog.net" class="tracking-[0.325em] text-amber-400 items-center gap-2 text-sm animate__animated animate__fadeInLeft animate__delay-1s hidden md:flex">
       GET IN TOUCH
       <Icon icon="uil:arrow-right" class="w-6 h-6" />
     </a>
     <button on:click={setNavOpen} class="block md:!hidden relative z-[9999]">
       <Icon
         icon="heroicons-outline:menu-alt-4"
-        class="w-7 h-7 {navOpen ? 'text-neutral-900' : 'text-white'}"
+        class="w-7 h-7 {navOpen ? 'text-neutral-800' : 'text-white'}"
       />
     </button>
     <div
       class="w-full h-screen bg-amber-400 {navOpen
         ? 'top-0 left-0 rounded-br-none'
-        : '-top-full -left-full rounded-br-full'} transition-all duration-700 fixed pointer-events-none z-50 flex items-center justify-center text-neutral-900 font-semibold"
+        : '-top-full -left-full rounded-br-full'} transition-all duration-700 fixed pointer-events-none z-50 flex items-center justify-center text-neutral-800 font-semibold"
     >
       <div class="flex flex-col items-center gap-12 text-sm">
         {#each ["home", "work", "about", "blog"] as link}
@@ -103,7 +103,7 @@
             class="tracking-[0.325rem] relative uppercase {pathname ===
               '/' + link ||
             (pathname === '/' && link === 'home')
-              ? "after:content-[''] after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:w-1/2 after:border-b-2 after:border-neutral-900"
+              ? "after:content-[''] after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:w-1/2 after:border-b-2 after:border-neutral-800"
               : ''}">{link}</Link
           >
         {/each}

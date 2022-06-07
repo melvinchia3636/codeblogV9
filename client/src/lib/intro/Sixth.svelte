@@ -56,26 +56,26 @@
         </div>
       </div>
       <div
-        class="animate__animated animate__fadeInUp tracking-[0.2em] w-3/4 text-center text-sm md:!text-base mt-8 font-light"
+        class="animate__animated animate__fadeInUp tracking-[0.2em] w-3/5 text-center text-sm md:!text-base mt-8 font-light"
       >
-        I'm a self-taught full-stack developer and an Avid learner with an insatiable drive for knowledge.
+        I'm a self-taught full-stack developer and an avid learner with an insatiable drive for making crazy idea come to life.
       </div>
       <div class="flex gap-4 mt-12 md:mt-20 flex-col md:!flex-row">
         <button
           on:click={() => leavePage("work")}
-          class="tracking-[0.325em] flex items-center font-semibold justify-center bg-amber-400 w-72 text-neutral-900 pb-[1.2rem] pt-5 px-12 animate__animated animate__fadeInRight animate__delay-1s"
+          class="tracking-[0.325em] flex items-center font-semibold rounded-sm justify-center bg-amber-400 w-72 text-neutral-800 pb-[1.2rem] pt-5 px-12 animate__animated animate__fadeInRight animate__delay-1s"
           >SEE MY WORK</button
         >
         <button
           on:click={() => leavePage("about")}
-          class="tracking-[0.325em] text-amber-400 w-72 border-[1.6px] border-amber-400 pb-[1.2rem] pt-5 px-12 animate__animated animate__fadeInLeft animate__delay-1s"
+          class="tracking-[0.325em] text-amber-400 w-72 border-[1.6px] rounded-sm border-amber-400 pb-[1.2rem] pt-5 px-12 animate__animated animate__fadeInLeft animate__delay-1s"
           >ABOUT ME</button
         >
       </div>
     </div>
   {/if}
   <div
-    class="fixed pointer-events-none bottom-0 w-8 h-8 bg-neutral-900 z-[9998] left-1/2 -translate-x-1/2"
+    class="fixed pointer-events-none bottom-0 w-8 h-8 bg-neutral-800 z-[9998] left-1/2 -translate-x-1/2"
   />
   <div in:fade out:fade class="fixed pointer-events-none top-0 left-8 text-[14rem] z-[9999] font-bold opacity-[2%]">()=>{'{'}</div>
   <div in:fade out:fade class="fixed pointer-events-none bottom-0 right-16 text-[14rem] z-[9999] font-bold opacity-[2%]">{'}'}</div>

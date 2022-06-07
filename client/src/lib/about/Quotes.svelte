@@ -33,7 +33,7 @@
           icon={quote.author === "Melvin Chia"
             ? "uil:balance-scale"
             : "mdi:format-quote-open"}
-          class="w-16 h-16 text-amber-400 stroke-neutral-900 stroke-1"
+          class="w-16 h-16 text-amber-400 stroke-neutral-800 stroke-1"
         />
         {quote.content}
         <br />
