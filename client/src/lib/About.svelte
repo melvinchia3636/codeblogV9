@@ -7,7 +7,6 @@
   import Resume from "./about/Resume.svelte";
   import Skills from "./about/Skills.svelte";
   import TechStacks from "./about/TechStacks.svelte";
-  import Workspace from "./about/Workspace.svelte";
 
   let section = null;
   let showSection = false;
@@ -55,7 +54,6 @@
         <Quotes />
       {/if}
       {#if section === 4}
-        <Workspace />
       {/if}
     </div>
   {:else}
@@ -92,13 +90,6 @@
       >
       <button
         on:click={() => (!showSection ? setSection(4) : "")}
-        class="tracking-[0.325em] animate__animated {section === null
-          ? 'animate__fadeInUp'
-          : 'animate__fadeOutLeft'} hover:text-amber-200"
-        style="animation-delay: 1.2s">WORKSPACE</button
-      >
-      <button
-        on:click={() => (!showSection ? setSection(5) : "")}
         class="tracking-[0.325em] animate__animated {section === null
           ? 'animate__fadeInUp'
           : 'animate__fadeOutLeft'} hover:text-amber-200"

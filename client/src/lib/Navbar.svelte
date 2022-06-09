@@ -85,7 +85,7 @@
       GET IN TOUCH
       <Icon icon="uil:arrow-right" class="w-6 h-6" />
     </a>
-    <button on:click={setNavOpen} class="block md:!hidden relative z-[9999]">
+    <button on:click={() => setNavOpen(!navOpen)} class="block md:!hidden relative z-[9999]">
       <Icon
         icon="heroicons-outline:menu-alt-4"
         class="w-7 h-7 {navOpen ? 'text-neutral-800' : 'text-white'}"
