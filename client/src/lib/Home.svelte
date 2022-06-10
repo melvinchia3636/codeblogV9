@@ -1,7 +1,6 @@
 <script lang="ts">
   import FirstIntro from "./intro/First.svelte";
   import SecondIntro from "./intro/Second.svelte";
-  import ThirdIntro from "./intro/Third.svelte";
   import FourthIntro from "./intro/Fourth.svelte";
   import FifthIntro from "./intro/Fifth.svelte";
   import SixthIntro from "./intro/Sixth.svelte";
@@ -12,7 +11,6 @@
   const sections = [
     FirstIntro,
     SecondIntro,
-    ThirdIntro,
     FourthIntro,
     FifthIntro,
     SixthIntro,
@@ -20,11 +18,11 @@
 </script>
 
 <main
-  class="w-full h-screen [max-height:-webkit-fill-available] snap-y overflow-y-scroll overflow-x-hidden snap-mandatory relative transition-fade" id="swup"
+  class="w-full h-screen [max-height:-webkit-fill-available] wrapper snap-y overflow-y-scroll overflow-x-hidden  relative transition-fade" id="swup"
 >
   {#each sections as Section}
   <div
-    class="w-full h-screen flex-shrink-0 flex items-center justify-center snap-start"
+    class="w-full h-screen flex-shrink-0 flex items-center justify-center"
   >
     <Visibility steps={100} let:percent let:unobserve>
       {#if percent > 50}

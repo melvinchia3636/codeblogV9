@@ -45,6 +45,6 @@
   });
 </script>
 
-<div bind:this={element}>
+<div bind:this={element} class="w-full h-full flex items-center justify-center">
   <slot {percent} {unobserve} />
 </div>

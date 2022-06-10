@@ -5,7 +5,7 @@
 </script>
 
 <h1
-  class="font-medium text-center w-min whitespace-nowrap flex tracking-[0.325em] uppercase text-4xl mt-6 mb-20 relative after:content-[''] after:absolute after:w-24 after:border-b-2 after:border-amber-400 after:-bottom-2 after:left-1/2 after:-translate-x-[55%]"
+  class="font-medium text-center flex tracking-[0.2em] uppercase text-4xl mt-6 mb-20 relative after:content-[''] after:absolute after:w-24 after:border-b-2 after:border-[#FFAA4C] after:-bottom-2 after:left-1/2 after:-translate-x-[55%]"
 >
   tech stacks
 </h1>
@@ -13,12 +13,12 @@
   {#each Object.entries(techStack) as [catName, items]}
     <Saos animation={"from-left .5s ease-in-out both"}>
       <div class="flex flex-col items-center gap-8">
-        <h2 class="text-amber-400 upprecase font-medium tracking-[0.325em]">
+        <h2 class="text-[#FFAA4C] upprecase font-medium tracking-[0.2em] text-center">
           {catName}
         </h2>
-        <div class="grid grid-cols-3 gap-y-8 gap-x-24">
+        <div class="grid w-full grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-y-8 gap-x-24">
           {#each items as [icon, name]}
-            <div class="flex items-center gap-4 tracking-[0.325em] uppercase w-96">
+            <div class="flex items-center gap-4 tracking-[0.2em] uppercase w-96">
               <Icon {icon} class="w-6 h-6 flex-shrink-0" />
               {name}
             </div>

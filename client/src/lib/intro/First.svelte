@@ -22,11 +22,11 @@
   }, 500);
 
   setTimeout(() => {
-    $size += 400;
+    $size += 1600;
   }, 1000);
 
   setTimeout(() => {
-    $size2 += 20;
+    $size2 += 100;
   }, 1500);
 
   setTimeout(() => {
@@ -35,34 +35,40 @@
 </script>
 
 <div
-  class="flex flex-col items-center h-screen [max-height:-webkit-fill-available]"
+  class="flex flex-col items-center max-w-full px-8 text-center h-full"
   style="max-height: {$size2}px"
+  in:fade out:fade 
 >
   {#if bind}
-    <div class="text-9xl fixed pointer-events-none top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[2%] tracking-[0.325em] -mt-3 font-black pl-12" in:fade out:fade>&lt;CODEBLOG/&gt;</div>
     <div
-      class="text-5xl tracking-[0.325em] flex"
+      class="text-9xl fixed pointer-events-none top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[2%] tracking-[0.2em] -mt-3 font-black pl-12"
+      in:fade
+      out:fade
+    >
+      &lt;CODEBLOG/&gt;
+    </div>
+    <p class="mb-4 animate__animated animate__fadeInUp text-[#FFAA4C] tracking-widest whitespace-normal text-xs sm:text-sm lg:text-base">HI, I'M MELVIN CHIA. MY AIM IS TO</p>
+    <div
+      class="text-3xl lg:text-5xl tracking-[0.2em] flex"
       in:fade={{ delay: 250, duration: 300 }}
       out:fade={{ delay: 250, duration: 300 }}
     >
-      <div>&lt;</div>
       <div
-        class="overflow-hidden flex justify-center items-center"
+        class="overflow-hidden flex justify-center items-center sm:whitespace-nowrap"
         style="max-width: {$size}px"
       >
-        CODEBLOG
+        SIMPLIFY THE INTERNET
       </div>
-      <div>/&gt;</div>
     </div>
   {/if}
   {#if bind2}
     <div
-      class="tracking-[0.325em] type flex font-light text-amber-400 -ml-1 text-base px-8 text-center mt-4"
+      class="tracking-[0.2em] type flex font-light text-[#FFAA4C] -ml-1 text-xs sm:text-sm lg:text-base px-8 text-center mt-8 sm:mt-4"
       in:fade={{ duration: 300 }}
     >
       <TypedJs
         strings={[
-          "PORTFOLIO OF MELVIN CHIA",
+          "WELCOME TO THE PORTFOLIO OF MELVIN CHIA",
           "MINIMALISM ULTRA PRO MAX PLUS SPECIAL EDITION +",
         ]}
         loop={true}
