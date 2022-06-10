@@ -8,7 +8,7 @@
   import { fade } from "svelte/transition";
 
   let data = [];
-  fetch("http://localhost:3001/projects/list")
+  fetch("https://backend.thecodeblog.net/projects/list")
     .then((res) => res.json())
     .then((res) => {
       data = res;
@@ -63,47 +63,57 @@
       PERSONAL PROJECTS
     </h1>
     <div class="px-16 sm:px-32 lg:px-64" in:fade out:fade>
-      <div
-        class="grid sm:grid-cols-[repeat(auto-fill,minmax(260px,1fr))] -mx-4 mt-12 mb-32 gap-8"
-      >
-        {#each data as project}
-          <div class="h-full saos">
-            <Saos animation={"from-left .5s ease-in-out both"}>
-              <div
-                class="flex font-light gap-8 flex-col h-full bg-slate-100 p-4 bg-opacity-5"
-              >
-                <img
-                  src={`https://github.com/melvinchia3636/CBImage/blob/main/${project.name
-                    .toLowerCase()
-                    .replace(/[^a-z0-9]/g, "")}.png?raw=true`}
-                  class="object-contain border border-neutral-700 rounded-sm"
-                  alt=""
-                />
-                <div class="flex flex-col justify-between h-full">
-                  <div class="flex flex-col gap-4">
-                    <div
-                      class="uppercase tracking-[0.2em] font-medium text-lg text-[#FFAA4C]"
-                    >
-                      {project.name}
+      {#if data.length}
+        <div
+          class="grid sm:grid-cols-[repeat(auto-fill,minmax(260px,1fr))] -mx-4 mt-12 mb-32 gap-8"
+        >
+          {#each data as project}
+            <div class="h-full saos">
+              <Saos animation={"from-left .5s ease-in-out both"}>
+                <div
+                  class="flex font-light gap-8 flex-col h-full bg-slate-100 p-4 bg-opacity-5"
+                >
+                  <img
+                    src={`https://github.com/melvinchia3636/CBImage/blob/main/${project.name
+                      .toLowerCase()
+                      .replace(/[^a-z0-9]/g, "")}.png?raw=true`}
+                    class="object-contain border border-neutral-700 rounded-sm"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between h-full">
+                    <div class="flex flex-col gap-4">
+                      <div
+                        class="uppercase tracking-[0.2em] font-medium text-lg text-[#FFAA4C]"
+                      >
+                        {project.name}
+                      </div>
+                      <p class="!text-xs tracking-[0.08em] !leading-5">
+                        {project.desc}
+                      </p>
                     </div>
-                    <p class="!text-xs tracking-[0.08em] !leading-5">
-                      {project.desc}
-                    </p>
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      class="uppercase whitespace-nowrap mt-8 text-sm font-semibold underline-offset-4 tracking-[0.2em] text-[#FFAA4C] flex items-center gap-2"
+                    >
+                      live demo
+                      <Icon icon="uil:arrow-right" class="w-5 h-5" />
+                    </a>
                   </div>
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    class="uppercase whitespace-nowrap mt-8 text-sm font-semibold underline-offset-4 tracking-[0.2em] text-[#FFAA4C] flex items-center gap-2"
-                  >
-                    live demo
-                    <Icon icon="uil:arrow-right" class="w-5 h-5" />
-                  </a>
                 </div>
-              </div>
-            </Saos>
+              </Saos>
+            </div>
+          {/each}
+        </div>
+      {:else}
+        <div class="flex flex-col gap-4" in:fade out:fade>
+          <div class="text-center">
+            <div class="text-lg uppercase font-medium tracking-[0.2em]">
+              <span>FETCHING DATA...</span>
+            </div>
           </div>
-        {/each}
-      </div>
+        </div>
+      {/if}
     </div>
   {/if}
 </main>

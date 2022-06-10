@@ -1,17 +1,18 @@
 <script>
   import Icon from "@iconify/svelte";
   import Saos from "saos";
+  import { fade } from "svelte/transition";
 
   let mottoes = [];
   let quotes = [];
 
-  fetch("http://localhost:3001/mottoes/list")
+  fetch("https://backend.thecodeblog.net/mottoes/list")
     .then((res) => res.json())
     .then((data) => {
       mottoes = data;
     });
 
-  fetch("http://localhost:3001/quotes/list")
+  fetch("https://backend.thecodeblog.net/quotes/list")
     .then((res) => res.json())
     .then((data) => {
       quotes = data;
@@ -24,24 +25,34 @@
   Quotes/Mottoes
 </h1>
 <div class="flex flex-col p-8 w-full sm:!w-1/2 gap-20 pb-48 items-center">
-  {#each mottoes.concat(quotes) as quote}
-    <Saos animation={"from-left .5s ease-in-out both"}>
-      <div
-        class="flex flex-col items-center gap-12 text-center tracking-[0.1em] text-lg sm:!text-2xl font-light"
-      >
-        <Icon
-          icon={quote.author === "Melvin Chia"
-            ? "uil:balance-scale"
-            : "mdi:format-quote-open"}
-          class="w-16 h-16 text-[#FFAA4C] stroke-neutral-800 stroke-1"
-        />
-        {quote.content}
-        <br />
-        <span class="text-sm font-medium">- {quote.author}</span>
-        <span class="w-16 border-b-2 border-[#FFAA4C]" />
+  {#if mottoes.length}
+    {#each mottoes.concat(quotes) as quote}
+      <Saos animation={"from-left .5s ease-in-out both"}>
+        <div
+          class="flex flex-col items-center gap-12 text-center tracking-[0.1em] text-lg sm:!text-2xl font-light"
+        >
+          <Icon
+            icon={quote.author === "Melvin Chia"
+              ? "uil:balance-scale"
+              : "mdi:format-quote-open"}
+            class="w-16 h-16 text-[#FFAA4C] stroke-neutral-800 stroke-1"
+          />
+          {quote.content}
+          <br />
+          <span class="text-sm font-medium">- {quote.author}</span>
+          <span class="w-16 border-b-2 border-[#FFAA4C]" />
+        </div>
+      </Saos>
+    {/each}
+  {:else}
+    <div class="flex flex-col gap-4" in:fade out:fade>
+      <div class="text-center">
+        <div class="text-lg uppercase font-medium tracking-[0.2em]">
+          <span>FETCHING DATA...</span>
+        </div>
       </div>
-    </Saos>
-  {/each}
+    </div>
+  {/if}
 </div>
 
 <style>
