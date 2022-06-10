@@ -69,7 +69,7 @@
       <TypedJs
         strings={[
           "WELCOME TO THE PORTFOLIO OF MELVIN CHIA",
-          "MINIMALISM ULTRA PRO MAX PLUS SPECIAL EDITION +",
+          "MINIMALISTIC ULTRA PRO MAX PLUS SPECIAL EDITION +",
         ]}
         loop={true}
         showCursor={false}
