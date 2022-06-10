@@ -9,7 +9,7 @@
   <div
     class="tracking-[0.2em] type flex font-light -ml-1 text-xs lg:text-base mb-4 animate__animated animate__fadeInDown"
   >
-    PRESENTED TO YOU BY
+    PRESENTED BY
   </div>
   <div
     class="text-3xl lg:text-5xl tracking-[0.2em] flex text-[#FFAA4C] animate__animated animate__fadeInUp"
