@@ -26,7 +26,7 @@
       <div
         class="tracking-[0.2em] animate__animated animate__fadeInUp type flex items-center justify-center font-light text-sm mb-8 overflow-hidden whitespace-nowrap"
       >
-        A FULL STACK DEVELOPER
+        FULL STACK DEVELOPER
       </div>
       <div
         class="text-3xl sm:text-4xl lg:text-5xl tracking-[0.2em] flex"
