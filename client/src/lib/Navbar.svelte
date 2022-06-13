@@ -110,7 +110,7 @@
       </div>
     </div>
     <div
-      class="fixed pointer-events-none bottom-8 items-center left-8 text-sm gap-8 -rotate-90 origin-top-left hidden md:flex"
+      class="fixed bottom-8 items-center left-8 text-sm gap-8 -rotate-90 origin-top-left hidden md:flex"
     >
       <a
         href="//github.com/melvinchia3636"
