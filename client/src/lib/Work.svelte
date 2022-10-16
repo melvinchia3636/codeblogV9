@@ -91,14 +91,19 @@
                         {project.desc}
                       </p>
                     </div>
-                    <a
+                    <div class="flex items-center justify-between mt-8">
+                      <a href={project.repo} target="_blank">
+                        <Icon icon="uil:github" class="w-6 h-6 text-[#FFAA4C]" />
+                      </a>
+                      <a
                       href={project.url}
                       target="_blank"
-                      class="uppercase whitespace-nowrap mt-8 text-sm font-semibold underline-offset-4 tracking-[0.2em] text-[#FFAA4C] flex items-center gap-2"
+                      class="uppercase whitespace-nowrap text-sm font-semibold underline-offset-4 tracking-[0.2em] text-[#FFAA4C] flex items-center gap-2"
                     >
                       live demo
                       <Icon icon="uil:arrow-right" class="w-5 h-5" />
                     </a>
+                    </div>
                   </div>
                 </div>
               </Saos>
