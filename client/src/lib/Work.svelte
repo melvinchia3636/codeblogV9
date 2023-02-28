@@ -72,7 +72,7 @@
                     src={`https://github.com/melvinchia3636/CBImage/blob/main/${project.name
                       .toLowerCase()
                       .replace(/[^a-z0-9]/g, "")}.png?raw=true`}
-                    class="object-contain border border-neutral-700 rounded-sm"
+                    class="object-contain border border-neutral-700 rounded-sm w-full h-48"
                     alt=""
                   />
                   <div class="flex flex-col justify-between h-full">
