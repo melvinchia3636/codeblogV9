@@ -205,5 +205,23 @@
     "repo": "https://github.com/melvinchia3636/MRNGA",
     "category": "webapp",
     "techs": ["reactjs", "tailwindcss"]
+  },
+  {
+    "_id": "63b0b9c6c30eb95b282a9dg",
+    "name": "Weather App",
+    "desc": "A simple weather app that shows you the weather forecasts of any location.",
+    "url": "https://weather.mrga.thecodeblog.net/",
+    "repo": "https://github.com/melvinchia3636/weatherApp",
+    "category": "webapp",
+    "techs": ["reactjs", "tailwindcss"]
+  },
+  {
+    "_id": "63b0b9c6c30eb95b282a9dh",
+    "name": "Weather App Mobile",
+    "desc": "A simple mobile app that shows you the weather forecasts of any location.",
+    "url": "https://github.com/melvinchia3636/weatherApp-mobile-2",
+    "repo": "https://github.com/melvinchia3636/weatherApp-mobile-2",
+    "category": "mobileapp",
+    "techs": ["reactnative"]
   }
 ]
