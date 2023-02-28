@@ -6,13 +6,8 @@
 
   import Saos from "saos";
   import { fade } from "svelte/transition";
-
-  let data = [];
-  fetch("https://backend.thecodeblog.net/projects/list")
-    .then((res) => res.json())
-    .then((res) => {
-      data = res;
-    });
+  // @ts-ignore
+  import data from "../assets/data/projects.json";
 
   function hexToRgb(hex) {
     var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);

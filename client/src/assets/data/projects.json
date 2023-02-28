@@ -1,0 +1,209 @@
+[
+  {
+    "_id": "622a9cfd4c7dc90d402119b5",
+    "name": "gitinfo - github api explorer",
+    "desc": "This website provides a clean place for displaying info of github users, repos, and more.",
+    "url": "https://gitinfo.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636/gitinfo",
+    "category": "webapp",
+    "techs": ["react", "tailwindcss"]
+  },
+  {
+    "_id": "622a9d454c7dc90d402119b6",
+    "name": "cruisegator - cruiseship database",
+    "desc": "This website summarizes and displays information of cruiseships from various sources",
+    "url": "https://cruisegator.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636/cruisegator",
+    "category": "webapp",
+    "techs": ["react", "tailwindcss", "redux", "typescript"]
+  },
+  {
+    "_id": "622a9d764c7dc90d402119b7",
+    "name": "Covid-19 Statistic Report",
+    "desc": "This website displays data and information of current situations of the Covid-19 pandemic.",
+    "url": "https://covid19.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636/",
+    "category": "webapp",
+    "techs": []
+  },
+  {
+    "_id": "622a9d8b4c7dc90d402119b8",
+    "name": "vanilla tweaks website remake",
+    "desc": "A redesigned remade version of vanillatweaks.net.",
+    "url": "https://vanillatweaks.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636/vanillaTweaks",
+    "category": "webapp",
+    "techs": ["react", "tailwindcss", "express"]
+  },
+  {
+    "_id": "622a9ef04c7dc90d402119bb",
+    "name": "Iconify website remake",
+    "desc": "A redesigned remade version of iconify.design.",
+    "url": "https://iconify.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636/iconify",
+    "category": "webapp",
+    "techs": ["svelte", "tailwindcss"]
+  },
+  {
+    "_id": "622a9fc14c7dc90d402119bc",
+    "name": "ASCIIMG - ASCII Art Generator",
+    "desc": "This website allows you to generate ASCII art and share them to the world.",
+    "url": "https://ascii.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636/asciiImage",
+    "category": "webapp",
+    "techs": []
+  },
+  {
+    "_id": "622a9fe14c7dc90d402119bd",
+    "name": "MDArchive - Markdown notes browser",
+    "desc": "A website to store all my markdown notes.",
+    "url": "https://mdarchive.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636/MDArchive",
+    "category": "webapp",
+    "techs": ["next.js", "mongodb"]
+  },
+  {
+    "_id": "622aa0064c7dc90d402119be",
+    "name": "Hello World in 1,080 languages",
+    "desc": "Show you how to implement Hello World in more than a thousand languages.",
+    "url": "https://hello-world.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636/helloworld",
+    "category": "webapp",
+    "techs": ["react", "tailwindcss", "typescript"]
+  },
+  {
+    "_id": "622aa02d4c7dc90d402119bf",
+    "name": "Brickset App - Lego Set Archive",
+    "desc": "This is my first proper mobile app project. I kicked started this project right away after I found the suitable data source, brickset.com",
+    "url": "https://brickset.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636/LEGOArchive",
+    "category": "mobileapp",
+    "techs": ["react-native"]
+  },
+  {
+    "_id": "622aa0444c7dc90d402119c0",
+    "name": "wordle clone",
+    "desc": "A redesigned and remade version of the Wordle game.",
+    "url": "https://wordle.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636/wordle",
+    "category": "webapp",
+    "techs": ["react", "tailwindcss"]
+  },
+  {
+    "_id": "622aa0a24c7dc90d402119c2",
+    "name": "Kaler.info - Everything about colors",
+    "desc": "Show you lots of information about colors.",
+    "url": "https://kaler.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636",
+    "category": "webapp",
+    "techs": []
+  },
+  {
+    "_id": "622aa1684c7dc90d402119c5",
+    "name": "MCS - Minecraft Server List",
+    "desc": "A remade and redesigned version of minecraft.buzz.",
+    "url": "https://mcs.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636/MCS",
+    "category": "webapp",
+    "techs": ["react", "tailwindcss"]
+  },
+  {
+    "_id": "622aab775d0a54be7ab04b9c",
+    "name": "avatargen - random avatar generator",
+    "url": "avatar-gen.thecodeblog.net",
+    "desc": "An avatar placeholder generator with complete REST api that you can use in your project..",
+    "repo": "https://github.com/melvinchia3636/avatar_gen",
+    "category": "webapp",
+    "techs": ["react", "tailwindcss"]
+  },
+  {
+    "_id": "622ef6e86c25bddee648b73f",
+    "name": "SSBuiltit - SimCity BuildIt Item List",
+    "desc": "A page showcasing all in-game items of SimCity BuiltIt and their information",
+    "url": "https://melvinchia3636.github.io/ssbuiltit/",
+    "repo": "https://github.com/melvinchia3636/ssbuildit",
+    "category": "webapp",
+    "techs": ["html5", "javascript", "jquery", "tailwindcss"]
+  },
+  {
+    "_id": "62606a83bae3cd1db7385977",
+    "name": "sudoku - a clean one",
+    "desc": "A clean and nice looking online sudoku game board.",
+    "repo": "https://github.com/melvinchia3636/clean-sudoku",
+    "category": "webapp",
+    "techs": ["react", "tailwindcss"],
+    "url": "https://sudoku.thecodeblog.net"
+  },
+  {
+    "_id": "629ec3abedb14c47ad3c1900",
+    "name": "Calculator",
+    "url": "https://calculator.thecodeblog.net",
+    "desc": "A neumorphic styled calculator.",
+    "repo": "https://github.com/melvinchia3636/calculator",
+    "category": "webapp",
+    "techs": ["react", "css3", "tailwindcss"]
+  },
+  {
+    "_id": "629ec69ec296d616ce03d223",
+    "name": "URL Shortener",
+    "url": "https://url.thecodeblog.net",
+    "desc": "A simple URL shortener that allows you to make long URLs shorter.",
+    "repo": "https://github.com/melvinchia3636/URLShortener",
+    "category": "webapp",
+    "techs": ["next.js", "tailwindcss", "mongodb"]
+  },
+  {
+    "_id": "62b6d1962c03b09684efc932",
+    "name": "2048",
+    "desc": "A recreation of 2048 with smooth animation and different themes",
+    "url": "https://2048.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636/js2048",
+    "category": "webapp",
+    "techs": ["typescript"]
+  },
+  {
+    "_id": "634a51cd86345284bee6456b",
+    "name": "Hangman",
+    "desc": "Guess the word letter by letter, you were given only 7 chances",
+    "url": "https://hangman.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636/hangman-rreact",
+    "category": "webapp",
+    "techs": ["React", "TailwindCSS"]
+  },
+  {
+    "_id": "634aa2f367a423ce7d192901",
+    "name": "flight ticket",
+    "desc": "A gorgeous looking virtual flight ticket designed using   TAILWINDCSS",
+    "url": "https://flight-ticket.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636/flight-ticket",
+    "category": "webapp",
+    "techs": ["React", "TailwindCSS"]
+  },
+  {
+    "_id": "638ab91231d0b2b379092c8d",
+    "name": "progress quest realms",
+    "desc": "A GUI application that shows you complete rank list of realms in Progress Quest\n",
+    "url": "https://github.com/melvinchia3636/progressQuestRealms",
+    "repo": "https://github.com/melvinchia3636/progressQuestRealms",
+    "category": "desktop app",
+    "techs": ["python3", "pyqt5"]
+  },
+  {
+    "_id": "63925a6f4ea5ede935d06336",
+    "name": "PyQt5 Progress Quest",
+    "desc": "This is a native looking version of Progress Quest - the oldest idle MMORPG",
+    "url": "https://github.com/melvinchia3636/PyQt5ProgressQuest",
+    "repo": "https://github.com/melvinchia3636/PyQt5ProgressQuest",
+    "category": "desktopapp",
+    "techs": ["Python3", "PyQt5"]
+  },
+  {
+    "_id": "63a9b98c6c30eb95b282a9df",
+    "name": "currency converter",
+    "desc": "A handy tool that converts currency from all around the world one to another.",
+    "url": "https://currency.converter.thecodeblog.net/",
+    "repo": "https://github.com/melvinchia3636/MRNGA",
+    "category": "webapp",
+    "techs": ["reactjs", "tailwindcss"]
+  }
+]

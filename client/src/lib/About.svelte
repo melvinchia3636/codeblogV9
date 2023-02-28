@@ -4,7 +4,6 @@
   import { fade } from "svelte/transition";
   import GithubRepo from "./about/githubRepo.svelte";
 
-  import Quotes from "./about/Quotes.svelte";
   import Resume from "./about/Resume.svelte";
   import Skills from "./about/Skills.svelte";
   import TechStacks from "./about/TechStacks.svelte";
@@ -55,9 +54,6 @@
       {#if section === 2}
         <TechStacks />
       {/if}
-      {#if section === 3}
-        <Quotes />
-      {/if}
       {#if section === 4}
         <GithubRepo />
       {/if}
@@ -86,13 +82,6 @@
           ? 'animate__fadeInUp'
           : 'animate__fadeOutLeft'} hover:text-[#FFAA4C] transition-all duration-300"
         style="animation-delay: 0.8s">TECH STACKS</button
-      >
-      <button
-        on:click={() => (!showSection ? setSection(3) : "")}
-        class="tracking-[0.2em] animate__animated {section === null
-          ? 'animate__fadeInUp'
-          : 'animate__fadeOutRight'} hover:text-[#FFAA4C] transition-all duration-300"
-        style="animation-delay: 1.0s">QUOTES</button
       >
       <button
         on:click={() => (!showSection ? setSection(4) : "")}
