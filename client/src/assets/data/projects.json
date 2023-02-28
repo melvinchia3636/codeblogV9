@@ -110,7 +110,7 @@
   {
     "_id": "622aab775d0a54be7ab04b9c",
     "name": "avatargen - random avatar generator",
-    "url": "avatar-gen.thecodeblog.net",
+    "url": "https://avatar-gen.thecodeblog.net",
     "desc": "An avatar placeholder generator with complete REST api that you can use in your project..",
     "repo": "https://github.com/melvinchia3636/avatar_gen",
     "category": "webapp",
