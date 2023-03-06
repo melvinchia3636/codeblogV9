@@ -223,5 +223,14 @@
     "repo": "https://github.com/melvinchia3636/weatherApp-mobile-2",
     "category": "mobileapp",
     "techs": ["reactnative"]
+  },
+  {
+    "_id": "63b0b9c6c30eb95b282a9di",
+    "name": "WebRTC Video Chat",
+    "desc": "A simple video chat app that allows you to chat with your friends.",
+    "url": "https://webrtc.thecodeblog.net/",
+    "repo": "https://github.com/melvinchia3636/webRTC",
+    "category": "webapp",
+    "techs": ["reactjs", "tailwindcss", "webrtc"]
   }
 ]
