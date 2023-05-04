@@ -236,6 +236,10 @@
   {
     "_id": "63b0b9c6c30eb95b282a9di",
     "name": "Neumorsweeper - A neumorophic minesweeper game",
-    "desc": "Neumorphic style Minesweeper game with an immersive interface and challenging gameplay."
+    "desc": "Neumorphic style Minesweeper game with an immersive interface and challenging gameplay.",
+    "url": "https://minesweeper.thecodeblog.net/",
+    "repo": "https://github.com/melvinchia3636/minesweeper",
+    "category": "webapp",
+    "techs": ["javascript", "html5", "css3", "tailwindcss"]
   }
 ]
