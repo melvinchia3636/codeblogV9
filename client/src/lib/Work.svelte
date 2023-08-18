@@ -64,7 +64,6 @@
         >
           {#each data as project}
             <div class="h-full saos">
-              <Saos animation={"from-left .5s ease-in-out both"}>
                 <div
                   class="flex font-light gap-8 flex-col h-full bg-slate-100 p-4 bg-opacity-5"
                 >
@@ -101,7 +100,6 @@
                     </div>
                   </div>
                 </div>
-              </Saos>
             </div>
           {/each}
         </div>
