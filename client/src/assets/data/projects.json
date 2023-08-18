@@ -250,5 +250,14 @@
     "repo": "https://github.com/melvinchia3636/weatherStation",
     "category": "hardware",
     "techs": ["raspberrypi", "python3"]
+  },
+  {
+    "_id": "63b0b9c6c30eb95b282a9di",
+    "name": "Yet Another Weather App",
+    "desc": "Yet another weather app that is built using React Native with better UI and UX.",
+    "url": "https://github.com/melvinchia3636/weatherApp-mobile",
+    "repo": "https://github.com/melvinchia3636/weatherApp-mobile",
+    "category": "mobileapp",
+    "techs": ["reactnative"]
   }
 ]
