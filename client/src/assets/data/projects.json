@@ -259,5 +259,14 @@
     "repo": "https://github.com/melvinchia3636/weatherApp-mobile",
     "category": "mobileapp",
     "techs": ["reactnative"]
+  },
+  {
+    "_id": "63b0b9c6c30eb95b282a9di",
+    "name": "Textbook Library",
+    "desc": "An online archive of all the textooks being used in Malaysia's Chinese independent high schools.",
+    "url": "https://textbook-library.vercel.app",
+    "repo": "https://textbook-library.vercel.app",
+    "category": "webapp",
+    "techs": ["reactjs", "tailwindcss"]
   }
 ]
