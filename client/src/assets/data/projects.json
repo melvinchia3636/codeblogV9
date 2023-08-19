@@ -286,5 +286,14 @@
     "repo": "https://github.com/melvinchia3636/imageuploader",
     "category": "webapp",
     "techs": ["expressjs", "reactjs", "tailwindcss"]
+  },
+  {
+    "_id": "63b0b9c6c30eb95b282a9di",
+    "name": "Colors of Life - Online Art Expo",
+    "desc": "An online art expo that showcases the artworks of the students of my school.",
+    "url": "https://github.com/melvinchia3636/Colors-Of-Life",
+    "repo": "https://github.com/melvinchia3636/Colors-Of-Life/",
+    "category": "webapp",
+    "techs": ["angularjs", "tailwindcss", "mysql", "angularjs"]
   }
 ]
