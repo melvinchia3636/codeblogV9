@@ -273,9 +273,18 @@
     "_id": "63b0b9c6c30eb95b282a9di",
     "name": "MCID - Minecraft Item List",
     "desc": "A simple website that lists all the items in Minecraft and their details in a neat and clean way.",
-    "url": "https://mcid.theblog.net",
+    "url": "https://mcid.thecodeblog.net",
     "repo": "https://github.com/melvinchia3636/mcid",
     "category": "webapp",
     "techs": ["nextjs", "tailwindcss"]
+  },
+  {
+    "_id": "63b0b9c6c30eb95b282a9di",
+    "name": "Codeblog Image CDN",
+    "desc": "A simple image content delivery network for images being embedded in my contents.",
+    "url": "https://image.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636/imageuploader",
+    "category": "webapp",
+    "techs": ["expressjs", "reactjs", "tailwindcss"]
   }
 ]
