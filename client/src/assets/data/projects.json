@@ -268,5 +268,14 @@
     "repo": "https://textbook-library.vercel.app",
     "category": "webapp",
     "techs": ["reactjs", "tailwindcss"]
+  },
+  {
+    "_id": "63b0b9c6c30eb95b282a9di",
+    "name": "MCID - Minecraft Item List",
+    "desc": "A simple website that lists all the items in Minecraft and their details in a neat and clean way.",
+    "url": "https://mcid.theblog.net",
+    "repo": "https://github.com/melvinchia3636/mcid",
+    "category": "webapp",
+    "techs": ["nextjs", "tailwindcss"]
   }
 ]
