@@ -36,7 +36,7 @@
         go back
       </Link>
       <h1
-        class="font-medium text-center flex tracking-[0.2em] uppercase text-4xl mt-6 mb-20 relative after:content-[''] after:absolute after:w-24 after:border-b-2 after:border-[#FFAA4C] after:-bottom-4 after:left-1/2 after:-translate-x-[55%]"
+        class="font-medium text-center flex tracking-[0.2em] px-12 uppercase text-4xl mt-6 mb-20 relative after:content-[''] after:absolute after:w-24 after:border-b-2 after:border-[#FFAA4C] after:-bottom-4 after:left-1/2 after:-translate-x-[55%]"
       >
         my life journey
       </h1>
@@ -57,12 +57,12 @@
               >
                 {@html blog.excerpt.rendered || "No description"}
               </p>
-              <Link to={`/blog/${blog.id}`} class="mt-auto">
+              <Link to={`/blog/${blog.id}`} class="mt-auto w-full sm:!w-min block">
                 <button
-                  class="tracking-[0.2em] mt-8 flex items-center font-semibold text-sm rounded-sm justify-center bg-[#FFAA4C] px-8 text-neutral-800 pb-[1.2rem] pt-5 uppercase"
+                  class="tracking-[0.2em] whitespace-nowrap w-full sm:w-!auto mt-8 flex items-center font-semibold text-sm rounded-sm justify-center bg-[#FFAA4C] px-8 text-neutral-800 pb-[1.2rem] pt-5 uppercase gap-2"
                 >
                   Read More
-                  <Icon icon="uil:arrow-right" class="w-5 h-5" />
+                  <Icon icon="uil:arrow-right" class="w-5 h-5 flex-shrink-0" />
                 </button>
               </Link>
             </div>
