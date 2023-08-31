@@ -46,6 +46,6 @@
   @tailwind utilities;
 
   * {
-    font-family: "Jetbrains Mono";
+    font-family: "Space Grotesk";
   }
 </style>
