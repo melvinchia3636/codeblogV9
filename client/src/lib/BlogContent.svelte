@@ -87,4 +87,12 @@
     :global(#content table td) {
         @apply border-r border-slate-100 p-3;
     }
+
+    :global(#content figure.wp-block-gallery) {
+        @apply w-full flex flex-row flex-wrap gap-4 justify-center;
+    }
+
+    :global(#content figure.wp-block-gallery figure.wp-block-image) {
+        @apply w-96
+    }
 </style>
