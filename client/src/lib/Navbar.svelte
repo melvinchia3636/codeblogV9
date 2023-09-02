@@ -48,6 +48,7 @@
     class="fixed left-0 top-0 z-[9999] w-full bg-[#101820] py-8 px-9 flex justify-between items-center"
     style="opacity: {(100 - $nav) / 100}"
   >
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
     <h1
       class="text-xl tracking-[0.2em] relative z-[9999] {navOpen
         ? 'text-neutral-800'
@@ -73,8 +74,7 @@
       {#each ["home", "work", "about", "blog"] as link}
         <Link
           to={"/" + link}
-          class="tracking-[0.325rem] relative uppercase after:transition-all after:duration-300 after:content-[''] after:w-0 after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:border-b-[1.6px] after:border-[#FFAA4C] cursor-pointer {pathname ===
-            '/' + link ||
+          class="tracking-[0.325rem] relative uppercase after:transition-all after:duration-300 after:content-[''] after:w-0 after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:border-b-[1.6px] after:border-[#FFAA4C] cursor-pointer {pathname.startsWith(`/${link}`) ||
           (pathname === '/' && link === 'home')
             ? "after:w-1/2"
             : ''} hover:after:w-1/2">{link}</Link
@@ -115,6 +115,7 @@
       <a
         href="//github.com/melvinchia3636"
         target="_blank"
+        rel="noopener noreferrer"
         class="font-bold hover:text-[#FFAA4C] transition-all duration-500">
         <Icon icon="uil:github" class="w-5 h-5" />
         </a
@@ -122,6 +123,7 @@
       <a
         href="//facebook.com/TheSillyCoder"
         target="_blank"
+        rel="noopener noreferrer"
         class="font-bold hover:text-[#FFAA4C] transition-all duration-500">
           <Icon icon="uil:facebook" class="w-5 h-5" />
         </a
@@ -129,6 +131,7 @@
       <a
         href="//www.youtube.com/channel/UCsSf5dUsiQYfEucaJlusXng"
         target="_blank"
+        rel="noopener noreferrer"
         class="font-bold hover:text-[#FFAA4C] transition-all duration-500">
           <Icon icon="uil:youtube" class="w-5 h-5" />
         </a

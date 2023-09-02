@@ -24,7 +24,7 @@
 <main class="w-full h-full flex flex-col items-center" id="swup">
   {#if showContent}
     <div
-      class="min-h-screen w-full overflow-y-auto flex flex-col items-center pt-48"
+      class="min-h-screen w-full overflow-y-auto flex flex-col items-center py-48"
       in:fade
       out:fade
     >
@@ -40,7 +40,7 @@
       >
         my life journey
       </h1>
-      <div class="flex w-full px-8 sm:!w-4/5 flex-col gap-20 text-left">
+      <div class="flex w-full px-8 sm:!w-4/5 flex-col gap-8 text-left">
         {#if blogData.length}
           {#each blogData as blog}
             <div
