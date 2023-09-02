@@ -61,7 +61,7 @@
         @apply w-full text-lg;
     }
     :global(#content figcaption) {
-        @apply w-full text-sm text-center mt-4 text-slate-500;
+        @apply w-full text-center text-slate-500;
     }
 
     :global(#content blockquote) {
