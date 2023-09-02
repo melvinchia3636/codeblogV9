@@ -71,4 +71,20 @@
     :global(#content h2) {
         @apply text-3xl font-medium text-[#FFAA4C] mt-8 -mb-2;
     }
+
+    :global(#content figure) {
+        @apply w-full flex flex-col items-center gap-4;
+    }
+
+    :global(#content table) {
+        @apply w-full border-collapse border border-slate-100;
+    }
+
+    :global(#content table tr) {
+        @apply border-b border-slate-100;
+    }
+
+    :global(#content table td) {
+        @apply border-r border-slate-100 p-3;
+    }
 </style>
