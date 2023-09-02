@@ -93,6 +93,9 @@
     }
 
     :global(#content figure.wp-block-gallery figure.wp-block-image) {
-        @apply w-96
+        @apply w-96;
+    }
+    :global(#content img) {
+        @apply w-96 !h-auto object-cover;
     }
 </style>
