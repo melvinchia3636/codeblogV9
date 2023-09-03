@@ -49,43 +49,51 @@
     style="opacity: {(100 - $nav) / 100}"
   >
     <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <h1
-      class="text-xl tracking-[0.2em] relative z-[9999] {navOpen
-        ? 'text-neutral-800'
-        : 'text-slate-100'} transition-all duration-700 font-medium"
-      on:click={scrollToTop}
-    >
-      <span
-        class="{navOpen
-          ? 'text-[#e09846]'
-          : 'text-[#FFAA4C]'} font-bold transition-all duration-700"
-        >C</span
-      >ODE<span
-        class="{navOpen
-          ? 'text-[#e09846]'
-          : 'text-[#FFAA4C]'} font-bold transition-all duration-700"
-        >B</span
-      >LOG<br />
-      <span class="text-xs tracking-widest block"
-        >by Melvin Chia.</span
+    <Link to="/">
+      <h1
+        class="text-xl tracking-[0.2em] relative z-[9999] {navOpen
+          ? 'text-neutral-800'
+          : 'text-slate-100'} transition-all duration-700 font-medium"
+        on:click={scrollToTop}
       >
-    </h1>
-    <div class="hidden md:flex gap-20 text-sm xl:absolute top-1/2 left-1/2 xl:-translate-x-1/2 xl:-translate-y-1/2">
+        <span
+          class="{navOpen
+            ? 'text-[#e09846]'
+            : 'text-[#FFAA4C]'} font-bold transition-all duration-700">C</span
+        >ODE<span
+          class="{navOpen
+            ? 'text-[#e09846]'
+            : 'text-[#FFAA4C]'} font-bold transition-all duration-700">B</span
+        >LOG<br />
+        <span class="text-xs tracking-widest block">by Melvin Chia.</span>
+      </h1>
+    </Link>
+    <div
+      class="hidden md:flex gap-20 text-sm xl:absolute top-1/2 left-1/2 xl:-translate-x-1/2 xl:-translate-y-1/2"
+    >
       {#each ["home", "work", "about", "blog"] as link}
         <Link
           to={"/" + link}
-          class="tracking-[0.325rem] relative uppercase after:transition-all after:duration-300 after:content-[''] after:w-0 after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:border-b-[1.6px] after:border-[#FFAA4C] cursor-pointer {pathname.startsWith(`/${link}`) ||
+          class="tracking-[0.325rem] relative uppercase after:transition-all after:duration-300 after:content-[''] after:w-0 after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:border-b-[1.6px] after:border-[#FFAA4C] cursor-pointer {pathname.startsWith(
+            `/${link}`
+          ) ||
           (pathname === '/' && link === 'home')
-            ? "after:w-1/2"
+            ? 'after:w-1/2'
             : ''} hover:after:w-1/2">{link}</Link
         >
       {/each}
     </div>
-    <a href="mailto:melvinchia@thecodeblog.net" class="tracking-[0.2em] font-medium text-[#FFAA4C] items-center gap-2 text-sm animate__animated animate__fadeInLeft animate__delay-1s hidden lg:!flex">
+    <a
+      href="mailto:melvinchia@thecodeblog.net"
+      class="tracking-[0.2em] font-medium text-[#FFAA4C] items-center gap-2 text-sm animate__animated animate__fadeInLeft animate__delay-1s hidden lg:!flex"
+    >
       GET IN TOUCH
       <Icon icon="uil:arrow-right" class="w-6 h-6" />
     </a>
-    <button on:click={() => setNavOpen(!navOpen)} class="block md:!hidden relative z-[9999]">
+    <button
+      on:click={() => setNavOpen(!navOpen)}
+      class="block md:!hidden relative z-[9999]"
+    >
       <Icon
         icon="heroicons-outline:menu-alt-4"
         class="w-7 h-7 {navOpen ? 'text-neutral-800' : 'text-slate-100'}"
@@ -107,7 +115,10 @@
               : ''}">{link}</Link
           >
         {/each}
-        <a href="mailto:melvinchia@thecodeblog.net" class="tracking-[0.2em] items-center gap-2 text-sm animate__animated animate__fadeInLeft animate__delay-1s flex">
+        <a
+          href="mailto:melvinchia@thecodeblog.net"
+          class="tracking-[0.2em] items-center gap-2 text-sm animate__animated animate__fadeInLeft animate__delay-1s flex"
+        >
           GET IN TOUCH
         </a>
       </div>
@@ -119,28 +130,32 @@
         href="//github.com/melvinchia3636"
         target="_blank"
         rel="noopener noreferrer"
-        class="font-bold hover:text-[#FFAA4C] transition-all duration-500">
-        <Icon icon="uil:github" class="w-5 h-5" />
-        </a
+        class="font-bold hover:text-[#FFAA4C] transition-all duration-500"
       >
+        <Icon icon="uil:github" class="w-5 h-5" />
+      </a>
       <a
         href="//facebook.com/TheSillyCoder"
         target="_blank"
         rel="noopener noreferrer"
-        class="font-bold hover:text-[#FFAA4C] transition-all duration-500">
-          <Icon icon="uil:facebook" class="w-5 h-5" />
-        </a
+        class="font-bold hover:text-[#FFAA4C] transition-all duration-500"
       >
+        <Icon icon="uil:facebook" class="w-5 h-5" />
+      </a>
       <a
         href="//www.youtube.com/channel/UCsSf5dUsiQYfEucaJlusXng"
         target="_blank"
         rel="noopener noreferrer"
-        class="font-bold hover:text-[#FFAA4C] transition-all duration-500">
-          <Icon icon="uil:youtube" class="w-5 h-5" />
-        </a
+        class="font-bold hover:text-[#FFAA4C] transition-all duration-500"
       >
+        <Icon icon="uil:youtube" class="w-5 h-5" />
+      </a>
       <div class="w-16 border-t-2 ml-1 border-neutral-600 hidden md:block" />
     </div>
-    <div class="fixed pointer-events-none bottom-10 items-center right-10 text-sm hidden md:block">v9.3.6</div>
+    <div
+      class="fixed pointer-events-none bottom-10 items-center right-10 text-sm hidden md:block"
+    >
+      v9.3.6
+    </div>
   </nav>
 </header>
