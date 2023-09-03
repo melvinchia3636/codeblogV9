@@ -7,12 +7,12 @@
   class="flex flex-col items-center mt-12 w-full h-full p-8"
 >
   <div
-    class="fixed pointer-events-none top-32 xl:top-44 left-8 xl:left-24 text-6xl xl:text-8xl z-[9999] font-bold opacity-5 leading-snug"
+    class="fixed pointer-events-none top-32 xl:top-44 left-8 xl:left-24 text-6xl xl:text-8xl z-[9997] font-bold opacity-5 leading-snug"
   >
     function codeBlog() {"{"}
   </div>
   <div
-    class="fixed pointer-events-none bottom-32 xl:bottom-36 left-8 xl:left-24 text-6xl xl:text-8xl z-[9999] font-bold opacity-5"
+    class="fixed pointer-events-none bottom-32 xl:bottom-36 left-8 xl:left-24 text-6xl xl:text-8xl z-[9997] font-bold opacity-5"
   >
     {"}"}
   </div>

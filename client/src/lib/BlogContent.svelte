@@ -125,7 +125,7 @@
   }
 
   :global(#content figure.wp-block-gallery figure.wp-block-image) {
-    @apply w-96;
+    @apply !w-96;
   }
   :global(#content img) {
     @apply object-cover;

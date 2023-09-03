@@ -4,8 +4,8 @@
 </script>
 
 <div class="flex flex-col items-center w-full h-full" in:fade out:fade >
-  <div class="fixed pointer-events-none top-32 xl:top-0 left-16 text-8xl xl:text-[16rem] z-[9999] font-bold opacity-5">&lt;!--</div>
-  <div class="fixed pointer-events-none bottom-32 xl:bottom-0 right-16 text-8xl xl:text-[16rem] z-[9999] font-bold opacity-5">--&gt;</div>
+  <div class="fixed pointer-events-none top-32 xl:top-0 left-16 text-8xl xl:text-[16rem] z-[9997] font-bold opacity-5">&lt;!--</div>
+  <div class="fixed pointer-events-none bottom-32 xl:bottom-0 right-16 text-8xl xl:text-[16rem] z-[9997] font-bold opacity-5">--&gt;</div>
   <div
     class="tracking-[0.2em] type flex font-light -ml-1 text-xs lg:text-base mb-4 animate__animated animate__fadeInDown"
   >

@@ -52,18 +52,18 @@
     <h1
       class="text-xl tracking-[0.2em] relative z-[9999] {navOpen
         ? 'text-neutral-800'
-        : 'text-slate-100'} transition-all delay-500 duration-700 font-medium"
+        : 'text-slate-100'} transition-all duration-700 font-medium"
       on:click={scrollToTop}
     >
       <span
         class="{navOpen
           ? 'text-[#e09846]'
-          : 'text-[#FFAA4C]'} font-bold transition-all delay-500 duration-700"
+          : 'text-[#FFAA4C]'} font-bold transition-all duration-700"
         >C</span
       >ODE<span
         class="{navOpen
           ? 'text-[#e09846]'
-          : 'text-[#FFAA4C]'} font-bold transition-all delay-500 duration-700"
+          : 'text-[#FFAA4C]'} font-bold transition-all duration-700"
         >B</span
       >LOG<br />
       <span class="text-xs tracking-widest block"
@@ -81,7 +81,7 @@
         >
       {/each}
     </div>
-    <a href="mailto:melvinchia@thecodeblog.net" class="tracking-[0.2em] text-[#FFAA4C] items-center gap-2 text-sm animate__animated animate__fadeInLeft animate__delay-1s hidden lg:!flex">
+    <a href="mailto:melvinchia@thecodeblog.net" class="tracking-[0.2em] font-medium text-[#FFAA4C] items-center gap-2 text-sm animate__animated animate__fadeInLeft animate__delay-1s hidden lg:!flex">
       GET IN TOUCH
       <Icon icon="uil:arrow-right" class="w-6 h-6" />
     </a>
@@ -94,7 +94,7 @@
     <div
       class="w-full h-screen bg-[#FFAA4C] {navOpen
         ? 'top-0 left-0 rounded-br-none'
-        : '-top-full -left-full rounded-br-full'} transition-all duration-700 fixed z-[9999] flex items-center justify-center text-neutral-800 font-semibold"
+        : '-top-full -left-full rounded-br-full'} transition-all duration-700 fixed z-[9998] flex items-center justify-center text-neutral-800 font-semibold"
     >
       <div class="flex flex-col items-center gap-12 text-sm">
         {#each ["home", "work", "about", "blog"] as link}
@@ -107,6 +107,9 @@
               : ''}">{link}</Link
           >
         {/each}
+        <a href="mailto:melvinchia@thecodeblog.net" class="tracking-[0.2em] items-center gap-2 text-sm animate__animated animate__fadeInLeft animate__delay-1s flex">
+          GET IN TOUCH
+        </a>
       </div>
     </div>
     <div

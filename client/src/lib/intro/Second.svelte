@@ -37,12 +37,12 @@
     MOBILE APP DEVELOPING
   </div>
   <div
-    class="fixed pointer-events-none top-32 xl:top-0 left-16 text-9xl xl:text-[16rem] z-[9999] font-bold opacity-5"
+    class="fixed pointer-events-none top-32 xl:top-0 left-16 text-9xl xl:text-[16rem] z-[9997] font-bold opacity-5"
   >
     &lt;/
   </div>
   <div
-    class="fixed pointer-events-none bottom-32 xl:bottom-0 right-16 text-9xl xl:text-[16rem] z-[9999] font-bold opacity-5"
+    class="fixed pointer-events-none bottom-32 xl:bottom-0 right-16 text-9xl xl:text-[16rem] z-[9997] font-bold opacity-5"
   >
     /&gt;
   </div>
