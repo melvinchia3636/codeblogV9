@@ -1,5 +1,6 @@
 <script lang="ts">
   import Icon from "@iconify/svelte";
+  import moment from "moment";
   import { Link, useParams, navigate } from "svelte-navigator";
   import { fade } from "svelte/transition";
 
@@ -46,12 +47,12 @@
       out:fade
     >
       <button
-      on:click={() => {
-        setShowContent(false);
-        setTimeout(() => {
-          navigate("/blog");
-        }, 500);
-      }}
+        on:click={() => {
+          setShowContent(false);
+          setTimeout(() => {
+            navigate("/blog");
+          }, 500);
+        }}
         class="tracking-[0.2em] uppercase font-medium text-[#FFAA4C] -ml-4 flex items-center gap-2"
       >
         <Icon icon="uil:arrow-left" class="w-5 h-5 -mt-[1px]" />
@@ -62,10 +63,28 @@
           <h1
             in:fade
             out:fade
-            class="font-medium text-center w-4/5 flex tracking-[0.2em] uppercase text-3xl mt-6 mb-20 relative after:content-[''] after:absolute after:w-24 after:border-b-2 after:border-[#FFAA4C] after:-bottom-4 after:left-1/2 after:-translate-x-[55%]"
+            class="font-medium text-center w-4/5 tracking-[0.2em] uppercase text-3xl mt-6 mb-20 relative after:content-[''] after:absolute after:w-24 after:border-b-2 after:border-[#FFAA4C] after:-bottom-4 after:left-1/2 after:-translate-x-[55%]"
           >
             {blogData.title.rendered}
           </h1>
+          <div
+            class="w-4/5 flex flex-col gap-4 sm:!flex-row items-center justify-between pb-8 text-[#FFAA4C]"
+          >
+            <div class="flex items-center gap-2">
+              <Icon icon="uil:calendar-alt" class="w-5 h-5" />
+              <span class="text-sm font-medium">
+                {moment(blogData.date).format("Do MMM YYYY")}
+              </span>
+            </div>
+            <div class="flex items-center gap-2">
+              <Icon icon="uil:bookmark" class="w-5 h-5" />
+              <span class="text-sm font-medium"
+                >Estimated read time: {Math.ceil(
+                  blogData.content.rendered.split(" ").length / 200
+                )} minutes</span
+              >
+            </div>
+          </div>
           <div
             in:fade
             out:fade
