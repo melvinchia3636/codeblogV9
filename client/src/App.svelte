@@ -1,21 +1,40 @@
 <script>
-  import { Router, Route, Link } from "svelte-navigator";
+  import { Router, Route, Link, globalHistory } from "svelte-navigator";
   import About from "./lib/About.svelte";
   import Blog from "./lib/Blog.svelte";
   import Home from "./lib/Home.svelte";
   import Navbar from "./lib/Navbar.svelte";
-  import Work from "./lib/Work.svelte"
+  import Work from "./lib/Work.svelte";
   import BlogContent from "./lib/BlogContent.svelte";
+  import { onDestroy, onMount } from "svelte";
+
+  let section = null;
+  let unsub;
+
+  onMount(() => {
+    unsub = globalHistory.listen(({ location, action }) => {
+      const path = location.pathname.split("/")[1];
+      section = path ? path[0].toUpperCase() + path.slice(1) : null;
+    });
+  });
+
+  onDestroy(() => {
+    unsub();
+  });
 </script>
+
+<svelte:head>
+  <title>{section ? section + " | " : ""}Codeblog by Melvin Chia</title>
+</svelte:head>
 
 <Router>
   <main class="w-full h-full overflow-y-auto relative">
     <Navbar />
-    <Route path="/" component="{Home}" />
-    <Route path="/home" component="{Home}" />
-    <Route path="/work" component="{Work}" />
-    <Route path="/about" component="{About}" />
-    <Route path="/blog" component="{Blog}" />
+    <Route path="/" component={Home} />
+    <Route path="/home" component={Home} />
+    <Route path="/work" component={Work} />
+    <Route path="/about" component={About} />
+    <Route path="/blog" component={Blog} />
     <Route path="/blog/:id" component={BlogContent} />
   </main>
 </Router>
@@ -25,12 +44,12 @@
 
 <style global>
   ::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
   }
   /* Optional: show position indicator in red */
   ::-webkit-scrollbar-thumb {
-    background: #FF0000;
+    background: #ff0000;
   }
 
   .transition-fade {
@@ -41,5 +60,4 @@
   html.is-animating .transition-fade {
     opacity: 0;
   }
-
 </style>

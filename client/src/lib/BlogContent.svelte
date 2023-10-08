@@ -1,7 +1,7 @@
 <script lang="ts">
   import Icon from "@iconify/svelte";
   import moment from "moment";
-  import { Link, useParams, navigate } from "svelte-navigator";
+  import { useParams, navigate } from "svelte-navigator";
   import { fade } from "svelte/transition";
 
   const params = useParams();
@@ -144,7 +144,7 @@
   }
 
   :global(#content figure.wp-block-gallery figure.wp-block-image) {
-    @apply !w-96;
+    @apply w-96;
   }
   :global(#content img) {
     @apply object-cover;
