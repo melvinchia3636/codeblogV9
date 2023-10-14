@@ -64,32 +64,32 @@
         >
           {#each data as project}
             <div class="h-full saos">
-                <div
-                  class="flex font-light gap-8 flex-col h-full bg-slate-100 p-4 bg-opacity-5"
-                >
-                  <img
-                    src={`https://github.com/melvinchia3636/CBImage/blob/main/${project.name
-                      .toLowerCase()
-                      .replace(/[^a-z0-9]/g, "")}.png?raw=true`}
-                    class="object-contain border border-neutral-700 rounded-sm w-full h-48"
-                    alt=""
-                  />
-                  <div class="flex flex-col justify-between h-full">
-                    <div class="flex flex-col gap-4">
-                      <div
-                        class="uppercase tracking-[0.2em] font-medium text-lg text-[#FFAA4C]"
-                      >
-                        {project.name}
-                      </div>
-                      <p class="!text-xs tracking-[0.08em] !leading-5">
-                        {project.desc}
-                      </p>
+              <div
+                class="flex font-light gap-8 flex-col h-full bg-slate-100 p-4 bg-opacity-5"
+              >
+                <img
+                  src={`https://github.com/melvinchia3636/CBImage/blob/main/${project.name
+                    .toLowerCase()
+                    .replace(/[^a-z0-9]/g, "")}.jpg?raw=true`}
+                  class="object-contain border border-neutral-700 rounded-sm w-full h-48"
+                  alt=""
+                />
+                <div class="flex flex-col justify-between h-full">
+                  <div class="flex flex-col gap-4">
+                    <div
+                      class="uppercase tracking-[0.2em] font-medium text-lg text-[#FFAA4C]"
+                    >
+                      {project.name}
                     </div>
-                    <div class="flex items-center justify-between mt-8">
-                      <a href={project.repo} target="_blank">
-                        <Icon icon="uil:github" class="w-6 h-6 text-[#FFAA4C]" />
-                      </a>
-                      <a
+                    <p class="!text-xs tracking-[0.08em] !leading-5">
+                      {project.desc}
+                    </p>
+                  </div>
+                  <div class="flex items-center justify-between mt-8">
+                    <a href={project.repo} target="_blank">
+                      <Icon icon="uil:github" class="w-6 h-6 text-[#FFAA4C]" />
+                    </a>
+                    <a
                       href={project.url}
                       target="_blank"
                       class="uppercase whitespace-nowrap text-sm font-semibold underline-offset-4 tracking-[0.2em] text-[#FFAA4C] flex items-center gap-2"
@@ -97,9 +97,9 @@
                       live demo
                       <Icon icon="uil:arrow-right" class="w-5 h-5" />
                     </a>
-                    </div>
                   </div>
                 </div>
+              </div>
             </div>
           {/each}
         </div>
