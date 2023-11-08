@@ -57,7 +57,7 @@
                 class="flex flex-col bg-slate-100 bg-opacity-5 rounded-md w-full h-full p-6"
               >
                 <div class="flex flex-wrap gap-2 mb-2 text-sm font-medium">
-                  {moment(blog.date).format("Do MMM YYYY")}
+                  {moment(blog.date).format("MMMM Do, YYYY")}
                 </div>
                 <h2 class="text-2xl font-medium text-[#FFAA4C]">
                   {blog.title.rendered}

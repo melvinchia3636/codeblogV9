@@ -24,14 +24,14 @@
       out:fade
     >
       <div
-        class="tracking-[0.2em] animate__animated animate__fadeInUp type flex items-center justify-center font-light text-sm mb-8 overflow-hidden whitespace-nowrap"
+        class="tracking-[0.2em] animate__animated animate__fadeInUp type flex gap-1 items-center justify-center text-lg font-light mb-8 overflow-hidden whitespace-nowrap"
       >
-        FULL STACK DEVELOPER
+        I'M <span class="text-[#FFAA4C] font-medium">MELVIN CHIA</span>
       </div>
-      <div
-        class="text-3xl sm:text-4xl lg:text-5xl tracking-[0.2em] flex"
-      >
-        <div class="animate__animated animate__fadeInLeft overflow-hidden justify-center items-center flex flex-col md:!flex-row gap-6">
+      <div class="text-4xl lg:text-5xl tracking-[0.2em] flex">
+        <div
+          class="animate__animated animate__fadeInLeft overflow-hidden justify-center items-center flex flex-col md:!flex-row gap-6"
+        >
           A
           <TypedJs
             strings={[
@@ -58,7 +58,8 @@
       <div
         class="animate__animated animate__fadeInUp tracking-[0.2em] w-3/5 text-center text-sm md:!text-base mt-8 font-light"
       >
-        I'm a self-taught full-stack developer and an avid learner with an insatiable drive for making crazy ideas come to life.
+        I'm a self-taught full-stack developer and an avid learner with an
+        insatiable drive for making crazy ideas come to life.
       </div>
       <div class="flex gap-4 mt-12 md:mt-20 flex-col md:!flex-row">
         <button
@@ -77,9 +78,21 @@
   <div
     class="fixed pointer-events-none bottom-0 w-8 h-8 bg-[#101820] z-10 left-1/2 -translate-x-1/2"
   />
-  <div class="fixed pointer-events-none top-32 xl:top-0 left-8 text-9xl xl:!text-[14rem] z-[9999] font-bold opacity-[2%]">()=>{'{'}</div>
-  <div class="fixed pointer-events-none bottom-32 xl:bottom-0 right-16 text-9xl xl:!text-[14rem] z-[9999] font-bold opacity-[2%]">{'}'}</div>
-  <div in:fade out:fade class="fixed pointer-events-none bottom-12 w-full text-center px-8 left-1/2 -translate-x-1/2 text-slate-100 z-[9999] uppercase text-xs font-light hidden md:block tracking-[0.2em]">
+  <div
+    class="fixed pointer-events-none top-32 xl:top-0 left-8 text-9xl xl:!text-[14rem] z-[9999] font-bold opacity-[2%]"
+  >
+    ()=>{"{"}
+  </div>
+  <div
+    class="fixed pointer-events-none bottom-32 xl:bottom-0 right-16 text-9xl xl:!text-[14rem] z-[9999] font-bold opacity-[2%]"
+  >
+    {"}"}
+  </div>
+  <div
+    in:fade
+    out:fade
+    class="fixed pointer-events-none bottom-12 w-full text-center px-8 left-1/2 -translate-x-1/2 text-slate-100 z-[9999] uppercase text-xs font-light hidden md:block tracking-[0.2em]"
+  >
     Copyright (C) 2020 - 2022 Melvin Chia; All rights reserved;
   </div>
 </div>
