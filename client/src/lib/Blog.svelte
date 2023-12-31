@@ -7,7 +7,7 @@
   let blogData = [];
 
   fetch(
-    "https://blog.thecodeblog.net/wp-json/wp/v2/posts?_fields=id,excerpt,title,date&per_page=3"
+    "https://blog.thecodeblog.net/wp-json/wp/v2/posts?_fields=id,excerpt,title,date&per_page=9999"
   )
     .then((e) => e.json())
     .then((data) => {
