@@ -9,6 +9,15 @@
     "techs": ["reactjs", "tailwindcss", "firebase"]
   },
   {
+    "_id": "63b0b9c6c30eb95b282a9di",
+    "name": "Super Tic Tac Toe",
+    "desc": "A super version of the classic Tic Tac Toe game with minimalistic UI.",
+    "url": "https://super-tictactoe.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636/super-TicTacToe/",
+    "category": "webapp",
+    "techs": ["typescript", "tailwindcss"]
+  },
+  {
     "_id": "622a9cfd4c7dc90d402119b5",
     "name": "gitinfo - github api explorer",
     "desc": "This website provides a clean place for displaying info of github users, repos, and more.",
