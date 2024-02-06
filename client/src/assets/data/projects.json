@@ -1,5 +1,14 @@
 [
   {
+    "_id": "63b0b9c6c30eb95b282a9di",
+    "name": "MCS Quiz System",
+    "desc": "A one-stop platform for initiating, managing, and marking quizzes.",
+    "url": "https://mcs-quiz-system.vercel.app",
+    "repo": "https://github.com/melvinchia3636/mcs-quiz-system/",
+    "category": "webapp",
+    "techs": ["reactjs", "tailwindcss", "firebase"]
+  },
+  {
     "_id": "622a9cfd4c7dc90d402119b5",
     "name": "gitinfo - github api explorer",
     "desc": "This website provides a clean place for displaying info of github users, repos, and more.",
@@ -18,15 +27,6 @@
     "techs": ["react", "tailwindcss", "redux", "typescript"]
   },
   {
-    "_id": "622a9d764c7dc90d402119b7",
-    "name": "Covid-19 Statistic Report",
-    "desc": "This website displays data and information of current situations of the Covid-19 pandemic.",
-    "url": "https://covid19.thecodeblog.net",
-    "repo": "https://github.com/melvinchia3636/",
-    "category": "webapp",
-    "techs": []
-  },
-  {
     "_id": "622a9d8b4c7dc90d402119b8",
     "name": "vanilla tweaks website remake",
     "desc": "A redesigned remade version of vanillatweaks.net.",
@@ -43,15 +43,6 @@
     "repo": "https://github.com/melvinchia3636/iconify",
     "category": "webapp",
     "techs": ["svelte", "tailwindcss"]
-  },
-  {
-    "_id": "622a9fc14c7dc90d402119bc",
-    "name": "ASCIIMG - ASCII Art Generator",
-    "desc": "This website allows you to generate ASCII art and share them to the world.",
-    "url": "https://ascii.thecodeblog.net",
-    "repo": "https://github.com/melvinchia3636/asciiImage",
-    "category": "webapp",
-    "techs": []
   },
   {
     "_id": "622a9fe14c7dc90d402119bd",
@@ -90,24 +81,6 @@
     "techs": ["react", "tailwindcss"]
   },
   {
-    "_id": "622aa0a24c7dc90d402119c2",
-    "name": "Kaler.info - Everything about colors",
-    "desc": "Show you lots of information about colors.",
-    "url": "https://kaler.thecodeblog.net",
-    "repo": "https://github.com/melvinchia3636",
-    "category": "webapp",
-    "techs": []
-  },
-  {
-    "_id": "622aa1684c7dc90d402119c5",
-    "name": "MCS - Minecraft Server List",
-    "desc": "A remade and redesigned version of minecraft.buzz.",
-    "url": "https://mcs.thecodeblog.net",
-    "repo": "https://github.com/melvinchia3636/MCS",
-    "category": "webapp",
-    "techs": ["react", "tailwindcss"]
-  },
-  {
     "_id": "622aab775d0a54be7ab04b9c",
     "name": "avatargen - random avatar generator",
     "url": "https://avatar-gen.thecodeblog.net",
@@ -115,15 +88,6 @@
     "repo": "https://github.com/melvinchia3636/avatar_gen",
     "category": "webapp",
     "techs": ["react", "tailwindcss"]
-  },
-  {
-    "_id": "622ef6e86c25bddee648b73f",
-    "name": "SSBuiltit - SimCity BuildIt Item List",
-    "desc": "A page showcasing all in-game items of SimCity BuiltIt and their information",
-    "url": "https://melvinchia3636.github.io/ssbuiltit/",
-    "repo": "https://github.com/melvinchia3636/ssbuildit",
-    "category": "webapp",
-    "techs": ["html5", "javascript", "jquery", "tailwindcss"]
   },
   {
     "_id": "62606a83bae3cd1db7385977",
