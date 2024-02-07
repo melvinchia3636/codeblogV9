@@ -10,6 +10,15 @@
   },
   {
     "_id": "63b0b9c6c30eb95b282a9di",
+    "name": "Colorpix - Mini Pixel Art",
+    "desc": "A place to create unique mini pixel art pieces and share with others.",
+    "url": "https://colorpix.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636/colorpix/",
+    "category": "webapp",
+    "techs": ["reactjs", "tailwindcss", "firebase"]
+  },
+  {
+    "_id": "63b0b9c6c30eb95b282a9di",
     "name": "Color Picker",
     "desc": "A color picker made with Python Tkinter in a native looking way.",
     "url": "https://github.com/melvinchia3636/color-palette",
