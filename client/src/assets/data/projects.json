@@ -268,5 +268,14 @@
     "repo": "https://github.com/melvinchia3636/Colors-Of-Life/",
     "category": "webapp",
     "techs": ["angularjs", "tailwindcss", "mysql", "angularjs"]
+  },
+  {
+    "_id": "63b0b9c6c30eb95b282a9di",
+    "name": "Battery",
+    "desc": "A useless but cool animation of a battery from empty to fully charged.",
+    "url": "https://battery.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636/battery/",
+    "category": "webapp",
+    "techs": ["reactjs", "css3", "tailwindcss"]
   }
 ]
