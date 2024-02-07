@@ -18,6 +18,15 @@
     "techs": ["typescript", "tailwindcss"]
   },
   {
+    "_id": "63b0b9c6c30eb95b282a9di",
+    "name": "Blog",
+    "desc": "A good looking neubrutalism styled blog that I ended up not using cuz wordpress YYDS yay =)",
+    "url": "https:/github.com/melvinchia3636/blog2/",
+    "repo": "https://github.com/melvinchia3636/blog2/",
+    "category": "webapp",
+    "techs": ["reactjs", "tailwindcss", "firebase"]
+  },
+  {
     "_id": "622a9cfd4c7dc90d402119b5",
     "name": "gitinfo - github api explorer",
     "desc": "This website provides a clean place for displaying info of github users, repos, and more.",
