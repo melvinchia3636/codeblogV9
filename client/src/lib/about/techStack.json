@@ -7,7 +7,8 @@
     ["logos:es6", "ES6"],
     ["logos:python", "Python"],
     ["logos:c-plusplus", "C++"],
-    ["logos:markdown", "Markdown"]
+    ["file-icons:latex", "LaTeX"],
+    ["simple-icons:markdown", "Markdown"]
   ],
 
   "FRONTEND": [
@@ -23,14 +24,23 @@
   ],
   "CSS FRAMEWORKS / PREPROCESSOR": [
     ["logos:tailwindcss-icon", "TailwindCSS"],
+    ["logos:daisyui", "DaisyUI"],
+    ["logos:headlessui-icon", "Headless UI"],
+    ["logos:postcss", "PostCSS"],
+    ["logos:sass", "SASS"],
+    ["logos:less", "LESS"],
+    ["logos:postcss", "PostCSS"],
     ["logos:material-ui", "Material ui"],
     ["logos:uikit", "UIKit"],
     ["logos:bootstrap", "Bootstrap"],
     ["vscode-icons:file-type-scss", "SCSS"]
   ],
-  "BACKEND / SERVER / DATABASE / API": [
+  "BACKEND / SERVER / DATABASE / API / SSR": [
     ["logos:nodejs-icon", "NodeJS"],
     ["simple-icons:express", "Express"],
+    ["logos:nextjs-icon", "NextJS"],
+    ["logos:svelte-kit", "SvelteKit"],
+    ["simple-icons:vercel", "Vercel"],
     ["logos:django-icon", "Django"],
     ["logos:flask", "Flask"],
     ["vscode-icons:file-type-mongo", "MongoDB"],
@@ -38,17 +48,26 @@
     ["logos:sqlite", "SQLite"],
     ["logos:firebase", "Firebase"],
     ["logos:cpanel", "CPanel"],
-    ["logos:heroku-icon", "Heroku"],
+    ["simple-icons:pocketbase", "Pocketbase"],
     ["logos:google-developers", "Google Dev"],
-    ["logos:oauth", "OAuth"]
+    ["logos:oauth", "OAuth"],
+    ["logos:rest", "REST"],
+    ["logos:axios", "Axios"],
+    ["logos:nginx", "Nginx"],
+    ["logos:apache", "Apache"]
   ],
-  "MOBILE APP": [
+  "MOBILE / DESKTOP APP / GAME DEVELOPMENT": [
     ["logos:expo-icon", "Expo"],
-    ["logos:react", "React Native"]
+    ["logos:react", "React Native"],
+    ["logos:flutter", "Flutter"],
+    ["logos:electron", "Electron"],
+    ["logos:qt", "PyQT"],
+    ["logos:godot", "Godot"]
   ],
   "MISCELLANEOUS": [
     ["logos:stackoverflow-icon", "Stackoverflow"],
     ["logos:figma", "Figma"],
+    ["logos:vim", "VIM"],
     ["logos:bash-icon", "Bash"],
     ["logos:npm-icon", "NPM"],
     ["logos:codepen-icon", "Codepen"],
@@ -59,6 +78,12 @@
     ["logos:discord-icon", "Discord"],
     ["logos:git-icon", "Git"],
     ["mdi:github", "Github"],
-    ["logos:raspberry-pi", "Raspberry Pi"]
+    ["logos:raspberry-pi", "Raspberry Pi"],
+    ["simple-icons:openai", "Chat GPT"],
+    ["logos:adobe-lightroom", "Adobe Lightroom"],
+    ["logos:blender", "Blender"],
+    ["simple-icons:curl", "Curl"],
+    ["logos:ffmpeg-icon", "FFMPEG"],
+    ["logos:matplotlib", "matplotlib"]
   ]
 }
