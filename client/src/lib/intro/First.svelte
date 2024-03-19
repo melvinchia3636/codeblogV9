@@ -37,17 +37,22 @@
 <div
   class="flex flex-col items-center max-w-full px-8 text-center h-full"
   style="max-height: {$size2}px"
-  in:fade out:fade 
+  in:fade
+  out:fade
 >
   {#if bind}
     <div
-      class="text-9xl fixed pointer-events-none top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[2%] tracking-[0.2em] -mt-3 font-black pl-12"
+      class="text-9xl fixed whitespace-nowrap pointer-events-none top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[2%] tracking-[0.2em] -mt-3 font-black pl-12"
       in:fade
       out:fade
     >
       &lt;CODEBLOG/&gt;
     </div>
-    <p class="mb-4 animate__animated animate__fadeInUp text-[#FFAA4C] tracking-widest whitespace-normal text-xs sm:text-sm lg:text-base">HI, I'M MELVIN CHIA. MY AIM IS TO</p>
+    <p
+      class="mb-4 animate__animated animate__fadeInUp text-[#FFAA4C] tracking-widest whitespace-normal text-xs sm:text-sm lg:text-base"
+    >
+      HI, I'M MELVIN CHIA. MY AIM IS TO
+    </p>
     <div
       class="text-3xl lg:text-5xl tracking-[0.2em] flex"
       in:fade={{ delay: 250, duration: 300 }}
