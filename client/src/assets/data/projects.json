@@ -1,6 +1,15 @@
 [
   {
     "_id": "63b0b9c6c30eb95b282a9di",
+    "name": "YT Summarized",
+    "desc": "Utilize the power of AI and summarize any YouTube video with just a click of a button.",
+    "url": "https://yt-summarized.thecodeblog.net",
+    "repo": "https://github.com/melvinchia3636/yt-summarized",
+    "category": "webapp",
+    "techs": ["reactjs", "tailwindcss", "expressjs"]
+  },
+  {
+    "_id": "63b0b9c6c30eb95b282a9di",
     "name": "MCS Quiz System",
     "desc": "A one-stop platform for initiating, managing, and marking quizzes.",
     "url": "https://mcs-quiz-system.vercel.app",
