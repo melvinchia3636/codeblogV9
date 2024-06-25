@@ -93,7 +93,7 @@
     out:fade
     class="fixed pointer-events-none bottom-12 w-full text-center px-8 left-1/2 -translate-x-1/2 text-slate-100 z-[9999] uppercase text-xs font-light hidden md:block tracking-[0.2em]"
   >
-    Copyright (C) 2020 - 2022 Melvin Chia; All rights reserved;
+    Copyright (C) 2020 - 2024 Melvin Chia; All rights reserved;
   </div>
 </div>
 
