@@ -1,51 +1,48 @@
-<p align="center">
-  
-  ![Group 2 1](https://user-images.githubusercontent.com/64565584/172536520-cd41718e-b144-479f-919b-ce9f61fea789.png)
-  
-</p>
+# Svelte + TS + Vite
 
-## The Problem
+This template should help get you started developing with Svelte and TypeScript in Vite.
 
-I need a place for showcasing my projects.
+## Recommended IDE Setup
 
-## The Solution
+[VSCode](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
 
-Here comes my very own uniquely special portfolio.
+## Need an official Svelte framework?
 
-## 🖥 Screenshots
+Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
 
-<div>
-  
-  <img width="49%" alt="Screenshot 2022-06-08 at 1 15 34 PM" src="https://user-images.githubusercontent.com/64565584/172537309-4ca2c1f3-2e1e-45e3-8a47-875cfa576f18.png">
-  <img width="49%" alt="Screenshot 2022-06-08 at 1 14 46 PM" src="https://user-images.githubusercontent.com/64565584/172537312-6f393616-d484-4511-a474-c4f5e39bd2fc.png">
-  <img width="49%" alt="Screenshot 2022-06-08 at 1 16 09 PM" src="https://user-images.githubusercontent.com/64565584/172537270-61948d49-eb35-452e-974d-2b70c020142d.png">
-  <img width="49%" alt="Screenshot 2022-06-08 at 1 16 04 PM" src="https://user-images.githubusercontent.com/64565584/172537286-2bab38b5-8fde-4daa-86d8-9f717c4ecfc2.png">
+## Technical considerations
 
-</div>
+**Why use this over SvelteKit?**
 
-## 🔬 Technologies Used 
+- It brings its own routing solution which might not be preferable for some users.
+- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+  `vite dev` and `vite build` wouldn't work in a SvelteKit environment, for example.
 
-![skills](https://img.shields.io/badge/-JAVASCRIPT-FF0000?style=for-the-badge&logo=javascript&logoColor=white&color=yellow)
-![skills](https://img.shields.io/badge/-HTML-FF0000?style=for-the-badge&logo=html5&logoColor=white&color=green)
-![skills](https://img.shields.io/badge/-CSS-FF0000?style=for-the-badge&logo=css3&logoColor=white&color=indigo)
-![skills](https://img.shields.io/badge/-TAILWIND_CSS-FF0000?style=for-the-badge&logo=tailwindcss&logoColor=white&color=22D3EE)
-![skills](https://img.shields.io/badge/-SVELTE-FF0000?style=for-the-badge&logo=svelte&logoColor=white&color=ff3e00)
-![skills](https://img.shields.io/badge/-MONGODB-FF0000?style=for-the-badge&logo=mongodb&logoColor=white&color=darkgreen)
+This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
 
-## ⌨️ Setup
+Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
 
-If you want to run the website on your local machine:
-Make your own portfolio lmao.
+**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
 
-## 📈 Status
+Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
 
-This project is almost completed. If any bugs are found, please file an issue here, and I'll resolve it ASAP.
+**Why include `.vscode/extensions.json`?**
 
-## 💡 Inspirations 
+Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
 
-My portfolio is inspired by hundreds of portfolio around the Internet.
+**Why enable `allowJs` in the TS template?**
 
-## 📄 License
+While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
 
-Copyright © 2022 Melvin Chia<br/>
-All right reversed.
+**Why is HMR not preserving my local component state?**
+
+HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
+
+If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
+
+```ts
+// store.ts
+// An extremely simple external store
+import { writable } from 'svelte/store'
+export default writable(0)
+```
