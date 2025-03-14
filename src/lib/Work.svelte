@@ -51,16 +51,19 @@
 <main class="w-full h-full flex flex-col items-center mt-64" id="swup">
   {#if showContent}
     <h1
-      class="font-medium text-center flex tracking-[0.125em] uppercase text-4xl mt-6 mb-20 relative after:content-[''] after:absolute after:w-24 after:border-b-2 after:border-[#FFAA4C] after:-bottom-2 after:left-1/2 after:-translate-x-[55%]"
+      class="text-4xl lg:text-5xl tracking-[0.2em] uppercase tracking-[0.125em] text-center mt-6 relative z-10"
       in:fade
       out:fade
     >
-      PERSONAL PROJECTS
+      My Works
     </h1>
-    <div class="px-16 sm:px-32 lg:px-64" in:fade out:fade>
+    <p class="mb-20 text-base md:!text-lg mt-6 tracking-[0.125rem] font-light">
+      Cool stuff that I've built throughout my developer journey
+    </p>
+    <div class="w-full px-16 sm:px-32 lg:px-64" in:fade out:fade>
       {#if data.length}
         <div
-          class="grid sm:grid-cols-[repeat(auto-fill,minmax(260px,1fr))] -mx-4 mt-12 mb-32 gap-8"
+          class="grid sm:grid-cols-[repeat(auto-fit,minmax(260px,1fr))] w-full -mx-4 mt-12 mb-32 gap-8"
         >
           {#each data as project}
             <div class="h-full saos">
@@ -85,18 +88,25 @@
                       {project.desc}
                     </p>
                   </div>
-                  <div class="flex items-center justify-between mt-8">
-                    <a href={project.repo} target="_blank">
-                      <Icon icon="uil:github" class="w-6 h-6 text-[#FFAA4C]" />
-                    </a>
+                  <div class="space-y-2 mt-8">
                     <a
-                      href={project.url}
+                      href={project.repo}
                       target="_blank"
-                      class="uppercase whitespace-nowrap text-sm font-semibold underline-offset-4 tracking-[0.2em] text-[#FFAA4C] flex items-center gap-2"
+                      class="tracking-[0.2em] flex items-center font-semibold rounded-sm justify-center border-2 border-[#FFAA4C] text-[#FFAA4C] hover:bg-[#FFAA4C]/10 transition-all w-full gap-3 uppercase pb-[1.2rem] pt-5 px-12"
                     >
-                      live demo
-                      <Icon icon="uil:arrow-right" class="w-5 h-5" />
+                      <Icon icon="uil:github" class="w-6 h-6 text-[#FFAA4C]" />
+                      <span>View Code</span>
                     </a>
+                    {#if project.url}
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        class="tracking-[0.2em] flex items-center uppercase font-semibold rounded-sm justify-center bg-[#FFAA4C] w-full text-neutral-800 hover:bg-[#FFAA4C]/90 transition-all pb-[1.2rem] pt-5 px-12 gap-2"
+                      >
+                        Live Demo
+                        <Icon icon="uil:arrow-right" class="w-6 h-6" />
+                      </a>
+                    {/if}
                   </div>
                 </div>
               </div>

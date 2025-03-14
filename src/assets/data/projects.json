@@ -3,136 +3,97 @@
     "_id": "63b0b9c6c30eb95b282a9di",
     "name": "YT Summarized",
     "desc": "Utilize the power of AI and summarize any YouTube video with just a click of a button.",
-    "url": "https://yt-summarized.thecodeblog.net",
     "repo": "https://github.com/melvinchia3636/yt-summarized",
     "category": "webapp",
-    "techs": ["reactjs", "tailwindcss", "expressjs"]
+    "techs": [
+      "reactjs",
+      "tailwindcss",
+      "expressjs"
+    ]
   },
   {
     "_id": "63b0b9c6c30eb95b282a9di",
     "name": "MCS Quiz System",
     "desc": "A one-stop platform for initiating, managing, and marking quizzes.",
-    "url": "https://mcs-quiz-system.vercel.app",
     "repo": "https://github.com/melvinchia3636/mcs-quiz-system/",
     "category": "webapp",
-    "techs": ["reactjs", "tailwindcss", "firebase"]
-  },
-  {
-    "_id": "63b0b9c6c30eb95b282a9di",
-    "name": "Colorpix - Mini Pixel Art",
-    "desc": "A place to create unique mini pixel art pieces and share with others.",
-    "url": "https://colorpix.thecodeblog.net",
-    "repo": "https://github.com/melvinchia3636/colorpix/",
-    "category": "webapp",
-    "techs": ["reactjs", "tailwindcss", "firebase"]
+    "techs": [
+      "reactjs",
+      "tailwindcss",
+      "firebase"
+    ]
   },
   {
     "_id": "63b0b9c6c30eb95b282a9di",
     "name": "Color Picker",
     "desc": "A color picker made with Python Tkinter in a native looking way.",
-    "url": "https://github.com/melvinchia3636/color-palette",
     "repo": "https://github.com/melvinchia3636/color-palette",
     "category": "desktop app",
-    "techs": ["python3", "tkinter"]
+    "techs": [
+      "python3",
+      "tkinter"
+    ]
   },
   {
     "_id": "63b0b9c6c30eb95b282a9di",
     "name": "Super Tic Tac Toe",
     "desc": "A super version of the classic Tic Tac Toe game with minimalistic UI.",
-    "url": "https://super-tictactoe.thecodeblog.net",
+    "url": "https://super-tictactoe.melvinchia.dev",
     "repo": "https://github.com/melvinchia3636/super-TicTacToe/",
     "category": "webapp",
-    "techs": ["typescript", "tailwindcss"]
-  },
-  {
-    "_id": "63b0b9c6c30eb95b282a9di",
-    "name": "Blog",
-    "desc": "A good looking neubrutalism styled blog that I ended up not using cuz wordpress YYDS yay =)",
-    "url": "https:/github.com/melvinchia3636/blog2/",
-    "repo": "https://github.com/melvinchia3636/blog2/",
-    "category": "webapp",
-    "techs": ["reactjs", "tailwindcss", "firebase"]
+    "techs": [
+      "typescript",
+      "tailwindcss"
+    ]
   },
   {
     "_id": "622a9cfd4c7dc90d402119b5",
     "name": "gitinfo - github api explorer",
     "desc": "This website provides a clean place for displaying info of github users, repos, and more.",
-    "url": "https://gitinfo.thecodeblog.net",
+    "url": "https://gitinfo.melvinchia.dev",
     "repo": "https://github.com/melvinchia3636/gitinfo",
     "category": "webapp",
-    "techs": ["react", "tailwindcss"]
+    "techs": [
+      "react",
+      "tailwindcss"
+    ]
   },
   {
     "_id": "622a9d454c7dc90d402119b6",
     "name": "cruisegator - cruiseship database",
     "desc": "This website summarizes and displays information of cruiseships from various sources",
-    "url": "https://cruisegator.thecodeblog.net",
     "repo": "https://github.com/melvinchia3636/cruisegator",
     "category": "webapp",
-    "techs": ["react", "tailwindcss", "redux", "typescript"]
+    "techs": [
+      "react",
+      "tailwindcss",
+      "redux",
+      "typescript"
+    ]
   },
   {
     "_id": "622a9d8b4c7dc90d402119b8",
     "name": "vanilla tweaks website remake",
     "desc": "A redesigned remade version of vanillatweaks.net.",
-    "url": "https://vanillatweaks.thecodeblog.net",
     "repo": "https://github.com/melvinchia3636/vanillaTweaks",
     "category": "webapp",
-    "techs": ["react", "tailwindcss", "express"]
-  },
-  {
-    "_id": "622a9ef04c7dc90d402119bb",
-    "name": "Iconify website remake",
-    "desc": "A redesigned remade version of iconify.design.",
-    "url": "https://iconify.thecodeblog.net",
-    "repo": "https://github.com/melvinchia3636/iconify",
-    "category": "webapp",
-    "techs": ["svelte", "tailwindcss"]
-  },
-  {
-    "_id": "622a9fe14c7dc90d402119bd",
-    "name": "MDArchive - Markdown notes browser",
-    "desc": "A website to store all my markdown notes.",
-    "url": "https://mdarchive.thecodeblog.net",
-    "repo": "https://github.com/melvinchia3636/MDArchive",
-    "category": "webapp",
-    "techs": ["next.js", "mongodb"]
-  },
-  {
-    "_id": "622aa0064c7dc90d402119be",
-    "name": "Hello World in 1,080 languages",
-    "desc": "Show you how to implement Hello World in more than a thousand languages.",
-    "url": "https://hello-world.thecodeblog.net",
-    "repo": "https://github.com/melvinchia3636/helloworld",
-    "category": "webapp",
-    "techs": ["react", "tailwindcss", "typescript"]
-  },
-  {
-    "_id": "622aa02d4c7dc90d402119bf",
-    "name": "Brickset App - Lego Set Archive",
-    "desc": "This is my first proper mobile app project. I kicked started this project right away after I found the suitable data source, brickset.com",
-    "url": "https://brickset.thecodeblog.net",
-    "repo": "https://github.com/melvinchia3636/LEGOArchive",
-    "category": "mobileapp",
-    "techs": ["react-native"]
+    "techs": [
+      "react",
+      "tailwindcss",
+      "express"
+    ]
   },
   {
     "_id": "622aa0444c7dc90d402119c0",
     "name": "wordle clone",
     "desc": "A redesigned and remade version of the Wordle game.",
-    "url": "https://wordle.thecodeblog.net",
+    "url": "https://wordle.melvinchia.dev",
     "repo": "https://github.com/melvinchia3636/wordle",
     "category": "webapp",
-    "techs": ["react", "tailwindcss"]
-  },
-  {
-    "_id": "622aab775d0a54be7ab04b9c",
-    "name": "avatargen - random avatar generator",
-    "url": "https://avatar-gen.thecodeblog.net",
-    "desc": "An avatar placeholder generator with complete REST api that you can use in your project..",
-    "repo": "https://github.com/melvinchia3636/avatar_gen",
-    "category": "webapp",
-    "techs": ["react", "tailwindcss"]
+    "techs": [
+      "react",
+      "tailwindcss"
+    ]
   },
   {
     "_id": "62606a83bae3cd1db7385977",
@@ -140,178 +101,118 @@
     "desc": "A clean and nice looking online sudoku game board.",
     "repo": "https://github.com/melvinchia3636/clean-sudoku",
     "category": "webapp",
-    "techs": ["react", "tailwindcss"],
-    "url": "https://sudoku.thecodeblog.net"
+    "techs": [
+      "react",
+      "tailwindcss"
+    ],
+    "url": "https://sudoku.melvinchia.dev"
   },
   {
     "_id": "629ec3abedb14c47ad3c1900",
     "name": "Calculator",
-    "url": "https://calculator.thecodeblog.net",
+    "url": "https://calculator.melvinchia.dev",
     "desc": "A neumorphic styled calculator.",
     "repo": "https://github.com/melvinchia3636/calculator",
     "category": "webapp",
-    "techs": ["react", "css3", "tailwindcss"]
+    "techs": [
+      "react",
+      "css3",
+      "tailwindcss"
+    ]
   },
   {
     "_id": "629ec69ec296d616ce03d223",
     "name": "URL Shortener",
-    "url": "https://url.thecodeblog.net",
+    "url": "https://url.melvinchia.dev",
     "desc": "A simple URL shortener that allows you to make long URLs shorter.",
     "repo": "https://github.com/melvinchia3636/URLShortener",
     "category": "webapp",
-    "techs": ["next.js", "tailwindcss", "mongodb"]
+    "techs": [
+      "next.js",
+      "tailwindcss",
+      "mongodb"
+    ]
   },
   {
     "_id": "62b6d1962c03b09684efc932",
     "name": "2048",
     "desc": "A recreation of 2048 with smooth animation and different themes",
-    "url": "https://2048.thecodeblog.net",
+    "url": "https://2048.melvinchia.dev",
     "repo": "https://github.com/melvinchia3636/js2048",
     "category": "webapp",
-    "techs": ["typescript"]
-  },
-  {
-    "_id": "634a51cd86345284bee6456b",
-    "name": "Hangman",
-    "desc": "Guess the word letter by letter, you were given only 7 chances",
-    "url": "https://hangman.thecodeblog.net",
-    "repo": "https://github.com/melvinchia3636/hangman-rreact",
-    "category": "webapp",
-    "techs": ["React", "TailwindCSS"]
+    "techs": [
+      "typescript"
+    ]
   },
   {
     "_id": "634aa2f367a423ce7d192901",
     "name": "flight ticket",
     "desc": "A gorgeous looking virtual flight ticket designed using   TAILWINDCSS",
-    "url": "https://flight-ticket.thecodeblog.net",
+    "url": "https://flight-ticket.melvinchia.dev",
     "repo": "https://github.com/melvinchia3636/flight-ticket",
     "category": "webapp",
-    "techs": ["React", "TailwindCSS"]
+    "techs": [
+      "React",
+      "TailwindCSS"
+    ]
   },
   {
     "_id": "638ab91231d0b2b379092c8d",
     "name": "progress quest realms",
     "desc": "A GUI application that shows you complete rank list of realms in Progress Quest\n",
-    "url": "https://github.com/melvinchia3636/progressQuestRealms",
     "repo": "https://github.com/melvinchia3636/progressQuestRealms",
     "category": "desktop app",
-    "techs": ["python3", "pyqt5"]
+    "techs": [
+      "python3",
+      "pyqt5"
+    ]
   },
   {
     "_id": "63925a6f4ea5ede935d06336",
     "name": "PyQt5 Progress Quest",
     "desc": "This is a native looking version of Progress Quest - the oldest idle MMORPG",
-    "url": "https://github.com/melvinchia3636/PyQt5ProgressQuest",
     "repo": "https://github.com/melvinchia3636/PyQt5ProgressQuest",
     "category": "desktopapp",
-    "techs": ["Python3", "PyQt5"]
+    "techs": [
+      "Python3",
+      "PyQt5"
+    ]
   },
   {
     "_id": "63a9b98c6c30eb95b282a9df",
     "name": "currency converter",
     "desc": "A handy tool that converts currency from all around the world one to another.",
-    "url": "https://currency.converter.thecodeblog.net/",
+    "url": "https://currency-converter.melvinchia.dev/",
     "repo": "https://github.com/melvinchia3636/MRNGA",
     "category": "webapp",
-    "techs": ["reactjs", "tailwindcss"]
-  },
-  {
-    "_id": "63b0b9c6c30eb95b282a9dg",
-    "name": "Weather App",
-    "desc": "A simple weather app that shows you the weather forecasts of any location.",
-    "url": "https://weather.mrga.thecodeblog.net/",
-    "repo": "https://github.com/melvinchia3636/weatherApp",
-    "category": "webapp",
-    "techs": ["reactjs", "tailwindcss"]
-  },
-  {
-    "_id": "63b0b9c6c30eb95b282a9dh",
-    "name": "Weather App Mobile",
-    "desc": "A simple mobile app that shows you the weather forecasts of any location.",
-    "url": "https://github.com/melvinchia3636/weatherApp-mobile-2",
-    "repo": "https://github.com/melvinchia3636/weatherApp-mobile-2",
-    "category": "mobileapp",
-    "techs": ["reactnative"]
-  },
-  {
-    "_id": "63b0b9c6c30eb95b282a9di",
-    "name": "WebRTC Video Chat",
-    "desc": "A simple video chat app that allows you to chat with your friends.",
-    "url": "https://webrtc.thecodeblog.net/",
-    "repo": "https://github.com/melvinchia3636/webRTC",
-    "category": "webapp",
-    "techs": ["reactjs", "tailwindcss", "webrtc"]
+    "techs": [
+      "reactjs",
+      "tailwindcss"
+    ]
   },
   {
     "_id": "63b0b9c6c30eb95b282a9di",
     "name": "Neumorsweeper - A neumorophic minesweeper game",
     "desc": "Neumorphic style Minesweeper game with an immersive interface and challenging gameplay.",
-    "url": "https://neumorsweeper.thecodeblog.net/",
+    "url": "https://neumorsweeper.melvinchia.dev/",
     "repo": "https://github.com/melvinchia3636/minesweeper",
     "category": "webapp",
-    "techs": ["javascript", "html5", "css3", "tailwindcss"]
+    "techs": [
+      "javascript",
+      "html5",
+      "css3",
+      "tailwindcss"
+    ]
   },
   {
     "_id": "63b0b9c6c30eb95b282a9di",
     "name": "Raspi Weather Station",
     "desc": "A weather station that is built using Raspberry Pi and some APIs to display the weather forecast and other cool stuff.",
-    "url": "https://github.com/melvinchia3636/weatherStation",
     "repo": "https://github.com/melvinchia3636/weatherStation",
     "category": "hardware",
-    "techs": ["raspberrypi", "python3"]
-  },
-  {
-    "_id": "63b0b9c6c30eb95b282a9di",
-    "name": "Yet Another Weather App",
-    "desc": "Yet another weather app that is built using React Native with better UI and UX.",
-    "url": "https://github.com/melvinchia3636/weatherApp-mobile",
-    "repo": "https://github.com/melvinchia3636/weatherApp-mobile",
-    "category": "mobileapp",
-    "techs": ["reactnative"]
-  },
-  {
-    "_id": "63b0b9c6c30eb95b282a9di",
-    "name": "Textbook Library",
-    "desc": "An online archive of all the textooks being used in Malaysia's Chinese independent high schools.",
-    "url": "https://textbook-library.vercel.app",
-    "repo": "https://textbook-library.vercel.app",
-    "category": "webapp",
-    "techs": ["reactjs", "tailwindcss"]
-  },
-  {
-    "_id": "63b0b9c6c30eb95b282a9di",
-    "name": "MCID - Minecraft Item List",
-    "desc": "A simple website that lists all the items in Minecraft and their details in a neat and clean way.",
-    "url": "https://mcid.thecodeblog.net",
-    "repo": "https://github.com/melvinchia3636/mcid",
-    "category": "webapp",
-    "techs": ["nextjs", "tailwindcss"]
-  },
-  {
-    "_id": "63b0b9c6c30eb95b282a9di",
-    "name": "Codeblog Image CDN",
-    "desc": "A simple image content delivery network for images being embedded in my contents.",
-    "url": "https://image.thecodeblog.net",
-    "repo": "https://github.com/melvinchia3636/imageuploader",
-    "category": "webapp",
-    "techs": ["expressjs", "reactjs", "tailwindcss"]
-  },
-  {
-    "_id": "63b0b9c6c30eb95b282a9di",
-    "name": "Colors of Life - Online Art Expo",
-    "desc": "An online art expo that showcases the artworks of the students of my school.",
-    "url": "https://github.com/melvinchia3636/Colors-Of-Life",
-    "repo": "https://github.com/melvinchia3636/Colors-Of-Life/",
-    "category": "webapp",
-    "techs": ["angularjs", "tailwindcss", "mysql", "angularjs"]
-  },
-  {
-    "_id": "63b0b9c6c30eb95b282a9di",
-    "name": "Battery",
-    "desc": "A useless but cool animation of a battery from empty to fully charged.",
-    "url": "https://battery.thecodeblog.net",
-    "repo": "https://github.com/melvinchia3636/battery/",
-    "category": "webapp",
-    "techs": ["reactjs", "css3", "tailwindcss"]
+    "techs": [
+      "raspberrypi",
+      "python3"
+    ]
   }
 ]

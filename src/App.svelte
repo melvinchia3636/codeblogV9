@@ -24,7 +24,7 @@
 </script>
 
 <svelte:head>
-  <title>{section ? section + " | " : ""}Codeblog by Melvin Chia</title>
+  <title>{section ? section + " | " : ""}Melvin Chia | Portfolio</title>
 </svelte:head>
 
 <Router>
@@ -46,10 +46,6 @@
   ::-webkit-scrollbar {
     width: 0; /* Remove scrollbar space */
     background: transparent; /* Optional: just make scrollbar invisible */
-  }
-  /* Optional: show position indicator in red */
-  ::-webkit-scrollbar-thumb {
-    background: #ff0000;
   }
 
   .transition-fade {

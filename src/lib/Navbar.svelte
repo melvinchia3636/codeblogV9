@@ -45,7 +45,7 @@
 
 <header class="w-full z-[9999]">
   <nav
-    class="fixed left-0 top-0 z-[9999] w-full bg-[#101820] py-8 px-9 flex justify-between items-center"
+    class="fixed left-0 top-0 z-[9999] w-full bg-zinc-900 py-8 px-9 flex justify-between items-center"
     style="opacity: {(100 - $nav) / 100}"
   >
     <!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -59,13 +59,14 @@
         <span
           class="{navOpen
             ? 'text-[#e09846]'
-            : 'text-[#FFAA4C]'} font-bold transition-all duration-700">C</span
-        >ODE<span
+            : 'text-[#FFAA4C]'} font-bold transition-all duration-700">M</span
+        >ELVIN<span
           class="{navOpen
             ? 'text-[#e09846]'
-            : 'text-[#FFAA4C]'} font-bold transition-all duration-700">B</span
-        >LOG<br />
-        <span class="text-xs tracking-widest block">by Melvin Chia.</span>
+            : 'text-[#FFAA4C]'} font-bold transition-all duration-700">C</span
+        >HIA<br />
+        <span class="text-xs tracking-widest block">Learn, Develop, Evolve</span
+        >
       </h1>
     </Link>
     <div
@@ -84,7 +85,7 @@
       {/each}
     </div>
     <a
-      href="mailto:melvinchia@thecodeblog.net"
+      href="mailto:melvinchia@melvinchia.dev"
       class="tracking-[0.2em] font-medium text-[#FFAA4C] items-center gap-2 text-sm animate__animated animate__fadeInLeft animate__delay-1s hidden lg:!flex"
     >
       GET IN TOUCH
@@ -116,7 +117,7 @@
           >
         {/each}
         <a
-          href="mailto:melvinchia@thecodeblog.net"
+          href="mailto:melvinchia@melvinchia.dev"
           class="tracking-[0.2em] items-center gap-2 text-sm animate__animated animate__fadeInLeft animate__delay-1s flex"
         >
           GET IN TOUCH
@@ -155,7 +156,7 @@
     <div
       class="fixed pointer-events-none bottom-10 items-center right-10 text-sm hidden md:block"
     >
-      v9.3.6
+      v9
     </div>
   </nav>
 </header>
