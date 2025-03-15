@@ -57,7 +57,9 @@
     >
       My Works
     </h1>
-    <p class="mb-20 text-base md:!text-lg mt-6 tracking-[0.125rem] font-light">
+    <p
+      class="mb-20 text-center text-base md:!text-lg mt-6 tracking-[0.125rem] font-light"
+    >
       Cool stuff that I've built throughout my developer journey
     </p>
     <div class="w-full px-16 sm:px-32 lg:px-64" in:fade out:fade>
