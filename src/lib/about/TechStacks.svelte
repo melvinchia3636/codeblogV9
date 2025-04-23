@@ -13,14 +13,32 @@
   {#each Object.entries(techStack) as [catName, items]}
     <Saos animation={"from-left .5s ease-in-out both"}>
       <div class="flex flex-col items-center gap-8">
-        <h2 class="text-[#FFAA4C] upprecase font-medium tracking-[0.2em] text-center">
+        <h2
+          class="text-[#FFAA4C] upprecase font-medium tracking-[0.2em] text-center"
+        >
           {catName}
         </h2>
-        <div class="grid w-full grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-y-8 gap-x-24">
-          {#each items as [icon, name]}
-            <div class="flex items-center gap-4 tracking-[0.2em] uppercase w-96">
-              <Icon {icon} class="w-6 h-6 flex-shrink-0" />
-              {name}
+        <div class="w-full divide-y divide-zinc-800">
+          {#each items.sort((a, b) => Number(b[2]) - Number(a[2])) as [icon, name, level]}
+            <div class="w-full flex items-center justify-between p-4">
+              <div
+                class="flex items-center gap-4 tracking-[0.2em] uppercase w-full"
+              >
+                <Icon {icon} class="w-6 h-6 flex-shrink-0" />
+                {name}
+              </div>
+              <p
+                class="{[
+                  'text-red-500 bg-red-500/10',
+                  'text-yellow-500 bg-yellow-500/10',
+                  'text-green-500 bg-green-500/10',
+                  'text-blue-500 bg-blue-500/10',
+                ][
+                  level
+                ]} uppercase font-medium text-xs tracking-[0.2em] rounded-full px-4 py-1"
+              >
+                {["Beginner", "Intermediate", "Advanced", "Expert"][level]}
+              </p>
             </div>
           {/each}
         </div>

@@ -1,10 +1,8 @@
 <script>
   import Icon from "@iconify/svelte";
-  import colors from "../assets/colors.json";
   import { tweened } from "svelte/motion";
   import { expoInOut } from "svelte/easing";
 
-  import Saos from "saos";
   import { fade } from "svelte/transition";
   // @ts-ignore
   import data from "../assets/data/projects.json";
@@ -48,7 +46,7 @@
   }, 500);
 </script>
 
-<main class="w-full h-full flex flex-col items-center mt-64" id="swup">
+<main class="w-full h-full flex flex-col items-center mt-32 sm:mt-64" id="swup">
   {#if showContent}
     <h1
       class="text-4xl lg:text-5xl tracking-[0.2em] uppercase tracking-[0.125em] text-center mt-6 relative z-10"
@@ -58,14 +56,52 @@
       My Works
     </h1>
     <p
-      class="mb-20 text-center text-base md:!text-lg mt-6 tracking-[0.125rem] font-light"
+      class="sm:mb-20 text-center px-8 text-base md:!text-lg mt-6 tracking-[0.125rem] font-light"
     >
       Cool stuff that I've built throughout my developer journey
     </p>
-    <div class="w-full px-16 sm:px-32 lg:px-64" in:fade out:fade>
+    <div class="w-full px-8 sm:px-32 lg:px-64" in:fade out:fade>
+      <div
+        class="w-full p-8 bg-slate-100 bg-opacity-5 border-2 border-[#FFAA4C] flex items-center gap-6"
+      >
+        <img
+          src="/lifeforge.png"
+          alt="lifeforge"
+          class="h-48 object-contain rounded-sm"
+        />
+        <div class="flex flex-col w-full">
+          <div
+            class="uppercase tracking-[0.2em] flex items-center gap-2 font-medium text-2xl text-[#FFAA4C]"
+          >
+            <Icon icon="tabler:hammer" class="size-8 shrink-0" />
+            LIFEFORGE
+          </div>
+          <p class="!text-base mt-2 tracking-[0.08em] !leading-5">
+            Your all-in-one self-hosted personal management system.
+          </p>
+          <div class="mt-8 flex gap-2 w-full">
+            <a
+              href="https://github.com/Lifeforge-app/lifeforge"
+              target="_blank"
+              class="tracking-[0.2em] flex-1 flex whitespace-nowrap items-center font-semibold rounded-sm justify-center border-2 border-[#FFAA4C] text-[#FFAA4C] hover:bg-[#FFAA4C]/10 transition-all w-full gap-3 uppercase pb-[1.2rem] pt-5"
+            >
+              <Icon icon="uil:github" class="w-6 h-6 shrink-0 text-[#FFAA4C]" />
+              <span>View Code</span>
+            </a>
+            <a
+              href="https://docs.lifeforge.melvinchia.dev"
+              target="_blank"
+              class="tracking-[0.2em] flex-1 flex items-center uppercase font-semibold rounded-sm justify-center bg-[#FFAA4C] w-full text-neutral-800 hover:bg-[#FFAA4C]/90 transition-all pb-[1.2rem] pt-5 whitespace-nowrap gap-2"
+            >
+              Documentation
+              <Icon icon="uil:arrow-right" class="w-6 h-6 shrink-0" />
+            </a>
+          </div>
+        </div>
+      </div>
       {#if data.length}
         <div
-          class="grid sm:grid-cols-[repeat(auto-fit,minmax(260px,1fr))] w-full -mx-4 mt-12 mb-32 gap-8"
+          class="grid sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] w-full mt-12 mb-32 gap-4"
         >
           {#each data as project}
             <div class="h-full saos">
@@ -94,19 +130,22 @@
                     <a
                       href={project.repo}
                       target="_blank"
-                      class="tracking-[0.2em] flex items-center font-semibold rounded-sm justify-center border-2 border-[#FFAA4C] text-[#FFAA4C] hover:bg-[#FFAA4C]/10 transition-all w-full gap-3 uppercase pb-[1.2rem] pt-5 px-12"
+                      class="tracking-[0.2em] flex whitespace-nowrap items-center font-semibold rounded-sm justify-center border-2 border-[#FFAA4C] text-[#FFAA4C] hover:bg-[#FFAA4C]/10 transition-all w-full gap-3 uppercase pb-[1.2rem] pt-5"
                     >
-                      <Icon icon="uil:github" class="w-6 h-6 text-[#FFAA4C]" />
+                      <Icon
+                        icon="uil:github"
+                        class="w-6 h-6 shrink-0 text-[#FFAA4C]"
+                      />
                       <span>View Code</span>
                     </a>
                     {#if project.url}
                       <a
                         href={project.url}
                         target="_blank"
-                        class="tracking-[0.2em] flex items-center uppercase font-semibold rounded-sm justify-center bg-[#FFAA4C] w-full text-neutral-800 hover:bg-[#FFAA4C]/90 transition-all pb-[1.2rem] pt-5 px-12 gap-2"
+                        class="tracking-[0.2em] flex items-center uppercase font-semibold rounded-sm justify-center bg-[#FFAA4C] w-full text-neutral-800 hover:bg-[#FFAA4C]/90 transition-all pb-[1.2rem] pt-5 whitespace-nowrap gap-2"
                       >
                         Live Demo
-                        <Icon icon="uil:arrow-right" class="w-6 h-6" />
+                        <Icon icon="uil:arrow-right" class="w-6 h-6 shrink-0" />
                       </a>
                     {/if}
                   </div>

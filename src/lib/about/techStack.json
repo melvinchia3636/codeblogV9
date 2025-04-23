@@ -1,89 +1,319 @@
 {
   "PROGRAMMING / MARKUP LANGUAGES": [
-    ["vscode-icons:file-type-html", "HTML"],
-    ["vscode-icons:file-type-css", "CSS"],
-    ["logos:typescript-icon", "Typescript"],
-    ["logos:javascript", "Javascript"],
-    ["logos:es6", "ES6"],
-    ["logos:python", "Python"],
-    ["logos:c-plusplus", "C++"],
-    ["file-icons:latex", "LaTeX"],
-    ["simple-icons:markdown", "Markdown"]
+    [
+      "vscode-icons:file-type-html",
+      "HTML",
+      3
+    ],
+    [
+      "vscode-icons:file-type-css",
+      "CSS",
+      2
+    ],
+    [
+      "logos:typescript-icon",
+      "Typescript",
+      3
+    ],
+    [
+      "logos:javascript",
+      "Javascript",
+      3
+    ],
+    [
+      "logos:python",
+      "Python",
+      3
+    ],
+    [
+      "logos:c-plusplus",
+      "C++",
+      1
+    ],
+    [
+      "file-icons:latex",
+      "LaTeX",
+      2
+    ],
+    [
+      "simple-icons:markdown",
+      "Markdown",
+      2
+    ]
   ],
-
   "FRONTEND": [
-    ["logos:react", "REACT"],
-    ["logos:svelte-icon", "Svelte"],
-    ["logos:angular-icon", "Angular"],
-    ["bx:bxl-jquery", "JQuery"],
-    ["logos:redux", "Redux"],
-    ["logos:react-router", "React Router"],
-    ["logos:vitejs", "Vite"],
-    ["logos:babel", "Babel"],
-    ["logos:webpack", "Webpack"]
+    [
+      "logos:react",
+      "REACT",
+      3
+    ],
+    [
+      "logos:svelte-icon",
+      "Svelte",
+      2
+    ],
+    [
+      "logos:angular-icon",
+      "Angular",
+      1
+    ],
+    [
+      "bx:bxl-jquery",
+      "JQuery",
+      2
+    ],
+    [
+      "logos:redux",
+      "Redux",
+      1
+    ],
+    [
+      "logos:vitejs",
+      "Vite",
+      3
+    ],
+    [
+      "logos:babel",
+      "Babel",
+      1
+    ],
+    [
+      "logos:webpack",
+      "Webpack",
+      1
+    ]
   ],
   "CSS FRAMEWORKS / PREPROCESSOR": [
-    ["logos:tailwindcss-icon", "TailwindCSS"],
-    ["logos:daisyui", "DaisyUI"],
-    ["logos:headlessui-icon", "Headless UI"],
-    ["logos:postcss", "PostCSS"],
-    ["logos:sass", "SASS"],
-    ["logos:less", "LESS"],
-    ["logos:postcss", "PostCSS"],
-    ["logos:material-ui", "Material ui"],
-    ["logos:uikit", "UIKit"],
-    ["logos:bootstrap", "Bootstrap"],
-    ["vscode-icons:file-type-scss", "SCSS"]
+    [
+      "logos:tailwindcss-icon",
+      "TailwindCSS",
+      3
+    ],
+    [
+      "logos:daisyui",
+      "DaisyUI",
+      2
+    ],
+    [
+      "logos:headlessui-icon",
+      "Headless UI",
+      3
+    ],
+    [
+      "vscode-icons:file-type-scss",
+      "SCSS",
+      1
+    ]
   ],
   "BACKEND / SERVER / DATABASE / API / SSR": [
-    ["logos:nodejs-icon", "NodeJS"],
-    ["simple-icons:express", "Express"],
-    ["logos:nextjs-icon", "NextJS"],
-    ["logos:svelte-kit", "SvelteKit"],
-    ["simple-icons:vercel", "Vercel"],
-    ["logos:django-icon", "Django"],
-    ["logos:flask", "Flask"],
-    ["vscode-icons:file-type-mongo", "MongoDB"],
-    ["logos:mysql", "MySQL"],
-    ["logos:sqlite", "SQLite"],
-    ["logos:firebase", "Firebase"],
-    ["logos:cpanel", "CPanel"],
-    ["simple-icons:pocketbase", "Pocketbase"],
-    ["logos:google-developers", "Google Dev"],
-    ["logos:oauth", "OAuth"],
-    ["logos:rest", "REST"],
-    ["logos:axios", "Axios"],
-    ["logos:nginx", "Nginx"],
-    ["logos:apache", "Apache"]
+    [
+      "logos:nodejs-icon",
+      "NodeJS",
+      3
+    ],
+    [
+      "simple-icons:express",
+      "Express",
+      3
+    ],
+    [
+      "logos:nextjs-icon",
+      "NextJS",
+      2
+    ],
+    [
+      "logos:svelte-kit",
+      "SvelteKit",
+      2
+    ],
+    [
+      "simple-icons:vercel",
+      "Vercel",
+      3
+    ],
+    [
+      "logos:netlify",
+      "Netlify",
+      3
+    ],
+    [
+      "logos:django-icon",
+      "Django",
+      1
+    ],
+    [
+      "logos:flask",
+      "Flask",
+      1
+    ],
+    [
+      "vscode-icons:file-type-mongo",
+      "MongoDB",
+      2
+    ],
+    [
+      "logos:mysql",
+      "MySQL",
+      1
+    ],
+    [
+      "logos:sqlite",
+      "SQLite",
+      3
+    ],
+    [
+      "logos:firebase",
+      "Firebase",
+      3
+    ],
+    [
+      "logos:cpanel",
+      "CPanel",
+      2
+    ],
+    [
+      "simple-icons:pocketbase",
+      "Pocketbase",
+      3
+    ],
+    [
+      "logos:google-developers",
+      "Google Dev",
+      3
+    ],
+    [
+      "logos:oauth",
+      "OAuth",
+      2
+    ],
+    [
+      "logos:rest",
+      "REST",
+      3
+    ]
   ],
   "MOBILE / DESKTOP APP / GAME DEVELOPMENT": [
-    ["logos:expo-icon", "Expo"],
-    ["logos:react", "React Native"],
-    ["logos:flutter", "Flutter"],
-    ["logos:electron", "Electron"],
-    ["logos:qt", "PyQT"],
-    ["logos:godot", "Godot"]
+    [
+      "logos:expo-icon",
+      "Expo",
+      2
+    ],
+    [
+      "logos:react",
+      "React Native",
+      2
+    ],
+    [
+      "logos:flutter",
+      "Flutter",
+      1
+    ],
+    [
+      "logos:electron",
+      "Electron",
+      1
+    ],
+    [
+      "logos:qt",
+      "PyQT",
+      1
+    ],
+    [
+      "logos:godot",
+      "Godot",
+      1
+    ]
   ],
   "MISCELLANEOUS": [
-    ["logos:stackoverflow-icon", "Stackoverflow"],
-    ["logos:figma", "Figma"],
-    ["logos:vim", "VIM"],
-    ["logos:bash-icon", "Bash"],
-    ["logos:npm-icon", "NPM"],
-    ["logos:codepen-icon", "Codepen"],
-    ["logos:eslint", "ESLint"],
-    ["logos:prettier", "Prettier"],
-    ["logos:json", "JSON"],
-    ["logos:io", "Socket IO"],
-    ["logos:discord-icon", "Discord"],
-    ["logos:git-icon", "Git"],
-    ["mdi:github", "Github"],
-    ["logos:raspberry-pi", "Raspberry Pi"],
-    ["simple-icons:openai", "Chat GPT"],
-    ["logos:adobe-lightroom", "Adobe Lightroom"],
-    ["logos:blender", "Blender"],
-    ["simple-icons:curl", "Curl"],
-    ["logos:ffmpeg-icon", "FFMPEG"],
-    ["logos:matplotlib", "matplotlib"]
+    [
+      "logos:figma",
+      "Figma",
+      3
+    ],
+    [
+      "logos:vim",
+      "VIM",
+      3
+    ],
+    [
+      "logos:bash-icon",
+      "Bash",
+      2
+    ],
+    [
+      "logos:npm-icon",
+      "NPM",
+      3
+    ],
+    [
+      "logos:codepen-icon",
+      "Codepen",
+      3
+    ],
+    [
+      "logos:eslint",
+      "ESLint",
+      3
+    ],
+    [
+      "logos:prettier",
+      "Prettier",
+      3
+    ],
+    [
+      "logos:json",
+      "JSON",
+      3
+    ],
+    [
+      "logos:io",
+      "Socket IO",
+      1
+    ],
+    [
+      "logos:git-icon",
+      "Git",
+      2
+    ],
+    [
+      "mdi:github",
+      "Github",
+      3
+    ],
+    [
+      "logos:raspberry-pi",
+      "Raspberry Pi",
+      3
+    ],
+    [
+      "simple-icons:openai",
+      "Chat GPT",
+      3
+    ],
+    [
+      "logos:adobe-lightroom",
+      "Adobe Lightroom",
+      3
+    ],
+    [
+      "logos:blender",
+      "Blender",
+      1
+    ],
+    [
+      "simple-icons:curl",
+      "Curl",
+      2
+    ],
+    [
+      "logos:ffmpeg-icon",
+      "FFMPEG",
+      2
+    ],
+    [
+      "logos:matplotlib",
+      "matplotlib",
+      1
+    ]
   ]
 }
