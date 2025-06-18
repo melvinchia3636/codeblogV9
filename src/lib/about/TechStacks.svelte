@@ -9,7 +9,7 @@
 >
   tech stacks
 </h1>
-<div class="flex flex-col w-7/12 gap-24 pb-48">
+<div class="flex flex-col px-6 sm:px-0 sm:w-7/12 gap-24 pb-48">
   {#each Object.entries(techStack) as [catName, items]}
     <Saos animation={"from-left .5s ease-in-out both"}>
       <div class="flex flex-col items-center gap-8">
