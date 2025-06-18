@@ -76,7 +76,7 @@
             <Icon icon="tabler:hammer" class="size-8 shrink-0" />
             LIFEFORGE
           </div>
-          <p class="!text-base mt-2 tracking-[0.08em] !leading-5">
+          <p class="!text-base mt-4 tracking-[0.08em] !leading-5">
             Your all-in-one self-hosted personal management system.
           </p>
           <div class="mt-8 flex gap-2 w-full 2xl:!flex-row flex-col">
