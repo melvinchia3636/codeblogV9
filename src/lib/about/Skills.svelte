@@ -13,12 +13,12 @@
       icon="icon-park-outline:thinking-problem"
       class="w-16 h-16 flex-shrink-0"
     />
-    <h2
-      class="uppercase font-medium tracking-[0.2em] text-2xl text-[#FFAA4C]"
-    >
+    <h2 class="uppercase font-medium tracking-[0.2em] text-2xl text-[#FFAA4C]">
       Problem Solving
     </h2>
-    <p class="text-xs !leading-5 sm:!text-base sm:!leading-normal tracking-[0.1em] text-center">
+    <p
+      class="text-xs !leading-5 sm:!text-base sm:!leading-normal tracking-[0.1em] text-center"
+    >
       I have a good understanding of the problem solving process and how to
       solve problems. I always strive to find the best solution to a problem and
       I am always open to new ideas.
@@ -29,12 +29,12 @@
       icon="icon-park-outline:monitor-one"
       class="w-16 h-16 flex-shrink-0"
     />
-    <h2
-      class="uppercase font-medium tracking-[0.2em] text-2xl text-[#FFAA4C]"
-    >
+    <h2 class="uppercase font-medium tracking-[0.2em] text-2xl text-[#FFAA4C]">
       Website Development
     </h2>
-    <p class="text-xs !leading-5 sm:!text-base sm:!leading-normal tracking-[0.1em] text-center">
+    <p
+      class="text-xs !leading-5 sm:!text-base sm:!leading-normal tracking-[0.1em] text-center"
+    >
       I have experience in building websites using the latest technologies and
       frameworks. I have built tons of cool and useful websites and I am always
       looking for new ideas to build.
@@ -45,12 +45,12 @@
       icon="icon-park-outline:graphic-design"
       class="w-16 h-16 flex-shrink-0"
     />
-    <h2
-      class="uppercase font-medium tracking-[0.2em] text-2xl text-[#FFAA4C]"
-    >
+    <h2 class="uppercase font-medium tracking-[0.2em] text-2xl text-[#FFAA4C]">
       UI/UX Design
     </h2>
-    <p class="text-xs !leading-5 sm:!text-base sm:!leading-normal tracking-[0.1em] text-center">
+    <p
+      class="text-xs !leading-5 sm:!text-base sm:!leading-normal tracking-[0.1em] text-center"
+    >
       I have experience in designing user interfaces and user experiences. My
       core concept of designing is to create minimalistic user interface and
       intuitive user experience.
@@ -61,12 +61,12 @@
       icon="icon-park-outline:database-setting"
       class="w-16 h-16 flex-shrink-0"
     />
-    <h2
-      class="uppercase font-medium tracking-[0.2em] text-2xl text-[#FFAA4C]"
-    >
+    <h2 class="uppercase font-medium tracking-[0.2em] text-2xl text-[#FFAA4C]">
       Database Management
     </h2>
-    <p class="text-xs !leading-5 sm:!text-base sm:!leading-normal tracking-[0.1em] text-center">
+    <p
+      class="text-xs !leading-5 sm:!text-base sm:!leading-normal tracking-[0.1em] text-center"
+    >
       I have quite some experience in managing databases. No matter what kind of
       database you need and how large it is, I'm sure I'll be able help you with
       it.

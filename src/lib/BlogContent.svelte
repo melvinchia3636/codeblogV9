@@ -112,11 +112,11 @@
     @apply w-full text-lg;
   }
   :global(#content figcaption) {
-    @apply w-full text-center text-slate-500;
+    @apply w-full text-center text-zinc-500;
   }
 
   :global(#content blockquote) {
-    @apply border-l-2 border-slate-100 w-full p-4;
+    @apply border-l-2 border-zinc-100 w-full p-4;
   }
 
   :global(#content h2) {
@@ -128,15 +128,15 @@
   }
 
   :global(#content table) {
-    @apply w-full border-collapse border border-slate-100;
+    @apply w-full border-collapse border border-zinc-100;
   }
 
   :global(#content table tr) {
-    @apply border-b border-slate-100;
+    @apply border-b border-zinc-100;
   }
 
   :global(#content table td) {
-    @apply border-r border-slate-100 p-3;
+    @apply border-r border-zinc-100 p-3;
   }
 
   :global(#content figure.wp-block-gallery) {

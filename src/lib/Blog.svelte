@@ -54,7 +54,7 @@
           >
             {#each blogData as blog}
               <div
-                class="flex flex-col bg-slate-100 bg-opacity-5 rounded-md w-full h-full p-6"
+                class="flex flex-col bg-zinc-100 bg-opacity-5 rounded-md w-full h-full p-6"
               >
                 <div class="flex flex-wrap gap-2 mb-2 text-sm font-medium">
                   {moment(blog.date).format("MMMM Do, YYYY")}
@@ -63,7 +63,7 @@
                   {blog.title.rendered}
                 </h2>
                 <p
-                  class="text-sm mt-2 description tracking-[0.08em] text-slate-400"
+                  class="text-sm mt-2 description tracking-[0.08em] text-zinc-400"
                 >
                   {@html blog.excerpt.rendered || "No description"}
                 </p>

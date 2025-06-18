@@ -84,7 +84,7 @@
   <div
     in:fade
     out:fade
-    class="fixed pointer-events-none bottom-12 w-full text-center px-8 left-1/2 -translate-x-1/2 text-slate-100 z-[9999] uppercase text-xs font-light hidden md:block tracking-[0.2em]"
+    class="fixed pointer-events-none bottom-12 w-full text-center px-8 left-1/2 -translate-x-1/2 text-zinc-100 z-[9999] uppercase text-xs font-light hidden md:block tracking-[0.2em]"
   >
     Copyright &copy; 2020 - 2025 Melvin Chia; All rights reserved;
   </div>

@@ -53,7 +53,7 @@
       <h1
         class="text-xl tracking-[0.2em] relative z-[9999] {navOpen
           ? 'text-neutral-800'
-          : 'text-slate-100'} transition-all duration-700 font-medium"
+          : 'text-zinc-100'} transition-all duration-700 font-medium"
         on:click={scrollToTop}
       >
         <span
@@ -79,7 +79,7 @@
             `/${link}`
           ) ||
           (pathname === '/' && link === 'home')
-            ? 'after:w-1/2'
+            ? 'after:w-1/2 font-semibold'
             : ''} hover:after:w-1/2">{link}</Link
         >
       {/each}
@@ -97,7 +97,7 @@
     >
       <Icon
         icon="heroicons-outline:menu-alt-4"
-        class="w-7 h-7 {navOpen ? 'text-neutral-800' : 'text-slate-100'}"
+        class="w-7 h-7 {navOpen ? 'text-neutral-800' : 'text-zinc-100'}"
       />
     </button>
     <div

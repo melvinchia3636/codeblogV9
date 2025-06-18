@@ -14,7 +14,7 @@
       data = e;
     });
 
-    fetch(
+  fetch(
     "https://api.github.com/users/melvinchia3636/repos?per_page=100&page=2&sort=updated",
     {
       headers: {
@@ -41,14 +41,16 @@
       target="_blank"
       rel="noreferrer"
       href={repo.html_url}
-      class="flex flex-col bg-slate-100 bg-opacity-5 rounded-md w-full h-full p-6"
+      class="flex flex-col bg-zinc-100 bg-opacity-5 rounded-md w-full h-full p-6"
     >
       <h2 class="text-xl font-medium text-[#FFAA4C]">{repo.name}</h2>
-      <p class="text-sm mt-2 description tracking-[0.08em]">{repo.description || "No description"}</p>
+      <p class="text-sm mt-2 description tracking-[0.08em]">
+        {repo.description || "No description"}
+      </p>
       <div class="flex mt-6 flex-wrap gap-2">
         {#each repo.topics as tag}
           <span
-            class="bg-slate-100 bg-opacity-5 rounded-full px-2 py-1 text-xs font-medium text-[#FFFFFF87]"
+            class="bg-zinc-100 bg-opacity-5 rounded-full px-2 py-1 text-xs font-medium text-[#FFFFFF87]"
           >
             {tag}
           </span>

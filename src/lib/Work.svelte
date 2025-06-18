@@ -56,13 +56,13 @@
       My Works
     </h1>
     <p
-      class="sm:mb-20 text-center px-8 text-base md:!text-lg mt-6 tracking-[0.125rem] font-light"
+      class="mb-20 text-center px-8 text-base md:!text-lg mt-6 tracking-[0.125rem] font-light"
     >
       Cool stuff that I've built throughout my developer journey
     </p>
     <div class="w-full px-8 sm:px-32 lg:px-64" in:fade out:fade>
       <div
-        class="w-full p-8 bg-slate-100 bg-opacity-5 border-2 border-[#FFAA4C] flex items-center gap-6"
+        class="w-full relative p-8 bg-zinc-100 bg-opacity-5 border-2 overflow-hidden border-[#FFAA4C] flex xl:!flex-row flex-col items-center gap-6"
       >
         <img
           src="/lifeforge.png"
@@ -79,7 +79,7 @@
           <p class="!text-base mt-2 tracking-[0.08em] !leading-5">
             Your all-in-one self-hosted personal management system.
           </p>
-          <div class="mt-8 flex gap-2 w-full">
+          <div class="mt-8 flex gap-2 w-full 2xl:!flex-row flex-col">
             <a
               href="https://github.com/Lifeforge-app/lifeforge"
               target="_blank"
@@ -98,6 +98,11 @@
             </a>
           </div>
         </div>
+        <div
+          class="uppercase font-medium bg-[#FFAA4C] text-slate-900 rotate-45 text-sm font-semibold absolute top-6 tracking-widest -right-20 origin-center text-center w-64 px-4 py-2"
+        >
+          Featured
+        </div>
       </div>
       {#if data.length}
         <div
@@ -106,7 +111,7 @@
           {#each data as project}
             <div class="h-full saos">
               <div
-                class="flex font-light gap-8 flex-col h-full bg-slate-100 p-4 bg-opacity-5"
+                class="flex font-light gap-8 flex-col h-full bg-zinc-100 p-4 bg-opacity-5"
               >
                 <img
                   src={`https://github.com/melvinchia3636/CBImage/blob/main/${project.name
