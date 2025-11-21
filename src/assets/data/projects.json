@@ -1,6 +1,18 @@
 [
   {
     "_id": "63b0b9c6c30eb95b282a9di",
+    "name": "RAGent - RAG AI Desktop Assistant",
+    "desc": "A desktop app built using JavaFX and LangChain that utilizes Retrieval Augmented Generation (RAG)",
+    "repo": "https://github.com/melvinchia3636/yt-summarized",
+    "category": "desktop app",
+    "techs": [
+      "java",
+      "javafx",
+      "langchain"
+    ]
+  },
+  {
+    "_id": "63b0b9c6c30eb95b282a9di",
     "name": "YT Summarized",
     "desc": "Utilize the power of AI and summarize any YouTube video with just a click of a button.",
     "repo": "https://github.com/melvinchia3636/yt-summarized",
