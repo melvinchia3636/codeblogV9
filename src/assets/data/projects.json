@@ -3,7 +3,7 @@
     "_id": "63b0b9c6c30eb95b282a9di",
     "name": "RAGent - RAG AI Desktop Assistant",
     "desc": "A desktop app built using JavaFX and LangChain that utilizes Retrieval Augmented Generation (RAG)",
-    "repo": "https://github.com/melvinchia3636/yt-summarized",
+    "repo": "https://github.com/melvinchia3636/RAGent",
     "category": "desktop app",
     "techs": [
       "java",
