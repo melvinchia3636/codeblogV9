@@ -1,11 +1,9 @@
 <script>
-  import { Router, Route, Link, globalHistory } from "svelte-navigator";
-  import About from "./lib/About.svelte";
-  import Blog from "./lib/Blog.svelte";
+  import { Router, Route, globalHistory } from "svelte-navigator";
+  import Resume from "./lib/Resume.svelte";
   import Home from "./lib/Home.svelte";
   import Navbar from "./lib/Navbar.svelte";
   import Work from "./lib/Work.svelte";
-  import BlogContent from "./lib/BlogContent.svelte";
   import { onDestroy, onMount } from "svelte";
 
   let section = null;
@@ -33,9 +31,7 @@
     <Route path="/" component={Home} />
     <Route path="/home" component={Home} />
     <Route path="/work" component={Work} />
-    <Route path="/about" component={About} />
-    <Route path="/blog" component={Blog} />
-    <Route path="/blog/:id" component={BlogContent} />
+    <Route path="/resume" component={Resume} />
   </main>
 </Router>
 

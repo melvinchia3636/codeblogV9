@@ -5,7 +5,9 @@
 
   import { fade } from "svelte/transition";
   // @ts-ignore
-  import data from "../assets/data/projects.json";
+  import clients from "../assets/data/clients-projects.json";
+  // @ts-ignore
+  import personal from "../assets/data/projects.json";
 
   function hexToRgb(hex) {
     var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
@@ -46,7 +48,7 @@
   }, 500);
 </script>
 
-<main class="w-full h-full flex flex-col items-center mt-32 sm:mt-64" id="swup">
+<main class="w-full h-full flex flex-col items-center mt-32 sm:mt-48" id="swup">
   {#if showContent}
     <h1
       class="text-4xl lg:text-5xl tracking-[0.2em] uppercase tracking-[0.125em] text-center mt-6 relative z-10"
@@ -83,18 +85,18 @@
             <a
               href="https://github.com/Lifeforge-app/lifeforge"
               target="_blank"
-              class="tracking-[0.2em] flex-1 flex whitespace-nowrap items-center font-semibold rounded-sm justify-center border-2 border-[#FFAA4C] text-[#FFAA4C] hover:bg-[#FFAA4C]/10 transition-all w-full gap-3 uppercase pb-[1.2rem] pt-5"
+              class="tracking-[0.2em] flex-1 flex whitespace-nowrap items-center font-semibold rounded-sm justify-center border-2 border-[#FFAA4C] text-[#FFAA4C] hover:bg-[#FFAA4C]/10 transition-all w-full gap-3 uppercase pb-3 pt-3 text-sm"
             >
-              <Icon icon="uil:github" class="w-6 h-6 shrink-0 text-[#FFAA4C]" />
-              <span>View Code</span>
+              <Icon icon="uil:github" class="size-5 shrink-0 text-[#FFAA4C]" />
+              <span>Source Code</span>
             </a>
             <a
               href="https://docs.lifeforge.melvinchia.dev"
               target="_blank"
-              class="tracking-[0.2em] flex-1 flex items-center uppercase font-semibold rounded-sm justify-center bg-[#FFAA4C] w-full text-neutral-800 hover:bg-[#FFAA4C]/90 transition-all pb-[1.2rem] pt-5 whitespace-nowrap gap-2"
+              class="tracking-[0.2em] flex-1 flex items-center uppercase font-semibold rounded-sm justify-center bg-[#FFAA4C] w-full text-neutral-800 hover:bg-[#FFAA4C]/90 transition-all pb-3 pt-3 whitespace-nowrap gap-2 text-sm"
             >
               Documentation
-              <Icon icon="uil:arrow-right" class="w-6 h-6 shrink-0" />
+              <Icon icon="uil:arrow-right" class="size-5 shrink-0" />
             </a>
           </div>
         </div>
@@ -104,11 +106,79 @@
           Featured
         </div>
       </div>
-      {#if data.length}
+      {#if clients.length}
+        <h2
+          class="text-2xl lg:text-3xl tracking-[0.2em] uppercase text-center mt-24 mb-8 relative z-10 after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-0.5 after:bg-[#FFAA4C]"
+          in:fade
+          out:fade
+        >
+          Client Projects
+        </h2>
+        <div
+          class="grid sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] w-full mb-8 gap-4"
+          in:fade
+          out:fade
+        >
+          {#each clients as project}
+            <div class="h-full">
+              <div
+                class="flex font-light gap-8 flex-col h-full bg-zinc-100 p-4 bg-opacity-5"
+              >
+                <img
+                  src={`https://github.com/melvinchia3636/CBImage/blob/main/${project.name
+                    .toLowerCase()
+                    .replace(/[^a-z0-9]/g, "")}.jpg?raw=true`}
+                  class="object-contain border border-neutral-700 rounded-sm w-full"
+                  alt=""
+                />
+                <div class="flex flex-col justify-between h-full">
+                  <div class="flex flex-col gap-4">
+                    <div
+                      class="uppercase tracking-[0.2em] font-medium text-lg text-[#FFAA4C]"
+                    >
+                      {project.name}
+                    </div>
+                    <p class="!text-xs tracking-[0.08em] !leading-5">
+                      {project.desc}
+                    </p>
+                  </div>
+                  <div class="space-y-2 mt-8">
+                    {#if project.url}
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        class="tracking-[0.2em] flex items-center uppercase font-semibold rounded-sm justify-center bg-[#FFAA4C] w-full text-neutral-800 hover:bg-[#FFAA4C]/90 transition-all pb-3 pt-3 whitespace-nowrap gap-2 text-sm"
+                      >
+                        Visit Site
+                        <Icon icon="uil:arrow-right" class="size-5 shrink-0" />
+                      </a>
+                    {:else}
+                      <div
+                        class="tracking-[0.2em] flex items-center uppercase font-semibold rounded-sm justify-center bg-zinc-700 w-full text-neutral-400 pb-3 pt-3 whitespace-nowrap gap-2 cursor-not-allowed text-sm"
+                      >
+                        <Icon icon="uil:lock" class="size-5 shrink-0" />
+                        Private / Internal
+                      </div>
+                    {/if}
+                  </div>
+                </div>
+              </div>
+            </div>
+          {/each}
+        </div>
+      {/if}
+      <h2
+        class="text-2xl lg:text-3xl tracking-[0.2em] uppercase text-center mt-12 mb-8 relative z-10 after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-0.5 after:bg-[#FFAA4C]"
+        in:fade
+        out:fade
+      >
+        Side Projects
+      </h2>
+      {#if personal.length}
         <div
           class="grid sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] w-full mt-12 mb-32 gap-4"
         >
-          {#each data as project}
+          {#each personal as project}
             <div class="h-full saos">
               <div
                 class="flex font-light gap-8 flex-col h-full bg-zinc-100 p-4 bg-opacity-5"
@@ -135,22 +205,22 @@
                     <a
                       href={project.repo}
                       target="_blank"
-                      class="tracking-[0.2em] flex whitespace-nowrap items-center font-semibold rounded-sm justify-center border-2 border-[#FFAA4C] text-[#FFAA4C] hover:bg-[#FFAA4C]/10 transition-all w-full gap-3 uppercase pb-[1.2rem] pt-5"
+                      class="tracking-[0.2em] flex whitespace-nowrap items-center font-semibold rounded-sm justify-center border-2 border-[#FFAA4C] text-[#FFAA4C] hover:bg-[#FFAA4C]/10 transition-all w-full gap-3 uppercase pb-3 pt-3 text-sm"
                     >
                       <Icon
                         icon="uil:github"
-                        class="w-6 h-6 shrink-0 text-[#FFAA4C]"
+                        class="size-5 shrink-0 text-[#FFAA4C]"
                       />
-                      <span>View Code</span>
+                      <span>Source Code</span>
                     </a>
                     {#if project.url}
                       <a
                         href={project.url}
                         target="_blank"
-                        class="tracking-[0.2em] flex items-center uppercase font-semibold rounded-sm justify-center bg-[#FFAA4C] w-full text-neutral-800 hover:bg-[#FFAA4C]/90 transition-all pb-[1.2rem] pt-5 whitespace-nowrap gap-2"
+                        class="tracking-[0.2em] flex items-center uppercase font-semibold rounded-sm justify-center bg-[#FFAA4C] w-full text-neutral-800 hover:bg-[#FFAA4C]/90 transition-all pb-3 pt-3 whitespace-nowrap gap-2 text-sm"
                       >
                         Live Demo
-                        <Icon icon="uil:arrow-right" class="w-6 h-6 shrink-0" />
+                        <Icon icon="uil:arrow-right" class="size-5 shrink-0" />
                       </a>
                     {/if}
                   </div>
@@ -160,7 +230,7 @@
           {/each}
         </div>
       {:else}
-        <div class="flex flex-col gap-4" in:fade out:fade>
+        <div class="flex flex-col gap-4 mb-32" in:fade out:fade>
           <div class="text-center">
             <div class="text-lg uppercase font-medium tracking-[0.2em]">
               <span>FETCHING DATA...</span>

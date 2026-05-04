@@ -72,17 +72,34 @@
     <div
       class="hidden md:flex gap-20 text-sm xl:absolute top-1/2 left-1/2 xl:-translate-x-1/2 xl:-translate-y-1/2"
     >
-      {#each ["home", "work", "about", "blog"] as link}
-        <Link
-          to={"/" + link}
-          class="tracking-[0.325rem] relative uppercase after:transition-all after:duration-300 after:content-[''] after:w-0 after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:border-b-[1.6px] after:border-[#FFAA4C] cursor-pointer {pathname.startsWith(
-            `/${link}`
-          ) ||
-          (pathname === '/' && link === 'home')
-            ? 'after:w-1/2 font-semibold'
-            : ''} hover:after:w-1/2">{link}</Link
-        >
-      {/each}
+      <Link
+        to="/"
+        class="tracking-[0.325rem] relative uppercase after:transition-all after:duration-300 after:content-[''] after:w-0 after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:border-b-[1.6px] after:border-[#FFAA4C] cursor-pointer {pathname ===
+        '/' || pathname.startsWith('/home')
+          ? 'after:w-1/2 font-semibold'
+          : ''} hover:after:w-1/2">home</Link
+      >
+      <Link
+        to="/work"
+        class="tracking-[0.325rem] relative uppercase after:transition-all after:duration-300 after:content-[''] after:w-0 after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:border-b-[1.6px] after:border-[#FFAA4C] cursor-pointer {pathname.startsWith(
+          '/work'
+        )
+          ? 'after:w-1/2 font-semibold'
+          : ''} hover:after:w-1/2">work</Link
+      >
+      <Link
+        to="/resume"
+        class="tracking-[0.325rem] relative uppercase after:transition-all after:duration-300 after:content-[''] after:w-0 after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:border-b-[1.6px] after:border-[#FFAA4C] cursor-pointer {pathname.startsWith(
+          '/resume'
+        )
+          ? 'after:w-1/2 font-semibold'
+          : ''} hover:after:w-1/2">resume</Link
+      >
+      <a
+        href="https://blog.melvinchia.dev"
+        target="_blank"
+        class="tracking-[0.325rem] relative uppercase after:transition-all after:duration-300 after:content-[''] after:w-0 after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:border-b-[1.6px] after:border-[#FFAA4C] cursor-pointer hover:after:w-1/2"
+      >blog</a>
     </div>
     <a
       href="mailto:melvinchia@melvinchia.dev"
@@ -106,16 +123,29 @@
         : '-top-full -left-full rounded-br-full'} transition-all duration-700 fixed z-[9998] flex items-center justify-center text-neutral-800 font-semibold"
     >
       <div class="flex flex-col items-center gap-12 text-sm">
-        {#each ["home", "work", "about", "blog"] as link}
-          <Link
-            to={"/" + link}
-            class="tracking-[0.325rem] relative uppercase {pathname ===
-              '/' + link ||
-            (pathname === '/' && link === 'home')
-              ? "after:content-[''] after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:w-1/2 after:border-b-2 after:border-neutral-800"
-              : ''}">{link}</Link
-          >
-        {/each}
+        <Link
+          to="/"
+          class="tracking-[0.325rem] relative uppercase {pathname === '/' || pathname === '/home'
+            ? "after:content-[''] after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:w-1/2 after:border-b-2 after:border-neutral-800"
+            : ''}">home</Link
+        >
+        <Link
+          to="/work"
+          class="tracking-[0.325rem] relative uppercase {pathname === '/work'
+            ? "after:content-[''] after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:w-1/2 after:border-b-2 after:border-neutral-800"
+            : ''}">work</Link
+        >
+        <Link
+          to="/resume"
+          class="tracking-[0.325rem] relative uppercase {pathname === '/resume'
+            ? "after:content-[''] after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:w-1/2 after:border-b-2 after:border-neutral-800"
+            : ''}">resume</Link
+        >
+        <a
+          href="https://blog.melvinchia.dev"
+          target="_blank"
+          class="tracking-[0.325rem] relative uppercase"
+        >blog</a>
         <a
           href="mailto:melvinchia@melvinchia.dev"
           class="tracking-[0.2em] items-center gap-2 text-sm animate__animated animate__fadeInLeft animate__delay-1s flex"
