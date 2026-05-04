@@ -4,7 +4,7 @@
 </script>
 
 <div
-  class="w-full relative p-8 bg-zinc-100 bg-opacity-5 border-2 overflow-hidden border-[#FFAA4C] flex xl:!flex-row flex-col items-center gap-6"
+  class="w-full relative p-8 bg-zinc-100/5 border-2 overflow-hidden border-[#FFAA4C] flex xl:!flex-row flex-col items-center gap-6"
 >
   <img
     src="/lifeforge.png"

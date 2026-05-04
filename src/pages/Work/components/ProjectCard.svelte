@@ -11,7 +11,7 @@
 
 <div class="h-full saos">
   <div
-    class="flex font-light gap-8 flex-col h-full bg-zinc-100 p-4 bg-opacity-5"
+    class="flex font-light gap-8 flex-col h-full bg-zinc-100/5 p-4"
   >
     {#if image}
       <img

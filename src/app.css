@@ -1,14 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap");
+
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap');
 
 @font-face {
   font-family: "Proxima Nova";
-  src: local('Proxima Nova'), url(./assets/Proxima.otf) format('opentype');
+  src:
+    local("Proxima Nova"),
+    url(./assets/Proxima.otf) format("opentype");
 }
 
 *:focus {
-    -webkit-tap-highlight-color: transparent;
-    outline: none;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
 }
