@@ -10,6 +10,7 @@
   import personal from "../assets/data/projects.json";
   import PageHeader from "../components/PageHeader.svelte";
   import SectionHeader from "../components/SectionHeader.svelte";
+  import Button from "../components/Button.svelte";
 
   function hexToRgb(hex) {
     var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
@@ -76,22 +77,21 @@
             Your all-in-one self-hosted personal management system.
           </p>
           <div class="mt-8 flex gap-2 w-full 2xl:!flex-row flex-col">
-            <a
+            <Button
+              icon="uil:github"
+              text="Source Code"
+              variant="outlined"
+              className="flex-1"
               href="https://github.com/Lifeforge-app/lifeforge"
               target="_blank"
-              class="tracking-[0.2em] flex-1 flex whitespace-nowrap items-center font-semibold rounded-sm justify-center border-2 border-[#FFAA4C] text-[#FFAA4C] hover:bg-[#FFAA4C]/10 transition-all w-full gap-3 uppercase pb-3 pt-3 text-sm"
-            >
-              <Icon icon="uil:github" class="size-5 shrink-0 text-[#FFAA4C]" />
-              <span>Source Code</span>
-            </a>
-            <a
+            />
+            <Button
+              icon="uil:arrow-right"
+              text="Documentation"
+              className="flex-1"
               href="https://docs.lifeforge.melvinchia.dev"
               target="_blank"
-              class="tracking-[0.2em] flex-1 flex items-center uppercase font-semibold rounded-sm justify-center bg-[#FFAA4C] w-full text-neutral-800 hover:bg-[#FFAA4C]/90 transition-all pb-3 pt-3 whitespace-nowrap gap-2 text-sm"
-            >
-              Documentation
-              <Icon icon="uil:arrow-right" class="size-5 shrink-0" />
-            </a>
+            />
           </div>
         </div>
         <div
@@ -135,21 +135,18 @@
                   </div>
                   <div class="space-y-2 mt-8">
                     {#if project.url}
-                      <a
+                      <Button
+                        icon="uil:arrow-right"
+                        text="Visit Site"
                         href={project.url}
                         target="_blank"
-                        class="tracking-[0.2em] flex items-center uppercase font-semibold rounded-sm justify-center bg-[#FFAA4C] w-full text-neutral-800 hover:bg-[#FFAA4C]/90 transition-all pb-3 pt-3 whitespace-nowrap gap-2 text-sm"
-                      >
-                        Visit Site
-                        <Icon icon="uil:arrow-right" class="size-5 shrink-0" />
-                      </a>
+                      />
                     {:else}
-                      <div
-                        class="tracking-[0.2em] flex items-center uppercase font-semibold rounded-sm justify-center bg-zinc-700 w-full text-neutral-400 pb-3 pt-3 whitespace-nowrap gap-2 cursor-not-allowed text-sm"
-                      >
-                        <Icon icon="uil:lock" class="size-5 shrink-0" />
-                        Private / Internal
-                      </div>
+                      <Button
+                        icon="uil:lock"
+                        text="Private / Internal"
+                        disabled
+                      />
                     {/if}
                   </div>
                 </div>
@@ -190,26 +187,20 @@
                     </p>
                   </div>
                   <div class="space-y-2 mt-8">
-                    <a
+                    <Button
+                      icon="uil:github"
+                      text="Source Code"
+                      variant="outlined"
                       href={project.repo}
                       target="_blank"
-                      class="tracking-[0.2em] flex whitespace-nowrap items-center font-semibold rounded-sm justify-center border-2 border-[#FFAA4C] text-[#FFAA4C] hover:bg-[#FFAA4C]/10 transition-all w-full gap-3 uppercase pb-3 pt-3 text-sm"
-                    >
-                      <Icon
-                        icon="uil:github"
-                        class="size-5 shrink-0 text-[#FFAA4C]"
-                      />
-                      <span>Source Code</span>
-                    </a>
+                    />
                     {#if project.url}
-                      <a
+                      <Button
+                        icon="uil:arrow-right"
+                        text="Live Demo"
                         href={project.url}
                         target="_blank"
-                        class="tracking-[0.2em] flex items-center uppercase font-semibold rounded-sm justify-center bg-[#FFAA4C] w-full text-neutral-800 hover:bg-[#FFAA4C]/90 transition-all pb-3 pt-3 whitespace-nowrap gap-2 text-sm"
-                      >
-                        Live Demo
-                        <Icon icon="uil:arrow-right" class="size-5 shrink-0" />
-                      </a>
+                      />
                     {/if}
                   </div>
                 </div>

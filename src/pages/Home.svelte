@@ -4,6 +4,7 @@
   import { navigate } from "svelte-navigator";
   import "animate.css";
   import Icon from "@iconify/svelte";
+  import Button from "../components/Button.svelte";
 
   let showPage = true;
 
@@ -61,16 +62,19 @@
           <span>More than just a full-stack developer.</span>
         </div>
         <div class="flex gap-4 mt-12 md:mt-20 flex-col md:!flex-row">
-          <button
+          <Button
+            text="SEE MY WORK"
             on:click={() => leavePage("work")}
-            class="tracking-[0.2em] flex items-center font-semibold rounded-sm justify-center bg-[#FFAA4C] w-72 text-neutral-800 pb-3 pt-3 px-12 text-sm animate__animated animate__fadeInLeft"
-            style="animation-delay: 0.5s">SEE MY WORK</button
-          >
-          <button
+            className="w-72 animate__animated animate__fadeInLeft"
+            style="animation-delay: 0.5s"
+          />
+          <Button
+            text="VIEW RESUME"
+            variant="outlined"
             on:click={() => leavePage("resume")}
-            class="tracking-[0.2em] text-[#FFAA4C] w-72 border-[1.6px] rounded-sm border-[#FFAA4C] pb-3 pt-3 px-12 text-sm animate__animated animate__fadeInRight"
-            style="animation-delay: 0.5s">VIEW RESUME</button
-          >
+            className="w-72 animate__animated animate__fadeInRight"
+            style="animation-delay: 0.5s"
+          />
         </div>
       </div>
     {/if}

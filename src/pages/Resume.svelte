@@ -4,6 +4,7 @@
   import { tweened } from "svelte/motion";
   import { expoInOut } from "svelte/easing";
   import PageHeader from "../components/PageHeader.svelte";
+  import Button from "../components/Button.svelte";
 
   const nav = tweened(100, {
     duration: 1000,
@@ -32,14 +33,13 @@
       out:fade
       class="flex flex-col items-center sm:w-7/12 px-8 gap-6 w-full"
     >
-      <a
+      <Button
+        icon="uil:download-alt"
+        text="Download PDF"
         href="/Melvin_Chia_FullStack_Developer_Resume.pdf"
         download
-        class="tracking-[0.2em] w-full flex items-center uppercase font-semibold rounded-sm justify-center bg-[#FFAA4C] text-neutral-800 hover:bg-[#FFAA4C]/90 transition-all px-8 pb-3 pt-3 whitespace-nowrap gap-2 text-sm"
-      >
-        <Icon icon="uil:download-alt" class="size-5 shrink-0" />
-        Download PDF
-      </a>
+        className="w-full"
+      />
       <iframe
         src="/Melvin_Chia_FullStack_Developer_Resume.pdf"
         class="w-full max-w-4xl h-[600px] sm:h-[800px] border border-neutral-700 rounded-sm"
