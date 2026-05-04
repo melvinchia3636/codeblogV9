@@ -82,9 +82,7 @@
   >
     addCopyright("Melvin Chia").from(2020).to(present).withAllRightsReserved();
   </div>
-  <div
-    class="fixed pointer-events-none bottom-0 w-8 h-8 bg-zinc-900 z-10 left-1/2 -translate-x-1/2"
-  />
+
   <div
     class="fixed pointer-events-none top-32 xl:top-0 left-8 text-9xl xl:!text-[14rem] z-[9999] font-bold opacity-[2%]"
   >
