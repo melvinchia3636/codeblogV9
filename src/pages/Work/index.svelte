@@ -11,31 +11,26 @@
   import SectionHeader from "../../components/SectionHeader.svelte";
   import ProjectCard from "./components/ProjectCard.svelte";
   import LifeForgeCard from "./components/LifeForgeCard.svelte";
-  import Icon from "@iconify/svelte";
-  import Button from "../../components/Button.svelte";
 
-  function hexToRgb(hex) {
-    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-    return result
-      ? {
-          r: parseInt(result[1], 16),
-          g: parseInt(result[2], 16),
-          b: parseInt(result[3], 16),
-        }
-      : null;
-  }
+  const sections = [
+    {
+      title: "Client Projects",
+      desc: "Real-world solutions built for businesses and organisations",
+      projects: clients,
+      showRepo: false,
+    },
+    {
+      title: "Side Projects",
+      desc: "Fun experiments and tools I built just because I could",
+      projects: personal,
+      showRepo: true,
+    },
+  ];
 
-  // check if hex color is light or dark
-  function isColorLight(hex) {
-    if (hex) {
-      // convert hex to rgb
-      const rgb = hexToRgb(hex);
-      // calculate luminance
-      const lum = 0.2126 * rgb.r + 0.7152 * rgb.g + 0.0722 * rgb.b;
-      // compare
-      return lum > 128;
-    }
-  }
+  const getImageSrc = (name) =>
+    `https://github.com/melvinchia3636/CBImage/blob/main/${name
+      .toLowerCase()
+      .replace(/[^a-z0-9]/g, "")}.jpg?raw=true`;
 
   const nav = tweened(100, {
     duration: 1000,
@@ -61,57 +56,24 @@
     />
     <div class="w-full px-8 sm:px-32 lg:px-64" in:fade out:fade>
       <LifeForgeCard />
-      {#if clients.length}
-        <SectionHeader
-          text="Client Projects"
-          description="Real-world solutions built for businesses and organisations"
-        />
+      {#each sections as section}
+        <SectionHeader text={section.title} description={section.desc} />
         <div
-          class="grid sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] w-full mb-8 gap-4"
+          class="grid sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] w-full mb-32 gap-4"
           in:fade
           out:fade
         >
-          {#each clients as project}
+          {#each section.projects as project}
             <ProjectCard
               name={project.name}
               desc={project.desc}
+              repo={section.showRepo ? project.repo : ""}
               url={project.url}
-              image={`https://github.com/melvinchia3636/CBImage/blob/main/${project.name
-                .toLowerCase()
-                .replace(/[^a-z0-9]/g, "")}.jpg?raw=true`}
+              image={getImageSrc(project.name)}
             />
           {/each}
         </div>
-      {/if}
-      <SectionHeader
-        text="Side Projects"
-        description="Fun experiments and tools I built just because I could"
-      />
-      {#if personal.length}
-        <div
-          class="grid sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] w-full mb-32 gap-4"
-        >
-          {#each personal as project}
-            <ProjectCard
-              name={project.name}
-              desc={project.desc}
-              repo={project.repo}
-              url={project.url}
-              image={`https://github.com/melvinchia3636/CBImage/blob/main/${project.name
-                .toLowerCase()
-                .replace(/[^a-z0-9]/g, "")}.jpg?raw=true`}
-            />
-          {/each}
-        </div>
-      {:else}
-        <div class="flex flex-col gap-4 mb-32" in:fade out:fade>
-          <div class="text-center">
-            <div class="text-lg uppercase font-medium tracking-[0.2em]">
-              <span>FETCHING DATA...</span>
-            </div>
-          </div>
-        </div>
-      {/if}
+      {/each}
     </div>
   {/if}
 </main>
