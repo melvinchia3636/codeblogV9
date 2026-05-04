@@ -88,6 +88,7 @@
             <Button
               icon="uil:arrow-right"
               text="Documentation"
+              iconPosition="end"
               className="flex-1"
               href="https://docs.lifeforge.melvinchia.dev"
               target="_blank"
@@ -138,6 +139,7 @@
                       <Button
                         icon="uil:arrow-right"
                         text="Visit Site"
+                        iconPosition="end"
                         href={project.url}
                         target="_blank"
                       />
@@ -146,6 +148,7 @@
                         icon="uil:lock"
                         text="Private / Internal"
                         disabled
+                        className="w-full"
                       />
                     {/if}
                   </div>
@@ -198,6 +201,7 @@
                       <Button
                         icon="uil:arrow-right"
                         text="Live Demo"
+                        iconPosition="end"
                         href={project.url}
                         target="_blank"
                       />

@@ -4,6 +4,7 @@
   export let icon = "";
   export let text = "";
   export let variant = "primary";
+  export let iconPosition = "start";
   export let className = "";
   export let href = "";
   export let target = "";
@@ -24,10 +25,13 @@
         ? 'border-2 border-[#FFAA4C] text-[#FFAA4C] hover:bg-[#FFAA4C]/10'
         : 'bg-[#FFAA4C] text-neutral-800 hover:bg-[#FFAA4C]/90'} {className}"
   >
-    {#if icon}
+    {#if icon && iconPosition === "start"}
       <Icon icon={icon} class="size-5 shrink-0" />
     {/if}
     {text}
+    {#if icon && iconPosition === "end"}
+      <Icon icon={icon} class="size-5 shrink-0" />
+    {/if}
   </a>
 {:else}
   <button
@@ -40,9 +44,12 @@
         : 'bg-[#FFAA4C] text-neutral-800 hover:bg-[#FFAA4C]/90'} {className}"
     on:click
   >
-    {#if icon}
+    {#if icon && iconPosition === "start"}
       <Icon icon={icon} class="size-5 shrink-0" />
     {/if}
     {text}
+    {#if icon && iconPosition === "end"}
+      <Icon icon={icon} class="size-5 shrink-0" />
+    {/if}
   </button>
 {/if}
