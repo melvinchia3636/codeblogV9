@@ -3,7 +3,7 @@
   import Resume from "./pages/Resume.svelte";
   import Home from "./pages/Home.svelte";
   import Navbar from "./components/Navbar.svelte";
-  import Work from "./pages/Work.svelte";
+  import Work from "./pages/Work/index.svelte";
   import { onDestroy, onMount } from "svelte";
 
   let section = null;
