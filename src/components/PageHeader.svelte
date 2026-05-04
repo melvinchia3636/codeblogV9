@@ -11,7 +11,7 @@
   </h1>
   {#if subtitle}
     <p
-      class="mb-20 text-center px-8 text-base md:!text-lg mt-4 tracking-[0.125rem] font-light"
+      class="mb-20 text-center px-8 text-base md:text-lg! mt-4 tracking-[0.125rem] font-light"
     >
       {subtitle}
     </p>

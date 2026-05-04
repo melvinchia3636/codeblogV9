@@ -15,7 +15,7 @@
   </h2>
   {#if description}
     <p
-      class="text-center px-8 text-sm md:!text-base tracking-[0.125rem] font-light mb-8"
+      class="text-center px-8 text-sm md:text-base! tracking-[0.125rem] font-light mb-8"
     >
       {description}
     </p>

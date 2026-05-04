@@ -43,15 +43,15 @@
   };
 </script>
 
-<header class="w-full z-[9999]">
+<header class="w-full z-9999">
   <nav
-    class="fixed left-0 top-0 z-[9999] w-full bg-zinc-900 py-8 px-9 flex justify-between items-center"
+    class="fixed left-0 top-0 z-9999 w-full bg-zinc-900 py-8 px-9 flex justify-between items-center"
     style="opacity: {(100 - $nav) / 100}"
   >
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <Link to="/">
       <h1
-        class="text-xl tracking-[0.2em] relative z-[9999] {navOpen
+        class="text-xl tracking-[0.2em] relative z-9999 {navOpen
           ? 'text-neutral-800'
           : 'text-zinc-100'} transition-all duration-700 font-medium"
         on:click={scrollToTop}
@@ -74,14 +74,14 @@
     >
       <Link
         to="/"
-        class="tracking-[0.325rem] relative uppercase after:transition-all after:duration-300 after:content-[''] after:w-0 after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:border-b-[1.6px] after:border-[#FFAA4C] cursor-pointer {pathname ===
+        class="tracking-[0.325rem] relative uppercase after:transition-all after:duration-300 after:content-[''] after:w-0 after:absolute after:left-1/2 after:translate-x-[-56%] after:-bottom-1 after:border-b-[1.6px] after:border-[#FFAA4C] cursor-pointer {pathname ===
           '/' || pathname.startsWith('/home')
           ? 'after:w-1/2 font-semibold'
           : ''} hover:after:w-1/2">home</Link
       >
       <Link
         to="/work"
-        class="tracking-[0.325rem] relative uppercase after:transition-all after:duration-300 after:content-[''] after:w-0 after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:border-b-[1.6px] after:border-[#FFAA4C] cursor-pointer {pathname.startsWith(
+        class="tracking-[0.325rem] relative uppercase after:transition-all after:duration-300 after:content-[''] after:w-0 after:absolute after:left-1/2 after:translate-x-[-56%] after:-bottom-1 after:border-b-[1.6px] after:border-[#FFAA4C] cursor-pointer {pathname.startsWith(
           '/work',
         )
           ? 'after:w-1/2 font-semibold'
@@ -89,7 +89,7 @@
       >
       <Link
         to="/resume"
-        class="tracking-[0.325rem] relative uppercase after:transition-all after:duration-300 after:content-[''] after:w-0 after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:border-b-[1.6px] after:border-[#FFAA4C] cursor-pointer {pathname.startsWith(
+        class="tracking-[0.325rem] relative uppercase after:transition-all after:duration-300 after:content-[''] after:w-0 after:absolute after:left-1/2 after:translate-x-[-56%] after:-bottom-1 after:border-b-[1.6px] after:border-[#FFAA4C] cursor-pointer {pathname.startsWith(
           '/resume',
         )
           ? 'after:w-1/2 font-semibold'
@@ -98,20 +98,20 @@
       <a
         href="https://blog.melvinchia.dev"
         target="_blank"
-        class="tracking-[0.325rem] relative uppercase after:transition-all after:duration-300 after:content-[''] after:w-0 after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:border-b-[1.6px] after:border-[#FFAA4C] cursor-pointer hover:after:w-1/2"
+        class="tracking-[0.325rem] relative uppercase after:transition-all after:duration-300 after:content-[''] after:w-0 after:absolute after:left-1/2 after:translate-x-[-56%] after:-bottom-1 after:border-b-[1.6px] after:border-[#FFAA4C] cursor-pointer hover:after:w-1/2"
         >blog</a
       >
     </div>
     <a
       href="mailto:melvinchia@melvinchia.dev"
-      class="tracking-[0.2em] font-medium text-[#FFAA4C] items-center gap-2 text-sm animate__animated animate__fadeInLeft animate__delay-1s hidden lg:!flex"
+      class="tracking-[0.2em] font-medium text-[#FFAA4C] items-center gap-2 text-sm animate__animated animate__fadeInLeft animate__delay-1s hidden lg:flex!"
     >
       GET IN TOUCH
       <Icon icon="uil:arrow-right" class="w-6 h-6" />
     </a>
     <button
       on:click={() => setNavOpen(!navOpen)}
-      class="block md:!hidden relative z-[9999]"
+      class="block md:hidden! relative z-9999"
     >
       <Icon
         icon="heroicons-outline:menu-alt-4"
@@ -121,26 +121,26 @@
     <div
       class="w-full h-dvh bg-[#FFAA4C] {navOpen
         ? 'top-0 left-0 rounded-br-none'
-        : '-top-full -left-full rounded-br-full'} transition-all duration-700 fixed z-[9998] flex items-center justify-center text-neutral-800 font-semibold"
+        : '-top-full -left-full rounded-br-full'} transition-all duration-700 fixed z-9998 flex items-center justify-center text-neutral-800 font-semibold"
     >
       <div class="flex flex-col items-center gap-12 text-sm">
         <Link
           to="/"
           class="tracking-[0.325rem] relative uppercase {pathname === '/' ||
           pathname === '/home'
-            ? "after:content-[''] after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:w-1/2 after:border-b-2 after:border-neutral-800"
+            ? "after:content-[''] after:absolute after:left-1/2 after:translate-x-[-56%] after:-bottom-1 after:w-1/2 after:border-b-2 after:border-neutral-800"
             : ''}">home</Link
         >
         <Link
           to="/work"
           class="tracking-[0.325rem] relative uppercase {pathname === '/work'
-            ? "after:content-[''] after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:w-1/2 after:border-b-2 after:border-neutral-800"
+            ? "after:content-[''] after:absolute after:left-1/2 after:translate-x-[-56%] after:-bottom-1 after:w-1/2 after:border-b-2 after:border-neutral-800"
             : ''}">work</Link
         >
         <Link
           to="/resume"
           class="tracking-[0.325rem] relative uppercase {pathname === '/resume'
-            ? "after:content-[''] after:absolute after:left-1/2 after:-translate-x-[56%] after:-bottom-1 after:w-1/2 after:border-b-2 after:border-neutral-800"
+            ? "after:content-[''] after:absolute after:left-1/2 after:translate-x-[-56%] after:-bottom-1 after:w-1/2 after:border-b-2 after:border-neutral-800"
             : ''}">resume</Link
         >
         <a

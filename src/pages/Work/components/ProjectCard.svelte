@@ -27,7 +27,7 @@
         >
           {name}
         </div>
-        <p class="!text-xs tracking-[0.08em] !leading-5">
+        <p class="text-xs! tracking-[0.08em] leading-5!">
           {desc}
         </p>
       </div>

@@ -36,7 +36,7 @@
         </div>
         <div class="text-4xl lg:text-5xl tracking-[0.2em] flex">
           <div
-            class="animate__animated animate__fadeInLeft overflow-hidden justify-center items-center flex flex-col md:!flex-row gap-6"
+            class="animate__animated animate__fadeInLeft overflow-hidden justify-center items-center flex flex-col md:flex-row! gap-6"
           >
             <span>
               I <span class="inline-flex items-center gap-1"
@@ -56,12 +56,12 @@
           </div>
         </div>
         <div
-          class="animate__animated animate__fadeInUp tracking-[0.125em] text-center flex flex-col items-center gap-2 text-sm md:!text-base mt-8 font-light"
+          class="animate__animated animate__fadeInUp tracking-[0.125em] text-center flex flex-col items-center gap-2 text-sm md:text-base! mt-8 font-light"
         >
           <span>Problem Solver, System Architect, and Lifelong Learner</span>
           <span>More than just a full-stack developer.</span>
         </div>
-        <div class="flex gap-4 mt-12 md:mt-20 flex-col md:!flex-row">
+        <div class="flex gap-4 mt-12 md:mt-20 flex-col md:flex-row!">
           <Button
             text="SEE MY WORK"
             on:click={() => leavePage("work")}
@@ -82,18 +82,18 @@
   <div
     in:fade
     out:fade
-    class="pointer-events-none mt-12 mb-8 sm:mb-12 w-full text-center px-8 break-words text-zinc-100 text-xs font-light tracking-[0.2em]"
+    class="pointer-events-none mt-12 mb-8 sm:mb-12 w-full text-center px-8 wrap-break-word text-zinc-100 text-xs font-light tracking-[0.2em]"
   >
     addCopyright("Melvin Chia").from(2020).to(present).withAllRightsReserved();
   </div>
 
   <div
-    class="fixed pointer-events-none top-32 xl:top-0 left-8 text-9xl xl:!text-[14rem] z-[9999] font-bold opacity-[2%]"
+    class="fixed pointer-events-none top-32 xl:top-0 left-8 text-9xl xl:text-[14rem]! z-9999 font-bold opacity-2"
   >
     ()=>{"{"}
   </div>
   <div
-    class="fixed pointer-events-none bottom-32 xl:bottom-0 right-16 text-9xl xl:!text-[14rem] z-[9999] font-bold opacity-[2%]"
+    class="fixed pointer-events-none bottom-32 xl:bottom-0 right-16 text-9xl xl:text-[14rem]! z-9999 font-bold opacity-2"
   >
     {"}"}
   </div>

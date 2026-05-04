@@ -4,7 +4,7 @@
 </script>
 
 <div
-  class="w-full relative p-8 bg-zinc-100/5 border-2 overflow-hidden border-[#FFAA4C] flex xl:!flex-row flex-col items-center gap-6"
+  class="w-full relative p-8 bg-zinc-100/5 border-2 overflow-hidden border-[#FFAA4C] flex xl:flex-row! flex-col items-center gap-6"
 >
   <img
     src="/lifeforge.png"
@@ -18,10 +18,10 @@
       <Icon icon="tabler:hammer" class="size-8 shrink-0" />
       LIFEFORGE
     </div>
-    <p class="!text-base mt-4 tracking-[0.08em] !leading-5">
+    <p class="text-base! mt-4 tracking-[0.08em] leading-5!">
       Your all-in-one self-hosted personal management system.
     </p>
-    <div class="mt-8 flex gap-2 w-full 2xl:!flex-row flex-col">
+    <div class="mt-8 flex gap-2 w-full 2xl:flex-row! flex-col">
       <Button
         icon="uil:github"
         text="Source Code"
