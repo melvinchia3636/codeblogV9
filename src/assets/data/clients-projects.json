@@ -11,5 +11,12 @@
     "name": "FEN Education - ERP",
     "desc": "Internal enterprise resource planning system for a company with 20+ staff members, featuring lead management, event management, commission management, etc.",
     "category": "web app"
+  },
+  {
+    "_id": "2",
+    "name": "Ringosan Works",
+    "desc": "The portfolio for my brother, a 2D illustrator specialized in ACG arts.",
+    "category": "website",
+    "url": "https://ringosan.work"
   }
 ]

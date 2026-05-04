@@ -9,6 +9,7 @@
   // @ts-ignore
   import personal from "../assets/data/projects.json";
   import PageHeader from "../components/PageHeader.svelte";
+  import SectionHeader from "../components/SectionHeader.svelte";
 
   function hexToRgb(hex) {
     var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
@@ -51,7 +52,10 @@
 
 <main class="w-full h-full flex flex-col items-center mt-32 sm:mt-48" id="swup">
   {#if showContent}
-    <PageHeader title="My Works" subtitle="Things I've designed, built, shipped, and maintained" />
+    <PageHeader
+      title="My Works"
+      subtitle="Things I've designed, built, shipped, and maintained"
+    />
     <div class="w-full px-8 sm:px-32 lg:px-64" in:fade out:fade>
       <div
         class="w-full relative p-8 bg-zinc-100 bg-opacity-5 border-2 overflow-hidden border-[#FFAA4C] flex xl:!flex-row flex-col items-center gap-6"
@@ -97,13 +101,10 @@
         </div>
       </div>
       {#if clients.length}
-        <h2
-          class="text-2xl lg:text-3xl tracking-[0.2em] uppercase text-center mt-24 mb-8 relative z-10 after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-0.5 after:bg-[#FFAA4C]"
-          in:fade
-          out:fade
-        >
-          Client Projects
-        </h2>
+        <SectionHeader
+          text="Client Projects"
+          description="Real-world solutions built for businesses and organisations"
+        />
         <div
           class="grid sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] w-full mb-8 gap-4"
           in:fade
@@ -157,16 +158,13 @@
           {/each}
         </div>
       {/if}
-      <h2
-        class="text-2xl lg:text-3xl tracking-[0.2em] uppercase text-center mt-12 mb-8 relative z-10 after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-0.5 after:bg-[#FFAA4C]"
-        in:fade
-        out:fade
-      >
-        Side Projects
-      </h2>
+      <SectionHeader
+        text="Side Projects"
+        description="Fun experiments and tools I built just because I could"
+      />
       {#if personal.length}
         <div
-          class="grid sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] w-full mt-12 mb-32 gap-4"
+          class="grid sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] w-full mb-32 gap-4"
         >
           {#each personal as project}
             <div class="h-full saos">
