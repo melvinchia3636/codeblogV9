@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "oneOf": [
+    { "$ref": "#/definitions/clientProjectList" },
+    { "$ref": "#/definitions/personalProjectList" }
+  ],
+  "definitions": {
+    "clientProject": {
+      "type": "object",
+      "required": ["_id", "name", "desc", "category"],
+      "properties": {
+        "_id": { "type": "string" },
+        "name": { "type": "string" },
+        "desc": { "type": "string" },
+        "category": { "type": "string" },
+        "url": { "type": "string", "format": "uri" }
+      }
+    },
+    "clientProjectList": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/clientProject" }
+    },
+    "personalProject": {
+      "type": "object",
+      "required": ["_id", "name", "desc", "repo", "category", "techs"],
+      "properties": {
+        "_id": { "type": "string" },
+        "name": { "type": "string" },
+        "desc": { "type": "string" },
+        "repo": { "type": "string", "format": "uri" },
+        "category": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "techs": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "personalProjectList": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/personalProject" }
+    }
+  }
+}
