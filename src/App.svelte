@@ -1,9 +1,9 @@
 <script>
   import { Router, Route, globalHistory } from "svelte-navigator";
-  import Resume from "./lib/Resume.svelte";
-  import Home from "./lib/Home.svelte";
-  import Navbar from "./lib/Navbar.svelte";
-  import Work from "./lib/Work.svelte";
+  import Resume from "./pages/Resume.svelte";
+  import Home from "./pages/Home.svelte";
+  import Navbar from "./components/Navbar.svelte";
+  import Work from "./pages/Work.svelte";
   import { onDestroy, onMount } from "svelte";
 
   let section = null;

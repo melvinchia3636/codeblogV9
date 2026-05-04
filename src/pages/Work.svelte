@@ -8,6 +8,7 @@
   import clients from "../assets/data/clients-projects.json";
   // @ts-ignore
   import personal from "../assets/data/projects.json";
+  import PageHeader from "../components/PageHeader.svelte";
 
   function hexToRgb(hex) {
     var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
@@ -50,18 +51,7 @@
 
 <main class="w-full h-full flex flex-col items-center mt-32 sm:mt-48" id="swup">
   {#if showContent}
-    <h1
-      class="text-4xl lg:text-5xl tracking-[0.2em] uppercase tracking-[0.125em] text-center mt-6 relative z-10"
-      in:fade
-      out:fade
-    >
-      My Works
-    </h1>
-    <p
-      class="mb-20 text-center px-8 text-base md:!text-lg mt-6 tracking-[0.125rem] font-light"
-    >
-      Cool stuff that I've built throughout my developer journey
-    </p>
+    <PageHeader title="My Works" subtitle="Things I've designed, built, shipped, and maintained" />
     <div class="w-full px-8 sm:px-32 lg:px-64" in:fade out:fade>
       <div
         class="w-full relative p-8 bg-zinc-100 bg-opacity-5 border-2 overflow-hidden border-[#FFAA4C] flex xl:!flex-row flex-col items-center gap-6"
