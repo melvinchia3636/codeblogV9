@@ -78,9 +78,9 @@
   <div
     in:fade
     out:fade
-    class="pointer-events-none mt-12 mb-8 sm:mb-12 w-full text-center px-8 text-zinc-100 uppercase text-xs font-light tracking-[0.2em]"
+    class="pointer-events-none mt-12 mb-8 sm:mb-12 w-full text-center px-8 break-words text-zinc-100 text-xs font-light tracking-[0.2em]"
   >
-    Copyright &copy; 2020 - {new Date().getFullYear()} Melvin Chia; All rights reserved;
+    addCopyright("Melvin Chia").from(2020).to(present).withAllRightsReserved();
   </div>
   <div
     class="fixed pointer-events-none bottom-0 w-8 h-8 bg-zinc-900 z-10 left-1/2 -translate-x-1/2"
