@@ -54,12 +54,12 @@
       title="My Works"
       subtitle="Things I've designed, built, shipped, and maintained"
     />
-    <div class="w-full px-8 sm:px-32 lg:px-64" in:fade out:fade>
+    <div class="w-full px-8 sm:px-32 lg:px-64 pb-16" in:fade out:fade>
       <LifeForgeCard />
       {#each sections as section}
         <SectionHeader text={section.title} description={section.desc} />
         <div
-          class="grid sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] w-full mb-32 gap-4"
+          class="grid sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] w-full gap-4"
           in:fade
           out:fade
         >
