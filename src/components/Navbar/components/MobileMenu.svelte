@@ -37,7 +37,7 @@
           onclick={() => { handleNav(href); ontoggle(); }}
           class="tracking-[0.325rem] relative uppercase after:content-[''] after:absolute after:left-1/2 after:translate-x-[-56%] after:-bottom-1 after:w-1/2 {active
             ? 'after:border-b-2 after:border-neutral-800 font-semibold'
-            : 'after:border-b-2 after:border-neutral-800!'}"
+            : ''}"
         >{label}</button>
       </li>
     {/each}
