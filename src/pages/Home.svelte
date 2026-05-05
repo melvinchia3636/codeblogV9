@@ -11,7 +11,6 @@
 
 <main
   class="w-full h-full flex flex-col items-center overflow-y-auto overflow-x-hidden"
-  id="swup"
 >
   <section
     class="flex flex-col items-center justify-center flex-1 px-8 pt-28 sm:py-0"
@@ -70,9 +69,7 @@
     </div>
   </section>
   <footer
-    in:fade
-    out:fade
-    class="pointer-events-none mt-12 mb-8 sm:mb-12 w-full text-center px-8 wrap-break-word text-zinc-100 text-xs font-light tracking-[0.2em]"
+    class="pointer-events-none animate__animated animate__fadeInUp mt-12 mb-8 sm:mb-12 w-full text-center px-8 wrap-break-word text-zinc-100 text-xs font-light tracking-[0.2em]"
   >
     <small>
       addCopyright("Melvin

@@ -2,7 +2,7 @@
   export let navOpen = false;
 </script>
 
-<button onclick={() => window.__navigate("/")} class="no-underline!">
+<button onclick={() => window.__navigate("/")} class="no-underline! animate__animated animate__fadeInLeft">
   <h1
     class="text-xl tracking-[0.2em] relative z-9999 {navOpen
       ? 'text-neutral-800'

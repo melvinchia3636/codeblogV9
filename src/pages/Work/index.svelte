@@ -27,7 +27,7 @@
       .replace(/[^a-z0-9]/g, "")}.jpg?raw=true`;
 </script>
 
-<main class="w-full h-full flex flex-col items-center mt-32 sm:mt-48" id="swup">
+<main class="w-full h-full flex flex-col items-center mt-32 sm:mt-48">
   <PageHeader
     title="My Works"
     subtitle="Things I've designed, built, shipped, and maintained"
@@ -38,8 +38,6 @@
       <SectionHeader text={section.title} description={section.desc} />
       <div
         class="grid sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] w-full gap-4"
-        in:fade
-        out:fade
       >
         {#each section.projects as project}
           <ProjectCard

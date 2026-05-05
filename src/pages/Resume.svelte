@@ -3,7 +3,7 @@
   import Button from "../components/Button.svelte";
 </script>
 
-<main class="w-full h-full flex flex-col items-center mt-32 sm:mt-48" id="swup">
+<main class="w-full h-full flex flex-col items-center mt-32 sm:mt-48">
   <PageHeader
     title="Resume"
     subtitle="Years of experience, distilled into a single sheet of paper"
