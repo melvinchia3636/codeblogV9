@@ -7,7 +7,6 @@
 
   const routes = {
     "/": Home,
-    "/home": Home,
     "/work": Work,
     "/resume": Resume,
   };
@@ -17,10 +16,8 @@
   <title>Melvin Chia | Portfolio</title>
 </svelte:head>
 
-<main class="w-full h-full overflow-y-auto relative">
-  <Navbar />
-  <Router {routes} />
-</main>
+<Navbar />
+<Router {routes} />
 
 <style global>
   ::-webkit-scrollbar {

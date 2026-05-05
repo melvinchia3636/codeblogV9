@@ -1,5 +1,4 @@
 <script>
-  import Icon from "@iconify/svelte";
   import Button from "../../../components/Button.svelte";
 
   export let name = "";
@@ -9,7 +8,7 @@
   export let image = "";
 </script>
 
-<div class="h-full saos">
+<article class="h-full saos">
   <div
     class="flex font-light gap-8 flex-col h-full bg-zinc-100/5 p-4"
   >
@@ -17,16 +16,16 @@
       <img
         src={image}
         class="object-contain border border-neutral-700 rounded-sm w-full {repo ? 'h-48' : ''}"
-        alt=""
+        alt={`Screenshot of {name}`}
       />
     {/if}
     <div class="flex flex-col justify-between h-full">
       <div class="flex flex-col gap-4">
-        <div
+        <h3
           class="uppercase tracking-[0.2em] font-medium text-lg text-[#FFAA4C]"
         >
           {name}
-        </div>
+        </h3>
         <p class="text-xs! tracking-[0.08em] leading-5!">
           {desc}
         </p>
@@ -68,7 +67,7 @@
       </div>
     </div>
   </div>
-</div>
+</article>
 
 <style global>
   .saos > div,

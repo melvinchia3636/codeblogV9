@@ -1,6 +1,7 @@
 <script>
-  import { tweened } from "svelte/motion";
+  import { Tween } from "svelte/motion";
   import { expoInOut } from "svelte/easing";
+  import { onMount } from "svelte";
 
   import { fade } from "svelte/transition";
   // @ts-ignore
@@ -32,20 +33,23 @@
       .toLowerCase()
       .replace(/[^a-z0-9]/g, "")}.jpg?raw=true`;
 
-  const nav = tweened(100, {
+  let navOpacity = $state(1);
+
+  const nav = new Tween(100, {
     duration: 1000,
     easing: expoInOut,
   });
 
-  let showContent = false;
+  onMount(() => {
+    nav.set(0);
+    const tick = () => {
+      navOpacity = (100 - nav.current) / 100;
+      requestAnimationFrame(tick);
+    };
+    tick();
+  });
 
-  setTimeout(() => {
-    showContent = true;
-  }, 500);
-
-  setTimeout(() => {
-    $nav -= 100;
-  }, 500);
+  let showContent = $state(false);
 </script>
 
 <main class="w-full h-full flex flex-col items-center mt-32 sm:mt-48" id="swup">
@@ -54,7 +58,7 @@
       title="My Works"
       subtitle="Things I've designed, built, shipped, and maintained"
     />
-    <div class="w-full px-8 sm:px-32 lg:px-64 pb-16" in:fade out:fade>
+    <section class="w-full px-8 sm:px-32 lg:px-64 pb-16" in:fade out:fade>
       <LifeForgeCard />
       {#each sections as section}
         <SectionHeader text={section.title} description={section.desc} />
@@ -74,6 +78,6 @@
           {/each}
         </div>
       {/each}
-    </div>
+    </section>
   {/if}
 </main>
