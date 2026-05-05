@@ -1,9 +1,25 @@
 <script>
-  import Router from "svelte-spa-router";
+  import Router, { push } from "svelte-spa-router";
   import Resume from "./pages/Resume.svelte";
   import Home from "./pages/Home.svelte";
   import Navbar from "./components/Navbar/index.svelte";
   import Work from "./pages/Work/index.svelte";
+
+  let visible = $state(false);
+
+  setTimeout(() => {
+    visible = true;
+  }, 50);
+
+  window.__navigate = (path) => {
+    visible = false;
+    setTimeout(() => {
+      push(path);
+      setTimeout(() => {
+        visible = true;
+      }, 50);
+    }, 200);
+  };
 
   const routes = {
     "/": Home,
@@ -17,20 +33,15 @@
 </svelte:head>
 
 <Navbar />
-<Router {routes} />
+<div
+  class="h-full transition-opacity duration-200 {visible ? 'opacity-100' : 'opacity-0'}"
+>
+  <Router {routes} />
+</div>
 
 <style global>
   ::-webkit-scrollbar {
     width: 0;
     background: transparent;
-  }
-
-  .transition-fade {
-    transition: 0.4s;
-    opacity: 1;
-  }
-
-  html.is-animating .transition-fade {
-    opacity: 0;
   }
 </style>

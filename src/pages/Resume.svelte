@@ -1,33 +1,13 @@
 <script>
   import { fade } from "svelte/transition";
-  import { Tween } from "svelte/motion";
-  import { expoInOut } from "svelte/easing";
   import PageHeader from "../components/PageHeader.svelte";
   import Button from "../components/Button.svelte";
-
-  import { onMount } from "svelte";
-
-  let navOpacity = $state(1);
-
-  const nav = new Tween(100, {
-    duration: 1000,
-    easing: expoInOut,
-  });
-
-  onMount(() => {
-    nav.set(0);
-    const tick = () => {
-      navOpacity = (100 - nav.current) / 100;
-      requestAnimationFrame(tick);
-    };
-    tick();
-  });
 
   let showContent = $state(false);
 
   setTimeout(() => {
     showContent = true;
-  }, 500);
+  }, 100);
 </script>
 
 <main class="w-full h-full flex flex-col items-center mt-32 sm:mt-48" id="swup">

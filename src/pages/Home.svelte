@@ -1,19 +1,11 @@
 <script lang="ts">
-  import { fade } from "svelte/transition";
   import TypedJs from "@loscrackitos/svelte-typed-js";
-  import { push } from "svelte-spa-router";
   import "animate.css";
   import Icon from "@iconify/svelte";
   import Button from "../components/Button.svelte";
 
-  let showPage = true;
-
   const leavePage = (nextPage) => {
-    showPage = false;
-
-    setTimeout(() => {
-      push("/" + nextPage);
-    }, 1000);
+    window.__navigate("/" + nextPage);
   };
 </script>
 
@@ -24,63 +16,58 @@
   <section
     class="flex flex-col items-center justify-center flex-1 px-8 pt-28 sm:py-0"
   >
-    {#if showPage}
-      <div
-        class="flex flex-col items-center justify-center relative z-20"
-        out:fade
+    <div class="flex flex-col items-center justify-center relative z-20">
+      <p
+        class="tracking-[0.2em] animate__animated animate__fadeInUp flex gap-1 items-center justify-center text-lg font-light mb-6 sm:mb-8"
       >
-        <p
-          class="tracking-[0.2em] animate__animated animate__fadeInUp flex gap-1 items-center justify-center text-lg font-light mb-6 sm:mb-8"
+        I'M <strong class="text-[#FFAA4C] font-medium">MELVIN CHIA</strong>
+      </p>
+      <h1 class="text-4xl lg:text-5xl tracking-[0.2em] flex">
+        <span
+          class="animate__animated animate__fadeInLeft overflow-hidden justify-center items-center flex flex-col md:flex-row! gap-6"
         >
-          I'M <strong class="text-[#FFAA4C] font-medium">MELVIN CHIA</strong>
-        </p>
-        <h1 class="text-4xl lg:text-5xl tracking-[0.2em] flex">
-          <span
-            class="animate__animated animate__fadeInLeft overflow-hidden justify-center items-center flex flex-col md:flex-row! gap-6"
+          <span>
+            I <span class="inline-flex items-center gap-1"
+              >L<Icon icon="tabler:heart" class="w-12 h-12" />VE</span
+            ></span
           >
-            <span>
-              I <span class="inline-flex items-center gap-1"
-                >L<Icon icon="tabler:heart" class="w-12 h-12" />VE</span
-              ></span
-            >
-            <TypedJs
-              strings={["EFFICIENCY", "QUALITY", "PERFECTION"]}
-              loop={true}
-              typeSpeed={100}
-              backSpeed={50}
-              backDelay={1500}
-              startDelay={1000}
-            >
-              <span class="text-[#FFAA4C] typing"></span>
-            </TypedJs>
-          </span>
-        </h1>
-        <div
-          class="animate__animated animate__fadeInUp tracking-[0.125em] text-center flex flex-col items-center gap-2 text-sm md:text-base! mt-8 font-light"
-        >
-          <p>Problem Solver, System Architect, and Lifelong Learner</p>
-          <p>More than just a full-stack developer.</p>
-        </div>
-        <nav
-          class="flex gap-4 mt-12 md:mt-20 flex-col md:flex-row!"
-          aria-label="Primary navigation"
-        >
-          <Button
-            text="SEE MY WORK"
-            on:click={() => leavePage("work")}
-            className="w-72 animate__animated animate__fadeInLeft"
-            style="animation-delay: 0.5s"
-          />
-          <Button
-            text="VIEW RESUME"
-            variant="outlined"
-            on:click={() => leavePage("resume")}
-            className="w-72 animate__animated animate__fadeInRight"
-            style="animation-delay: 0.5s"
-          />
-        </nav>
+          <TypedJs
+            strings={["EFFICIENCY", "QUALITY", "PERFECTION"]}
+            loop={true}
+            typeSpeed={100}
+            backSpeed={50}
+            backDelay={1500}
+            startDelay={1000}
+          >
+            <span class="text-[#FFAA4C] typing"></span>
+          </TypedJs>
+        </span>
+      </h1>
+      <div
+        class="animate__animated animate__fadeInUp tracking-[0.125em] text-center flex flex-col items-center gap-2 text-sm md:text-base! mt-8 font-light"
+      >
+        <p>Problem Solver, System Architect, and Lifelong Learner</p>
+        <p>More than just a full-stack developer.</p>
       </div>
-    {/if}
+      <nav
+        class="flex gap-4 mt-12 md:mt-20 flex-col md:flex-row!"
+        aria-label="Primary navigation"
+      >
+        <Button
+          text="SEE MY WORK"
+          on:click={() => leavePage("work")}
+          className="w-72 animate__animated animate__fadeInLeft"
+          style="animation-delay: 0.5s"
+        />
+        <Button
+          text="VIEW RESUME"
+          variant="outlined"
+          on:click={() => leavePage("resume")}
+          className="w-72 animate__animated animate__fadeInRight"
+          style="animation-delay: 0.5s"
+        />
+      </nav>
+    </div>
   </section>
   <footer
     in:fade

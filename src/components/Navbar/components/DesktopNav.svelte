@@ -1,6 +1,4 @@
 <script lang="ts">
-  import { link } from "svelte-spa-router";
-
   export let pathname = "";
 
   const links = [
@@ -8,6 +6,10 @@
     { href: "/work", label: "work" },
     { href: "/resume", label: "resume" },
   ];
+
+  function handleNav(href: string) {
+    window.__navigate(href);
+  }
 </script>
 
 <ul
@@ -16,13 +18,12 @@
   {#each links as { href, label }}
     {@const active = pathname === href}
     <li>
-      <a
-        {href}
-        use:link
+      <button
+        onclick={() => handleNav(href)}
         class="tracking-[0.325rem] relative uppercase after:transition-all after:duration-300 after:content-[''] after:w-0 after:absolute after:left-1/2 after:translate-x-[-56%] after:-bottom-1 after:border-b-[1.6px] after:border-[#FFAA4C] cursor-pointer hover:after:w-1/2 {active
           ? 'after:w-1/2 font-semibold'
-          : ''}">{label}</a
-      >
+          : ''}"
+      >{label}</button>
     </li>
   {/each}
   <li>
