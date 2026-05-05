@@ -20,11 +20,6 @@
       showRepo: true,
     },
   ];
-
-  const getImageSrc = (name) =>
-    `https://github.com/melvinchia3636/CBImage/blob/main/${name
-      .toLowerCase()
-      .replace(/[^a-z0-9]/g, "")}.jpg?raw=true`;
 </script>
 
 <main class="w-full h-full flex flex-col items-center mt-32 sm:mt-48">
@@ -45,7 +40,6 @@
             desc={project.desc}
             repo={section.showRepo ? /** @type {any} */ (project).repo : ""}
             url={project.url ?? ""}
-            image={getImageSrc(project.name)}
           />
         {/each}
       </div>

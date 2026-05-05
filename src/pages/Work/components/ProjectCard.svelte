@@ -6,15 +6,21 @@
   export let repo = "";
   export let url = "";
   export let image = "";
+
+  function getImageSrc(name) {
+    return `https://github.com/melvinchia3636/CBImage/blob/main/${name
+      .toLowerCase()
+      .replace(/[^a-z0-9]/g, "")}.webp?raw=true`;
+  }
 </script>
 
-<article class="h-full saos">
+<article class="h-full">
   <div
     class="flex font-light gap-8 flex-col h-full bg-zinc-100/5 p-4"
   >
     {#if image}
       <img
-        src={image}
+        src={image || getImageSrc(name)}
         class="object-contain border border-neutral-700 rounded-sm w-full {repo ? 'h-48' : ''}"
         alt={`Screenshot of {name}`}
       />
