@@ -67,8 +67,8 @@
             <ProjectCard
               name={project.name}
               desc={project.desc}
-              repo={section.showRepo ? project.repo : ""}
-              url={project.url}
+              repo={section.showRepo ? /** @type {any} */ (project).repo : ""}
+              url={project.url ?? ""}
               image={getImageSrc(project.name)}
             />
           {/each}

@@ -3,92 +3,70 @@
     "_id": "63b0b9c6c30eb95b282a9dk",
     "name": "ThermPrint - A Reverse-Engineering Project",
     "desc": "A lightweight, open-source web app for printing images and QR codes to BLE thermal printers.",
-    "repo": "https://github.com/melvinchia3636/thermprint",
-    "category": "web app",
-    "techs": ["python3", "react", "tailwindcss", "bleak", "fastapi"]
+    "repo": "https://github.com/melvinchia3636/thermprint"
   },
   {
     "_id": "63b0b9c6c30eb95b282a9di",
     "name": "RAGent - RAG AI Desktop Assistant",
     "desc": "A desktop app built using JavaFX and LangChain that utilizes Retrieval Augmented Generation (RAG)",
-    "repo": "https://github.com/melvinchia3636/RAGent",
-    "category": "desktop app",
-    "techs": ["java", "javafx", "langchain"]
+    "repo": "https://github.com/melvinchia3636/RAGent"
   },
   {
     "_id": "63b0b9c6c30eb95b282a9di",
     "name": "YT Summarized",
     "desc": "Utilize the power of AI and summarize any YouTube video with just a click of a button.",
-    "repo": "https://github.com/melvinchia3636/yt-summarized",
-    "category": "webapp",
-    "techs": ["reactjs", "tailwindcss", "expressjs"]
+    "repo": "https://github.com/melvinchia3636/yt-summarized"
   },
   {
     "_id": "63b0b9c6c30eb95b282a9di",
     "name": "MCS Quiz System",
     "desc": "A one-stop platform for initiating, managing, and marking quizzes.",
-    "repo": "https://github.com/melvinchia3636/mcs-quiz-system/",
-    "category": "webapp",
-    "techs": ["reactjs", "tailwindcss", "firebase"]
+    "repo": "https://github.com/melvinchia3636/mcs-quiz-system/"
   },
   {
     "_id": "63b0b9c6c30eb95b282a9di",
     "name": "Color Picker",
     "desc": "A color picker made with Python Tkinter in a native looking way.",
-    "repo": "https://github.com/melvinchia3636/color-palette",
-    "category": "desktop app",
-    "techs": ["python3", "tkinter"]
+    "repo": "https://github.com/melvinchia3636/color-palette"
   },
   {
     "_id": "63b0b9c6c30eb95b282a9di",
     "name": "Super Tic Tac Toe",
     "desc": "A super version of the classic Tic Tac Toe game with minimalistic UI.",
     "url": "https://super-tictactoe.melvinchia.dev",
-    "repo": "https://github.com/melvinchia3636/super-TicTacToe/",
-    "category": "webapp",
-    "techs": ["typescript", "tailwindcss"]
+    "repo": "https://github.com/melvinchia3636/super-TicTacToe/"
   },
   {
     "_id": "622a9cfd4c7dc90d402119b5",
     "name": "gitinfo - github api explorer",
     "desc": "This website provides a clean place for displaying info of github users, repos, and more.",
     "url": "https://gitinfo.melvinchia.dev",
-    "repo": "https://github.com/melvinchia3636/gitinfo",
-    "category": "webapp",
-    "techs": ["react", "tailwindcss"]
+    "repo": "https://github.com/melvinchia3636/gitinfo"
   },
   {
     "_id": "622a9d454c7dc90d402119b6",
     "name": "cruisegator - cruiseship database",
     "desc": "This website summarizes and displays information of cruiseships from various sources",
-    "repo": "https://github.com/melvinchia3636/cruisegator",
-    "category": "webapp",
-    "techs": ["react", "tailwindcss", "redux", "typescript"]
+    "repo": "https://github.com/melvinchia3636/cruisegator"
   },
   {
     "_id": "622a9d8b4c7dc90d402119b8",
     "name": "vanilla tweaks website remake",
     "desc": "A redesigned remade version of vanillatweaks.net.",
-    "repo": "https://github.com/melvinchia3636/vanillaTweaks",
-    "category": "webapp",
-    "techs": ["react", "tailwindcss", "express"]
+    "repo": "https://github.com/melvinchia3636/vanillaTweaks"
   },
   {
     "_id": "622aa0444c7dc90d402119c0",
     "name": "wordle clone",
     "desc": "A redesigned and remade version of the Wordle game.",
     "url": "https://wordle.melvinchia.dev",
-    "repo": "https://github.com/melvinchia3636/wordle",
-    "category": "webapp",
-    "techs": ["react", "tailwindcss"]
+    "repo": "https://github.com/melvinchia3636/wordle"
   },
   {
     "_id": "62606a83bae3cd1db7385977",
     "name": "sudoku - a clean one",
     "desc": "A clean and nice looking online sudoku game board.",
     "repo": "https://github.com/melvinchia3636/clean-sudoku",
-    "category": "webapp",
-    "techs": ["react", "tailwindcss"],
     "url": "https://sudoku.melvinchia.dev"
   },
   {
@@ -96,77 +74,59 @@
     "name": "Calculator",
     "url": "https://calculator.melvinchia.dev",
     "desc": "A neumorphic styled calculator.",
-    "repo": "https://github.com/melvinchia3636/calculator",
-    "category": "webapp",
-    "techs": ["react", "css3", "tailwindcss"]
+    "repo": "https://github.com/melvinchia3636/calculator"
   },
   {
     "_id": "629ec69ec296d616ce03d223",
     "name": "URL Shortener",
     "url": "https://url.melvinchia.dev",
     "desc": "A simple URL shortener that allows you to make long URLs shorter.",
-    "repo": "https://github.com/melvinchia3636/URLShortener",
-    "category": "webapp",
-    "techs": ["next.js", "tailwindcss", "mongodb"]
+    "repo": "https://github.com/melvinchia3636/URLShortener"
   },
   {
     "_id": "62b6d1962c03b09684efc932",
     "name": "2048",
     "desc": "A recreation of 2048 with smooth animation and different themes",
     "url": "https://2048.melvinchia.dev",
-    "repo": "https://github.com/melvinchia3636/js2048",
-    "category": "webapp",
-    "techs": ["typescript"]
+    "repo": "https://github.com/melvinchia3636/js2048"
   },
   {
     "_id": "634aa2f367a423ce7d192901",
     "name": "flight ticket",
     "desc": "A gorgeous looking virtual flight ticket designed using   TAILWINDCSS",
     "url": "https://flight-ticket.melvinchia.dev",
-    "repo": "https://github.com/melvinchia3636/flight-ticket",
-    "category": "webapp",
-    "techs": ["React", "TailwindCSS"]
+    "repo": "https://github.com/melvinchia3636/flight-ticket"
   },
   {
     "_id": "638ab91231d0b2b379092c8d",
     "name": "progress quest realms",
     "desc": "A GUI application that shows you complete rank list of realms in Progress Quest\n",
-    "repo": "https://github.com/melvinchia3636/progressQuestRealms",
-    "category": "desktop app",
-    "techs": ["python3", "pyqt5"]
+    "repo": "https://github.com/melvinchia3636/progressQuestRealms"
   },
   {
     "_id": "63925a6f4ea5ede935d06336",
     "name": "PyQt5 Progress Quest",
     "desc": "This is a native looking version of Progress Quest - the oldest idle MMORPG",
-    "repo": "https://github.com/melvinchia3636/PyQt5ProgressQuest",
-    "category": "desktopapp",
-    "techs": ["Python3", "PyQt5"]
+    "repo": "https://github.com/melvinchia3636/PyQt5ProgressQuest"
   },
   {
     "_id": "63a9b98c6c30eb95b282a9df",
     "name": "currency converter",
     "desc": "A handy tool that converts currency from all around the world one to another.",
     "url": "https://currency-converter.melvinchia.dev/",
-    "repo": "https://github.com/melvinchia3636/MRNGA",
-    "category": "webapp",
-    "techs": ["reactjs", "tailwindcss"]
+    "repo": "https://github.com/melvinchia3636/MRNGA"
   },
   {
     "_id": "63b0b9c6c30eb95b282a9di",
     "name": "Neumorsweeper - A neumorophic minesweeper game",
     "desc": "Neumorphic style Minesweeper game with an immersive interface and challenging gameplay.",
     "url": "https://neumorsweeper.melvinchia.dev/",
-    "repo": "https://github.com/melvinchia3636/minesweeper",
-    "category": "webapp",
-    "techs": ["javascript", "html5", "css3", "tailwindcss"]
+    "repo": "https://github.com/melvinchia3636/minesweeper"
   },
   {
     "_id": "63b0b9c6c30eb95b282a9di",
     "name": "Raspi Weather Station",
     "desc": "A weather station that is built using Raspberry Pi and some APIs to display the weather forecast and other cool stuff.",
-    "repo": "https://github.com/melvinchia3636/weatherStation",
-    "category": "hardware",
-    "techs": ["raspberrypi", "python3"]
+    "repo": "https://github.com/melvinchia3636/weatherStation"
   }
 ]

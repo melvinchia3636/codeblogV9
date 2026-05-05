@@ -22,18 +22,13 @@
     },
     "personalProject": {
       "type": "object",
-      "required": ["_id", "name", "desc", "repo", "category", "techs"],
+      "required": ["_id", "name", "desc", "repo"],
       "properties": {
         "_id": { "type": "string" },
         "name": { "type": "string" },
         "desc": { "type": "string" },
         "repo": { "type": "string", "format": "uri" },
-        "category": { "type": "string" },
-        "url": { "type": "string", "format": "uri" },
-        "techs": {
-          "type": "array",
-          "items": { "type": "string" }
-        }
+        "url": { "type": "string", "format": "uri" }
       }
     },
     "personalProjectList": {
