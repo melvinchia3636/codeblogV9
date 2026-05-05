@@ -2,15 +2,8 @@
   import Router from "svelte-spa-router";
   import Resume from "./pages/Resume.svelte";
   import Home from "./pages/Home.svelte";
-  import Navbar from "./components/Navbar.svelte";
+  import Navbar from "./components/Navbar/index.svelte";
   import Work from "./pages/Work/index.svelte";
-
-  let section = $state(null);
-
-  $effect(() => {
-    section = window.location.pathname.split("/")[1];
-    section = section ? section[0].toUpperCase() + section.slice(1) : null;
-  });
 
   const routes = {
     "/": Home,
@@ -21,7 +14,7 @@
 </script>
 
 <svelte:head>
-  <title>{section ? section + " | " : ""}Melvin Chia | Portfolio</title>
+  <title>Melvin Chia | Portfolio</title>
 </svelte:head>
 
 <main class="w-full h-full overflow-y-auto relative">
