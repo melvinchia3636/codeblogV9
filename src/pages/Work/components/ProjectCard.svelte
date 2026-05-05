@@ -5,7 +5,6 @@
   export let desc = "";
   export let repo = "";
   export let url = "";
-  export let image = "";
 
   function getImageSrc(name) {
     return `https://github.com/melvinchia3636/CBImage/blob/main/${name
@@ -15,16 +14,14 @@
 </script>
 
 <article class="h-full">
-  <div
-    class="flex font-light gap-8 flex-col h-full bg-zinc-100/5 p-4"
-  >
-    {#if image}
-      <img
-        src={image || getImageSrc(name)}
-        class="object-contain border border-neutral-700 rounded-sm w-full {repo ? 'h-48' : ''}"
-        alt={`Screenshot of {name}`}
-      />
-    {/if}
+  <div class="flex font-light gap-8 flex-col h-full bg-zinc-100/5 p-4">
+    <img
+      src={getImageSrc(name)}
+      class="object-contain border border-neutral-700 rounded-sm w-full {repo
+        ? 'h-48'
+        : ''}"
+      alt={`Screenshot of ${name}`}
+    />
     <div class="flex flex-col justify-between h-full">
       <div class="flex flex-col gap-4">
         <h3

@@ -10,14 +10,29 @@
     "repo": "https://github.com/melvinchia3636/RAGent"
   },
   {
+    "name": "OOP Practical GUI - Simple Tasks, Advanced Implementation",
+    "desc": "A GUI desktop app built with Java Swing for the OOP module in my university, since those tasks were too simple and I was too bored during the class."
+  },
+  {
     "name": "YT Summarized",
     "desc": "Utilize the power of AI and summarize any YouTube video with just a click of a button.",
     "repo": "https://github.com/melvinchia3636/yt-summarized"
   },
   {
+    "name": "Acc Editor",
+    "desc": "A tool for grinding questions for accounting exam back in my high school tht got me an A1 (highest distinction) in the UEC exam for the subject.",
+    "repo": "https://github.com/melvinchia3636/accountingTools"
+  },
+  {
     "name": "MCS Quiz System",
     "desc": "A one-stop platform for initiating, managing, and marking quizzes.",
     "repo": "https://github.com/melvinchia3636/mcs-quiz-system/"
+  },
+  {
+    "name": "Trip Memoir - Taiwan 2023",
+    "desc": "A memoir and album website for my trip with family to Taiwan back in 2023.",
+    "repo": "https://github.com/melvinchia3636/memoir",
+    "url": "https://trips.taiwan.melvinchia.dev"
   },
   {
     "name": "Color Picker",

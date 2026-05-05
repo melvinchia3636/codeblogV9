@@ -12,5 +12,24 @@
     "name": "Ringosan Works",
     "desc": "The portfolio for my brother, a 2D illustrator specialized in ACG arts.",
     "url": "https://ringosan.work"
+  },
+  {
+    "name": "Foon Yew Drama Show 2025 - Program Booklet",
+    "desc": "Yup, they reached out to me yet again after my graduation from high school. The program booklet for Annual drama show of Foon Yew Drama Society in the year 2025",
+    "url": "https://fy-drama-show-2025.vercel.app"
+  },
+  {
+    "name": "Foon Yew Drama Show 2023 - Program Booklet",
+    "desc": "The program booklet for Annual drama show of Foon Yew Drama Society in the year 2023",
+    "url": "https://fy-drama-show.vercel.app"
+  },
+  {
+    "name": "Foon Yew Coding Competition - Landing Page",
+    "desc": "A landing page I built back in the day when I was the organizer a competitive programming competition for my school.",
+    "url": "https://coding.foonyew.edu.my"
+  },
+  {
+    "name": "Foon Yew Project - e Campus Touring Website",
+    "desc": "A website project that I was the lead developer of, featuring 360deg campus touring of my high school and multiple mini games. The school promised a long-term deployment for the project but seems like they've totally forgotten this matter."
   }
 ]
