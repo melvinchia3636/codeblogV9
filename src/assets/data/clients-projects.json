@@ -1,22 +1,16 @@
 [
   {
-    "_id": "0",
     "name": "FEN Education - Landing Page",
     "desc": "Landing page for one of the renowned education consultancy in Malaysia",
-    "category": "website",
     "url": "https://feneducation.com"
   },
   {
-    "_id": "1",
     "name": "FEN Education - ERP",
-    "desc": "Internal enterprise resource planning system for a company with 20+ staff members, featuring lead management, event management, commission management, etc.",
-    "category": "web app"
+    "desc": "Internal enterprise resource planning system for a company with 20+ staff members, featuring lead management, event management, commission management, etc."
   },
   {
-    "_id": "2",
     "name": "Ringosan Works",
     "desc": "The portfolio for my brother, a 2D illustrator specialized in ACG arts.",
-    "category": "website",
     "url": "https://ringosan.work"
   }
 ]

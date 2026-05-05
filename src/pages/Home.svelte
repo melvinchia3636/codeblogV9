@@ -1,7 +1,7 @@
 <script lang="ts">
   import { fade } from "svelte/transition";
   import TypedJs from "@loscrackitos/svelte-typed-js";
-  import { navigate } from "svelte-navigator";
+  import { push } from "svelte-spa-router";
   import "animate.css";
   import Icon from "@iconify/svelte";
   import Button from "../components/Button.svelte";
@@ -12,7 +12,7 @@
     showPage = false;
 
     setTimeout(() => {
-      navigate("/" + nextPage);
+      push("/" + nextPage);
     }, 1000);
   };
 </script>
@@ -51,7 +51,7 @@
               backDelay={1500}
               startDelay={1000}
             >
-              <span class="text-[#FFAA4C] typing" />
+              <span class="text-[#FFAA4C] typing"></span>
             </TypedJs>
           </div>
         </div>

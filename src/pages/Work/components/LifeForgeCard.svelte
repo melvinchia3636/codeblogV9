@@ -6,11 +6,7 @@
 <div
   class="w-full relative p-8 bg-zinc-100/5 border-2 overflow-hidden border-[#FFAA4C] flex xl:flex-row! flex-col items-center gap-6"
 >
-  <img
-    src="/lifeforge.png"
-    alt="lifeforge"
-    class="h-48 object-contain rounded-sm"
-  />
+  <img src="/lifeforge.png" alt="" class="h-48 object-contain rounded-sm" />
   <div class="flex flex-col w-full">
     <div
       class="uppercase tracking-[0.2em] flex items-center gap-2 font-medium text-2xl text-[#FFAA4C]"

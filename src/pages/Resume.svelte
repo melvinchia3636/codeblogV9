@@ -43,13 +43,12 @@
       <iframe
         src="/Melvin_Chia_FullStack_Developer_Resume.pdf"
         class="w-full max-w-4xl h-[600px] sm:h-[800px] border border-neutral-700 rounded-sm"
-      />
+        title="Melvin Chia Resume"
+      ></iframe>
     </div>
   {/if}
 </div>
 
 <style>
-  path {
-    stroke-width: 0.6px !important;
-  }
+
 </style>
