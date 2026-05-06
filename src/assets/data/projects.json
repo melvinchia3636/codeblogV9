@@ -1,5 +1,10 @@
 [
   {
+    "name": "Crypto Utils GUI",
+    "desc": "A desktop cryptography explorer built with PyQt5 that covers various symmetric and asymmetric encryption algorithms",
+    "repo": "https://github.com/melvinchia3636/crypto-utils-gui"
+  },
+  {
     "name": "ThermPrint - A Reverse-Engineering Project",
     "desc": "A lightweight, open-source web app for printing images and QR codes to BLE thermal printers.",
     "repo": "https://github.com/melvinchia3636/thermprint"
