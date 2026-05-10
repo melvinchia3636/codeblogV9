@@ -1,5 +1,11 @@
 [
   {
+    "name": "Grass Toucher",
+    "desc": "A VS Code extension that forces you to leave your workspace alone and go touch some grass.",
+    "repo": "https://github.com/melvinchia3636/grass-toucher",
+    "url": "https://marketplace.visualstudio.com/items?itemName=Lifeforge.grass-toucher"
+  },
+  {
     "name": "Crypto Utils GUI",
     "desc": "A desktop cryptography explorer built with PyQt5 that covers various symmetric and asymmetric encryption algorithms",
     "repo": "https://github.com/melvinchia3636/crypto-utils-gui"
