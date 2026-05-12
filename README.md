@@ -13,8 +13,8 @@ Yup, here it is. Feel free to [take a visit](https://melvinchia.dev)
 ## 🖥 Screenshots
 
 <div align="center">
-  <img width="49%" alt="Home page" src="https://user-images.githubusercontent.com/64565584/164948663-87b520e2-e3b7-4ca9-8797-7f4d1d9d8f47.png">
-  <img width="49%" alt="Work page" src="https://user-images.githubusercontent.com/64565584/164948676-ed27e417-71ab-42ff-91b1-bec7bed89e04.png">
+  <img width="49%" alt="image" src="https://github.com/user-attachments/assets/579b70af-7064-45c4-9208-d9b90ae9ec99" />
+  <img width="49%" alt="image" src="https://github.com/user-attachments/assets/e3cd4dbc-d5a3-4385-b1ed-ff2ca8379604" />
 </div>
 
 ## 🔬 Technologies Used
