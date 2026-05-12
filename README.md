@@ -2,11 +2,11 @@
 
 <p align="center">The source code for the official melvinchia.dev</p>
 
-## The Problem
+## 🤔 The Problem
 
 I needed a place to showcase all the projects I've built - client work, side projects, and open-source experiments - in one clean, cohesive space. Being a fullstack web developer, of course I have to build my own from scratch.
 
-## The Solution
+## ✅ The Solution
 
 Yup, here it is. Feel free to [take a visit](https://melvinchia.dev)
 
