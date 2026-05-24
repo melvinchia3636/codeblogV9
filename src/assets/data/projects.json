@@ -1,5 +1,11 @@
 [
   {
+    "name": "Stickr",
+    "desc": "A React Native app for creating, browsing, and managing WhatsApp sticker packs. No ads, no bloat, no nonsense.",
+    "repo": "https://github.com/melvinchia3636/stickr",
+    "url": "https://github.com/melvinchia3636/stickr/releases/tag/v1.0.0"
+  },
+  {
     "name": "Grass Toucher",
     "desc": "A VS Code extension that forces you to leave your workspace alone and go touch some grass.",
     "repo": "https://github.com/melvinchia3636/grass-toucher",
