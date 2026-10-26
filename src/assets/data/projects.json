@@ -1,5 +1,11 @@
 [
   {
+    "name": "Planeteria",
+    "desc": "Interactive contour globes and flat maps for eight worlds, generated from real planetary elevation models by a unified Python pipeline.",
+    "repo": "https://github.com/melvinchia3636/planeteria",
+    "url": "https://melvinchia3636.github.io/planeteria/"
+  },
+  {
     "name": "Stickr",
     "desc": "A React Native app for creating, browsing, and managing WhatsApp sticker packs. No ads, no bloat, no nonsense.",
     "repo": "https://github.com/melvinchia3636/stickr",
