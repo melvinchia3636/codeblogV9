@@ -1,5 +1,10 @@
 [
   {
+    "name": "Twitter Video Downloader",
+    "desc": "A Python CLI that extracts every video from your X bookmarks, downloads them in bulk with live progress bars, and backs up the list before letting you clear it.",
+    "repo": "https://github.com/melvinchia3636/twitter-video-downloader"
+  },
+  {
     "name": "Planeteria",
     "desc": "Interactive contour globes and flat maps for eight worlds, generated from real planetary elevation models by a unified Python pipeline.",
     "repo": "https://github.com/melvinchia3636/planeteria",
