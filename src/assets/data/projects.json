@@ -39,7 +39,8 @@
   },
   {
     "name": "OOP Practical GUI - Simple Tasks, Advanced Implementation",
-    "desc": "A GUI desktop app built with Java Swing for the OOP module in my university, since those tasks were too simple and I was too bored during the class."
+    "desc": "A GUI desktop app built with Java Swing for the OOP module in my university, since those tasks were too simple and I was too bored during the class.",
+    "repo": "https://github.com/melvinchia3636/oop-practical"
   },
   {
     "name": "YT Summarized",
