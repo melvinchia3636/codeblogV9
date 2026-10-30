@@ -2,7 +2,8 @@
   {
     "name": "Perpetual Calendar",
     "desc": "A fully offline Chinese almanac (万年历) for Android with lunar dates, daily 宜忌, and 吉日/吉时 search.",
-    "repo": "https://github.com/melvinchia3636/perpetual-calendar"
+    "repo": "https://github.com/melvinchia3636/perpetual-calendar",
+    "url": "https://github.com/melvinchia3636/perpetual-calendar/releases/tag/v1.0.0"
   },
   {
     "name": "Twitter Video Downloader",
