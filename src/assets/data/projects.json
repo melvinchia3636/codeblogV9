@@ -1,5 +1,10 @@
 [
   {
+    "name": "Perpetual Calendar",
+    "desc": "A fully offline Chinese almanac (万年历) for Android with lunar dates, daily 宜忌, and 吉日/吉时 search.",
+    "repo": "https://github.com/melvinchia3636/perpetual-calendar"
+  },
+  {
     "name": "Twitter Video Downloader",
     "desc": "A Python CLI that extracts every video from your X bookmarks, downloads them in bulk with live progress bars, and backs up the list before letting you clear it.",
     "repo": "https://github.com/melvinchia3636/twitter-video-downloader"
